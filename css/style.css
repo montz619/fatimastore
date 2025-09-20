@@ -1,0 +1,431 @@
+/*
+ * Custom CSS for the online store.
+ * All styling is done with Tailwind CSS classes,
+ * except for custom background images and dropdown behavior.
+ */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7fafc;
+}
+
+/* Make the page a column flex container so the footer sticks to the bottom on short pages */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto; /* allow main content to grow and push footer to the bottom */
+}
+
+/* Narrow the footer vertically across the whole site */
+footer {
+    padding-top: 0.5rem; /* reduce large Tailwind py-* values */
+    padding-bottom: 0.5rem;
+}
+
+/* Reduce the extra top margin often used for the copyright row inside footer */
+footer .mt-8 {
+    margin-top: 0.5rem !important;
+}
+
+/* Hero Section with a background image */
+.hero {
+    /* prefer WebP where supported (image-set); fall back to JPG files included in the repository */
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), -webkit-image-set(
+        url('../images/hero-bg/pat-herobg-1920.webp') type('image/webp') 1x,
+        url('../images/hero-bg/pat-herobg-1920.jpg') type('image/jpeg') 1x
+    ), image-set(
+        url('../images/hero-bg/pat-herobg-1920.webp') type('image/webp') 1x,
+        url('../images/hero-bg/pat-herobg-1920.jpg') type('image/jpeg') 1x
+    );
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* allow the hero to scale reasonably across devices; height is controlled via viewport units */
+    min-height: 52vh;
+}
+
+/* Prefer the right side of the hero image as the focal point so cropping keeps the subject visible */
+.hero picture img,
+.hero img {
+    object-position: right center;
+}
+
+/* Slightly brighten hero images while keeping contrast with text */
+.hero picture img, .hero img {
+    filter: brightness(1.06) contrast(1.02);
+}
+
+/* Add small text-shadow for heading and paragraph to keep legibility when image brightens */
+.hero h1 { text-shadow: 0 2px 8px rgba(0,0,0,0.28); }
+.hero p { text-shadow: 0 1px 6px rgba(0,0,0,0.22); }
+
+/* Responsive background swaps: use smaller files on narrow viewports to save bandwidth and improve mobile rendering */
+@media (max-width: 640px) {
+    .hero {
+        /* prefer a small WebP on phones, fallback to 480.jpg */
+        background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), -webkit-image-set(
+            url('../images/hero-bg/pat-herobg-480-right.webp') type('image/webp') 1x,
+            url('../images/hero-bg/pat-herobg-480-right.jpg') type('image/jpeg') 1x
+        ), image-set(
+            url('../images/hero-bg/pat-herobg-480-right.webp') type('image/webp') 1x,
+            url('../images/hero-bg/pat-herobg-480-right.jpg') type('image/jpeg') 1x
+        );
+        background-position: right center; /* favor the right crop on mobile like desktop */
+    min-height: 70vh; /* taller hero for mobile to show subject */
+    }
+}
+
+/* Ensure the hero image keeps a right-centered focal point on small screens too */
+@media (max-width: 640px) {
+    .hero picture img,
+    .hero img {
+        object-position: right center;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .hero {
+        /* prefer a medium WebP on tablets, fallback to 800.jpg */
+        background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), -webkit-image-set(
+            url('../images/hero-bg/pat-herobg-800.webp') type('image/webp') 1x,
+            url('../images/hero-bg/pat-herobg-800.jpg') type('image/jpeg') 1x
+        ), image-set(
+            url('../images/hero-bg/pat-herobg-800.webp') type('image/webp') 1x,
+            url('../images/hero-bg/pat-herobg-800.jpg') type('image/jpeg') 1x
+        );
+        background-position: center center;
+        min-height: 50vh;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+    .hero {
+    padding-top: 3.5rem; /* reduce hero vertical padding on very small screens */
+    padding-bottom: 3.5rem;
+    min-height: 48vh; /* slightly taller on mobile to maintain visual balance */
+        border-radius: 1rem;
+    }
+    /* Mobile menu visible block styling */
+    #mobile-menu {
+        position: sticky;
+        top: 64px;
+        z-index: 60;
+    }
+
+    /* Reduce header padding and logo size on very small screens for better viewport fit */
+    header .container {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    header a.text-3xl {
+        font-size: 1.25rem; /* smaller logo text on phones */
+    }
+}
+
+/* ----------------------
+   Mobile-first usability
+   ---------------------- */
+/* Improve tap targets, inputs, and modal sizing for small screens while retaining desktop behavior */
+@media (max-width: 640px) {
+    /* Ensure interactive elements meet touch target recommendations */
+    header .container a,
+    header .container button,
+    #mobile-menu a,
+    #mobile-menu button,
+    .add-to-cart-btn,
+    .inline-block,
+    .search-input,
+    .product-card button,
+    .product-card a {
+        min-height: 44px;
+        min-width: 44px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    /* Make mobile menu links easier to tap */
+    #mobile-menu a { padding: 0.75rem 1rem; font-size: 1rem; }
+
+    /* Product cards should be single-column and images scale naturally */
+    .product-card { width: 100%; display: block; }
+    .product-card img { width: 100%; height: auto; object-fit: cover; }
+
+    /* Quick-view modal should be near full-screen on mobile for easier interaction */
+    #quick-view-modal > div {
+        width: 95vw;
+        max-width: 95vw;
+        height: auto;
+        max-height: 95vh;
+        padding: 1rem;
+        border-radius: 0.75rem;
+        overflow: auto;
+    }
+
+    /* Increase space for search input tappable area */
+    .search-input { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+
+    /* Larger number input touch area */
+    input[type="number"] { padding: 0.5rem 0.6rem; }
+
+    /* Make hero spacing slightly tighter to keep focal subject visible */
+    .hero { padding-left: 0.75rem; padding-right: 0.75rem; }
+    /* Reduce hero text to avoid covering important subject on small screens */
+    .hero h1 { font-size: 1.6rem; line-height: 1.05; }
+    .hero p { font-size: 0.95rem; }
+}
+
+/* Accessibility: visible focus states for keyboard and assistive users */
+:focus {
+    outline: none;
+}
+:focus-visible {
+    outline: 3px solid rgba(99,102,241,0.75);
+    outline-offset: 2px;
+}
+
+/* Ensure buttons and anchors show a consistent focus ring */
+button:focus-visible, a:focus-visible {
+    box-shadow: 0 0 0 4px rgba(99,102,241,0.12);
+}
+
+/* Make cart price column behave nicely on very small screens */
+@media (max-width: 640px) {
+    #cart-items .w-28 { width: auto !important; text-align: right; }
+    #cart-items .font-semibold { word-break: break-word; }
+    .hero h1 { font-size: 1.4rem; }
+    .hero p { font-size: 0.95rem; }
+}
+
+/* Dropdown menu display on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* This is a great example of a CSS property that can solve the original issue */
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Modal fade-in/fade-out animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#quick-view-modal.modal-open {
+    display: flex;
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+#quick-view-modal.modal-closing {
+    animation: fadeOut 0.3s ease-out forwards;
+}
+
+.product-card {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Disable hover lift on touch devices to avoid layout shifts */
+@media (hover: none) {
+    .product-card:hover {
+        transform: none;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.06);
+    }
+}
+
+/* Ensure compact add buttons still meet touch target recommendations */
+.add-to-cart-btn {
+    min-width: 56px;
+    min-height: 36px;
+}
+
+.add-to-cart-btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease-in-out;
+}
+
+/* New: Subtle animation for the search input on focus */
+.search-input:focus {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Brands modal and focus styles */
+.brand-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 60;
+}
+.brand-overlay.open {
+    display: flex;
+}
+.brand-modal {
+    background: white;
+    border-radius: 1rem;
+    max-width: 900px;
+    width: 95%;
+    max-height: 85vh;
+    overflow: auto;
+    padding: 1.25rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform 0.22s cubic-bezier(.2,.9,.2,1), opacity 0.18s ease-out;
+}
+.brand-modal.open {
+    transform: scale(1);
+    opacity: 1;
+}
+.brand-overlay.open {
+    animation: overlayFadeIn 180ms ease-out forwards;
+}
+
+@keyframes overlayFadeIn {
+    from { background: rgba(0,0,0,0); }
+    to { background: rgba(0,0,0,0.6); }
+}
+
+/* pop-in animation for the modal to emphasize zoom */
+@keyframes modalPopIn {
+    from { transform: scale(0.86); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.brand-modal.open {
+    animation: modalPopIn 220ms cubic-bezier(.2,.9,.2,1) forwards;
+}
+.brand-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+}
+.brand-item {
+    background: #fff;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.brand-item:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+.brand-list {
+    margin-top: 1rem;
+}
+.brand-list .product-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #f1f1f1;
+    flex-wrap: wrap; /* allow children to wrap on narrow screens */
+}
+.brand-list .product-row:last-child { border-bottom: none; }
+.brand-list .product-name { font-weight: 600; }
+.brand-list .product-stock { color: #6b7280; }
+
+/* Brand tile click feedback */
+.brand-tile {
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.brand-tile:active {
+    transform: scale(0.98) translateY(2px);
+}
+
+.brand-list .product-row.cursor-pointer:hover {
+    background: rgba(99,102,241,0.03);
+    transform: translateY(-3px);
+}
+
+/* Quantity modal animations */
+.quantity-modal-inner {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    transform: translateY(6px);
+    opacity: 0;
+    transition: transform 200ms ease-out, opacity 200ms ease-out;
+}
+.quantity-modal-open .quantity-modal-inner {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Search results modal */
+#search-results-modal {
+    display: none;
+}
+#search-results-modal > div {
+    max-height: 70vh;
+}
+#search-results-modal:not(.hidden) {
+    display: flex;
+}
+
+/* Ensure the add button sits on its own centered row on small screens */
+.brand-list .product-row .product-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .brand-list .product-row {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .brand-list .product-row .product-add {
+        /* force full width and center the button below the main row */
+        width: 100%;
+        order: 3; /* move it after the other elements when wrapping */
+        margin-top: 0.5rem;
+    }
+    .brand-list .product-row .product-stock {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.25rem;
+        font-size: 0.95rem;
+        color: #6b7280;
+    }
+    .brand-list .product-row .flex.items-center {
+        order: 1;
+        width: auto;
+    }
+
+    /* Make header/footer containers stretch to the viewport edges on very small screens */
+    header .container, footer .container {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        max-width: 100% !important;
+    }
+}

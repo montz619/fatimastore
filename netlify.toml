@@ -1,0 +1,16 @@
+[build]
+  publish = "."
+  # No build required for this static site; keep the command a no-op.
+  command = "echo 'No build; static site'"
+
+[context.production.environment]
+# Ensure Netlify installs only production dependencies. This prevents dev-only
+# packages that download large binaries (e.g., puppeteer, sharp) from being
+# installed during the site build. If you need those dev tools, run them in CI.
+  NODE_ENV = "production"
+  NPM_FLAGS = "--omit=dev"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
