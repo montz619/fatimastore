@@ -572,5 +572,126 @@
         "image_url": "images/food/powdered-drinks/tang-strawberry-19g.jpg",
         "image_webp": "images/food/powdered-drinks/tang-strawberry-19g.webp"
     }
+,
+    {
+        "id": "3001",
+        "name": "Silver Swan Soy Sauce 350ml",
+        "price": 28.00,
+        "category": "food",
+        "brand": "Silver Swan",
+        "tags": ["spices","condiment","soy"],
+        "stock": 10,
+        "description": "Silver Swan Soy Sauce 350ml",
+        "image_url": "images/food/spices-n-condiments/silver-swan-soy-350ml.jpg",
+        "image_webp": "images/food/spices-n-condiments/silver-swan-soy-350ml.webp"
+    },
+    {
+        "id": "3002",
+        "name": "Silver Swan Vinegar 350ml",
+        "price": 28.00,
+        "category": "food",
+        "brand": "Silver Swan",
+        "tags": ["spices","condiment","vinegar"],
+        "stock": 10,
+        "description": "Silver Swan Vinegar 350ml",
+        "image_url": "images/food/spices-n-condiments/silver-swan-vinegar-350ml.jpg",
+        "image_webp": "images/food/spices-n-condiments/silver-swan-vinegar-350ml.webp"
+    },
+    {
+        "id": "3003",
+        "name": "Silver Swan Soy Sauce 200ml",
+        "price": 15.00,
+        "category": "food",
+        "brand": "Silver Swan",
+        "tags": ["spices","condiment","soy"],
+        "stock": 10,
+        "description": "Silver Swan Soy Sauce 200ml",
+        "image_url": "images/food/spices-n-condiments/silver-swan-soy-200ml.jpg",
+        "image_webp": "images/food/spices-n-condiments/silver-swan-soy-200ml.webp"
+    },
+    {
+        "id": "3004",
+        "name": "Silver Swan Vinegar 200ml",
+        "price": 15.00,
+        "category": "food",
+        "brand": "Silver Swan",
+        "tags": ["spices","condiment","vinegar"],
+        "stock": 10,
+        "description": "Silver Swan Vinegar 200ml",
+        "image_url": "images/food/spices-n-condiments/silver-swan-vinegar-200ml.jpg",
+        "image_webp": "images/food/spices-n-condiments/silver-swan-vinegar-200ml.webp"
+    },
+    {
+        "id": "3005",
+        "name": "UFC Banana Catsup 320g",
+        "price": 38.00,
+        "category": "food",
+        "brand": "UFC",
+        "tags": ["spices","condiment","catsup"],
+        "stock": 10,
+        "description": "UFC Banana Catsup 320g",
+        "image_url": "images/food/spices-n-condiments/ufc-catsup-320g.jpg",
+        "image_webp": "images/food/spices-n-condiments/ufc-catsup-320g.webp"
+    },
+    {
+        "id": "3006",
+        "name": "Beer na Beer Pilsen Grande",
+        "price": 120.00,
+        "category": "food",
+        "brand": "Beer na Beer",
+        "tags": ["liquor","beer"],
+        "stock": 10,
+        "description": "Beer na Beer Pilsen Grande",
+        "image_url": "images/food/liquor-n-beverages/pilsen-grande.jpg",
+        "image_webp": "images/food/liquor-n-beverages/pilsen-grande.webp"
+    },
+    {
+        "id": "3007",
+        "name": "Red Horse Beer 1L",
+        "price": 120.00,
+        "category": "food",
+        "brand": "Red Horse",
+        "tags": ["liquor","beer"],
+        "stock": 10,
+        "description": "Red Horse Beer 1L",
+        "image_url": "images/food/liquor-n-beverages/red-horse-beer-litro.jpg",
+        "image_webp": "images/food/liquor-n-beverages/red-horse-beer-litro.webp"
+    },
+    {
+        "id": "3008",
+        "name": "Tanduay Rhum 5 Years 375ml",
+        "price": 75.00,
+        "category": "food",
+        "brand": "Tanduay",
+        "tags": ["liquor","rhum"],
+        "stock": 10,
+        "description": "Tanduay Rhum 5 Years 375ml",
+        "image_url": "images/food/liquor-n-beverages/tanduay-rhum-5years-375ml.jpg",
+        "image_webp": "images/food/liquor-n-beverages/tanduay-rhum-5years-375ml.webp"
+    },
+    {
+        "id": "3009",
+        "name": "Tanduay Rhum 5 Years 750ml",
+        "price": 180.00,
+        "category": "food",
+        "brand": "Tanduay",
+        "tags": ["liquor","rhum"],
+        "stock": 5,
+        "description": "Tanduay Rhum 5 Years 750ml",
+        "image_url": "images/food/liquor-n-beverages/tanduay-rhum-5years-750ml.jpg",
+        "image_webp": "images/food/liquor-n-beverages/tanduay-rhum-5years-750ml.webp"
+    },
+    {
+        "id": "3010",
+        "name": "Tanduay Rhum Light 750ml",
+        "price": 150.00,
+        "category": "food",
+        "brand": "Tanduay",
+        "tags": ["liquor","rhum","light"],
+        "stock": 5,
+        "description": "Tanduay Rhum Light 750ml",
+        "image_url": "images/food/liquor-n-beverages/tanduay-rhum-light-750ml.jpg",
+        "image_webp": "images/food/liquor-n-beverages/tanduay-rhum-light-750ml.webp"
+    }
 ]
 

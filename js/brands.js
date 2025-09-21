@@ -288,13 +288,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             // Filter items by title keyword (for subcategory tiles like Snacks/Drinks)
-            const keyword = (title || '').toLowerCase();
+            const keyword = (title || '').toLowerCase().trim();
             let filtered = items;
             if (keyword) {
+                const tokens = keyword.split(/\s+|&|\//).map(s => s.trim()).filter(Boolean);
                 filtered = items.filter(it => {
                     const tags = (it.tags || []).map(t => String(t).toLowerCase());
                     const name = (it.name || '').toLowerCase();
-                    return tags.includes(keyword) || name.includes(keyword);
+                    const brand = (it.brand || '').toLowerCase();
+                    // Match if any token appears in name, brand, or tags
+                    return tokens.some(tok => name.includes(tok) || brand.includes(tok) || tags.includes(tok));
                 });
             }
 
@@ -326,7 +329,58 @@ document.addEventListener('DOMContentLoaded', async () => {
                     // If this modal was opened for a specific named tile, we may need to show curated items.
             try {
                 const tstr = String(title || '').toLowerCase();
-                // Powdered Drinks: replace the default result with a curated list of powdered milk/drinks
+                    // Liquor & Beverages curated products
+                    if (tstr.includes('liquor') || tstr.includes('beverage')) {
+                        result.length = 0;
+                        result.push(
+                            {
+                                id: null,
+                                name: 'Beer na Beer Pilsen Grande',
+                                image_url: 'images/food/liquor-n-beverages/pilsen-grande.jpg',
+                                image_webp: 'images/food/liquor-n-beverages/pilsen-grande.webp',
+                                price: 120.00,
+                                stock: 10,
+                                description: 'Beer na Beer Pilsen Grande'
+                            },
+                            {
+                                id: null,
+                                name: 'Red Horse Beer 1L',
+                                image_url: 'images/food/liquor-n-beverages/red-horse-beer-litro.jpg',
+                                image_webp: 'images/food/liquor-n-beverages/red-horse-beer-litro.webp',
+                                price: 120.00,
+                                stock: 10,
+                                description: 'Red Horse Beer 1L'
+                            },
+                            {
+                                id: null,
+                                name: 'Tanduay Rhum 5 Years 375ml',
+                                image_url: 'images/food/liquor-n-beverages/tanduay-rhum-5years-375ml.jpg',
+                                image_webp: 'images/food/liquor-n-beverages/tanduay-rhum-5years-375ml.webp',
+                                price: 75.00,
+                                stock: 10,
+                                description: 'Tanduay Rhum 5 Years 375ml'
+                            },
+                            {
+                                id: null,
+                                name: 'Tanduay Rhum 5 Years 750ml',
+                                image_url: 'images/food/liquor-n-beverages/tanduay-rhum-5years-750ml.jpg',
+                                image_webp: 'images/food/liquor-n-beverages/tanduay-rhum-5years-750ml.webp',
+                                price: 180.00,
+                                stock: 5,
+                                description: 'Tanduay Rhum 5 Years 750ml'
+                            },
+                            {
+                                id: null,
+                                name: 'Tanduay Rhum Light 750ml',
+                                image_url: 'images/food/liquor-n-beverages/tanduay-rhum-light-750ml.jpg',
+                                image_webp: 'images/food/liquor-n-beverages/tanduay-rhum-light-750ml.webp',
+                                price: 150.00,
+                                stock: 5,
+                                description: 'Tanduay Rhum Light 750ml'
+                            }
+                        );
+                    }
+                    // Powdered Drinks: replace the default result with a curated list of powdered milk/drinks
                 if ((tstr.includes('powder') || tstr.includes('powdered')) ) {
                     result.length = 0; // clear any previous items
                     result.push(
@@ -517,6 +571,57 @@ document.addEventListener('DOMContentLoaded', async () => {
                             description: 'Tang Strawberry 19g'
                         }
                     );
+                    // Spices & Condiments curated products (show these when title matches)
+                    if (tstr.includes('spice') || tstr.includes('spices') || tstr.includes('condiment') || tstr.includes('condiments')) {
+                        result.length = 0;
+                        result.push(
+                            {
+                                id: null,
+                                name: 'Silver Swan Soy Sauce 350ml',
+                                image_url: 'images/food/spices-n-condiments/silver-swan-soy-350ml.jpg',
+                                image_webp: 'images/food/spices-n-condiments/silver-swan-soy-350ml.webp',
+                                price: 28.00,
+                                stock: 10,
+                                description: 'Silver Swan Soy Sauce 350ml'
+                            },
+                            {
+                                id: null,
+                                name: 'Silver Swan Vinegar 350ml',
+                                image_url: 'images/food/spices-n-condiments/silver-swan-vinegar-350ml.jpg',
+                                image_webp: 'images/food/spices-n-condiments/silver-swan-vinegar-350ml.webp',
+                                price: 28.00,
+                                stock: 10,
+                                description: 'Silver Swan Vinegar 350ml'
+                            },
+                            {
+                                id: null,
+                                name: 'Silver Swan Soy Sauce 200ml',
+                                image_url: 'images/food/spices-n-condiments/silver-swan-soy-200ml.jpg',
+                                image_webp: 'images/food/spices-n-condiments/silver-swan-soy-200ml.webp',
+                                price: 15.00,
+                                stock: 10,
+                                description: 'Silver Swan Soy Sauce 200ml'
+                            },
+                            {
+                                id: null,
+                                name: 'Silver Swan Vinegar 200ml',
+                                image_url: 'images/food/spices-n-condiments/silver-swan-vinegar-200ml.jpg',
+                                image_webp: 'images/food/spices-n-condiments/silver-swan-vinegar-200ml.webp',
+                                price: 15.00,
+                                stock: 10,
+                                description: 'Silver Swan Vinegar 200ml'
+                            },
+                            {
+                                id: null,
+                                name: 'UFC Banana Catsup 320g',
+                                image_url: 'images/food/spices-n-condiments/ufc-catsup-320g.jpg',
+                                image_webp: 'images/food/spices-n-condiments/ufc-catsup-320g.webp',
+                                price: 38.00,
+                                stock: 10,
+                                description: 'UFC Banana Catsup 320g'
+                            }
+                        );
+                    }
                 }
 
                 // If this modal was opened for the 'Snacks' (or renamed Chips) tile, replace the very first item
@@ -544,6 +649,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                             description: 'Oishi Prawn Crackers (Big, Original)'
                         };
                     }
+                    // ...existing code continues
                     // replace the third item with the small spicy variant if available
                     if (result.length > 2) {
                         result[2] = {
@@ -705,7 +811,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return (Number(it.price || 0) > 0) || (Number(it.stock || 0) > 0) || !nameLooksPlaceholder;
             });
 
-            if (!hasRealProduct) {
+            // Only show 'Coming soon' when a specific tile/title is requested and no real products exist.
+            if (!hasRealProduct && keyword) {
                 // render a friendly Coming Soon block
                 const box = document.createElement('div');
                 box.className = 'w-full py-12 flex flex-col items-center justify-center text-center text-gray-600';

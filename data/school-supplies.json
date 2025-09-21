@@ -202,7 +202,7 @@
         "image_url": "https://placehold.co/300x300/e2e8f0/6B46C1?text=Scissors"
     },
     {
-        "id": "30",
+        "id": "4001",
         "name": "Utility Knife",
         "price": 3.99,
         "originalPrice": 5.50,
@@ -214,7 +214,7 @@
         "image_url": "https://placehold.co/300x300/e2e8f0/6B46C1?text=Utility+Knife"
     },
     {
-        "id": "31",
+        "id": "4002",
         "name": "Craft Knife",
         "price": 2.75,
         "originalPrice": 3.50,
@@ -226,7 +226,7 @@
         "image_url": "https://placehold.co/300x300/e2e8f0/6B46C1?text=Craft+Knife"
     },
     {
-        "id": "32",
+        "id": "4003",
         "name": "Set Square",
         "price": 2.75,
         "originalPrice": 3.75,
