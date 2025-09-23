@@ -4,43 +4,135 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Privacy Policy - Fatima Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="antialiased text-gray-800 bg-gray-50">
+
+  <!-- Header -->
   <header class="bg-white shadow-lg sticky top-0 z-50">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center space-x-4">
         <a href="index.html" class="text-3xl font-bold text-indigo-600">Fatima Store</a>
         <nav class="hidden md:flex items-center space-x-6 ml-4">
-          <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors">Hot Deals</a>
-          <a href="category-food.html" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors">Food</a>
-          <a href="category-school-supplies.html" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors">School Supplies</a>
+          <div class="relative">
+            <button id="categories-toggle" aria-expanded="false" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors flex items-center" aria-haspopup="true">
+              Categories
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div id="categories-menu" class="absolute hidden bg-white shadow-xl rounded-xl mt-2 w-48 py-2 z-50">
+              <a href="category-food.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors" data-open-category="food" data-title="">Food</a>
+              <a href="category-school-supplies.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors" data-open-category="school-supplies" data-title="">School Supplies</a>
+            </div>
+          </div>
+          <a href="hot-deals.html" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors transform hover:scale-105 transition-transform duration-200">Hot Deals</a>
         </nav>
       </div>
+
       <div class="flex items-center space-x-4">
         <a id="nav-cart-link" href="cart.html" class="relative text-gray-600 hover:text-indigo-600 font-medium transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.706.707 1.706H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.706.707 1.706H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
           <span id="cart-badge" class="absolute -top-2 -right-3 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center hidden">0</span>
         </a>
       </div>
     </div>
   </header>
-  <!-- Mobile Menu (hidden by default) -->
-          <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-            <div class="px-4 py-4 space-y-2">
-              <a href="category-food.html" data-open-category="food" data-title="" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Food</a>
-              <a href="category-school-supplies.html" data-open-category="school-supplies" data-title="" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">School Supplies</a>
-              <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Hot Deals</a>
-              <!-- Shop By Brands removed from mobile menu -->
-              <a id="nav-cart-link-mobile" href="cart.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 relative">
-                Cart
-                <span id="cart-badge-mobile" class="absolute -top-1 -right-3 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center hidden">0</span>
-              </a>
-            </div>
-          </div>
-</body>
+
+  <!-- Main content -->
+  <main class="container mx-auto px-4 py-12">
+    <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow p-8">
+      <h1 class="text-2xl font-bold mb-4">Privacy Policy</h1>
+      <p class="text-gray-600 mb-6">Effective date: September 23, 2025</p>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2">Overview</h2>
+        <p class="text-gray-700">Fatima Store is a small static storefront that showcases food items, school supplies and general merchandise. This site is a static site without user accounts, it does not host or process payments directly. This policy explains what information we collect, how it is used, and your choices.</p>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2">Information we collect</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li><strong>Local cart data:</strong> Items you add to the shopping cart are stored locally in your browser (localStorage). We do not send cart contents to any server unless you explicitly submit an order through a checkout flow that integrates with a third-party service.</li>
+          <li><strong>Contact messages:</strong> If you use the contact form, the form data may be sent by email or to a third-party form handler depending on configuration. This site does not persist contact form messages on the site itself.</li>
+          <li><strong>Analytics & third parties:</strong> This static site does not include analytics, tracking pixels, or advertising by default. If third-party integrations are added (for example for payments or analytics), their own privacy policies will apply.</li>
+        </ul>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2">How we use information</h2>
+        <p class="text-gray-700">We use information only to support site functionality and customer requests. Examples:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Restore your cart contents in your browser during the current session.</li>
+          <li>Respond to contact form submissions via the configured email or form handler.</li>
+          <li>Provide product listings and site features.</li>
+        </ul>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2">Cookies and local storage</h2>
+        <p class="text-gray-700">This site uses localStorage to save a small amount of data (for example the shopping cart). We do not use cookies for tracking by default. If cookies or other storage are added by third-party providers (for example payments), those providers determine their own cookie behavior.</p>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2">Third-party services</h2>
+        <p class="text-gray-700">The site may integrate third-party services for tasks like payments or email. These services are independent controllers of any personal data they collect. Please review their privacy policies before using those features.</p>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2">Security</h2>
+        <p class="text-gray-700">We take reasonable steps to protect information stored on the site. However, because this is a static site, sensitive operations such as payments should be completed through trusted, secure third-party providers.</p>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2">Your choices</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>You can clear localStorage or your browser data at any time to remove cart information stored locally.</li>
+          <li>If you submitted a contact form and want your data removed, contact us at the address below and we will work to remove it from our records (to the extent we control it).</li>
+        </ul>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2">Contact</h2>
+        <p class="text-gray-700">For privacy questions or requests, please use the <a href="contact.html" class="text-indigo-600 hover:underline">Contact</a> page.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">Changes to this policy</h2>
+        <p class="text-gray-700">We may update this policy from time to time. When we do, we will update the effective date at the top of this page.</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Fatima Store</h3>
+        <p class="text-gray-400">Your one-stop shop for food and school supplies.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+        <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+          <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+          <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+          <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto px-4 mt-8 text-center text-gray-400 text-sm border-t border-gray-700 pt-4">
+      &copy; 2024 Fatima Store. All rights reserved.
+    </div>
+  </footer>
+
   <script src="js/cart.js"></script>
   <script src="js/utils.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
