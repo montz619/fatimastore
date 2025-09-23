@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased text-gray-800 bg-gray-50">
 
     <!-- Header & Navigation -->
     <header class="bg-white shadow-lg sticky top-0 z-50">
@@ -16,7 +18,6 @@
             <div class="flex items-center space-x-4">
                 <!-- Logo -->
                 <a href="index.html" class="text-3xl font-bold text-indigo-600">Fatima Store</a>
-
 
                 <!-- Nav Links next to logo -->
                 <nav class="hidden md:flex items-center space-x-6 ml-4">
@@ -35,7 +36,6 @@
                     <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors transform hover:scale-105 transition-transform duration-200">Hot Deals</a>
                 </nav>
             </div>
-
 
             <div class="flex items-center space-x-4">
                 <!-- Cart (right-most) -->
@@ -73,27 +73,41 @@
 
     <main class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold mb-4">School Supplies</h1>
-        <p class="text-gray-600 mb-6">Template page for school supplies — click tiles to open the centered item view.</p>
+    <p class="text-gray-600 mb-6">Browse notebooks, writing materials, coloring materials, and measuring materials for school and office. Click a tile to view items in that brand group.</p>
+
+    <!-- search removed on this category page (not needed) -->
 
         <div id="brands-list" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="school-supplies" data-title="Notebooks">
-                <img src="https://placehold.co/100x60/f8f9fa/212529?text=Notebooks" alt="Notebooks" class="mb-3">
-                <div class="text-sm font-semibold">Notebooks</div>
+            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="school-supplies" data-title="Paper & Notebooks">
+                <picture class="mb-3">
+                    <source srcset="images/school-supplies/paper-notebooks/paper-notebooks.webp" type="image/webp">
+                    <img src="images/school-supplies/paper-notebooks/paper-notebooks.jpg" alt="Paper & Notebooks" loading="lazy" width="100" height="60">
+                </picture>
+                <div class="text-sm font-semibold">Paper & Notebooks</div>
                 <button class="tile-add-btn mt-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm hidden">Add to cart</button>
             </div>
-            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="school-supplies" data-title="Writing Tools">
-                <img src="https://placehold.co/100x60/f8f9fa/212529?text=Pens" alt="Pens" class="mb-3">
-                <div class="text-sm font-semibold">Writing Tools</div>
+            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="school-supplies" data-title="Writing Materials">
+                <picture class="mb-3">
+                    <source srcset="images/school-supplies/writing-materials/writing.webp" type="image/webp">
+                    <img src="images/school-supplies/writing-materials/writing.jpg" alt="Writing Materials" loading="lazy" width="100" height="60">
+                </picture>
+                <div class="text-sm font-semibold">Writing Materials</div>
                 <button class="tile-add-btn mt-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm hidden">Add to cart</button>
             </div>
-            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="school-supplies" data-title="Paper">
-                <img src="https://placehold.co/100x60/f8f9fa/212529?text=Paper" alt="Paper" class="mb-3">
-                <div class="text-sm font-semibold">Paper</div>
+            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="school-supplies" data-title="Coloring Materials">
+                <picture class="mb-3">
+                    <source srcset="images/school-supplies/coloring-materials/coloring.webp" type="image/webp">
+                    <img src="images/school-supplies/coloring-materials/coloring.jpg" alt="Coloring Materials" loading="lazy" width="100" height="60">
+                </picture>
+                <div class="text-sm font-semibold">Coloring Materials</div>
                 <button class="tile-add-btn mt-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm hidden">Add to cart</button>
             </div>
-            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="school-supplies" data-title="Accessories">
-                <img src="https://placehold.co/100x60/f8f9fa/212529?text=Glue" alt="Glue" class="mb-3">
-                <div class="text-sm font-semibold">Accessories</div>
+            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="school-supplies" data-title="Measuring Materials">
+                <picture class="mb-3">
+                    <source srcset="images/school-supplies/measuring-materials/measuring.webp" type="image/webp">
+                    <img src="images/school-supplies/measuring-materials/measuring.jpg" alt="Measuring Materials" loading="lazy" width="100" height="60">
+                </picture>
+                <div class="text-sm font-semibold">Measuring Materials</div>
                 <button class="tile-add-btn mt-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm hidden">Add to cart</button>
             </div>
         </div>
@@ -112,6 +126,7 @@
                 </div>
             </div>
         </div>
+
     </main>
 
     <footer class="bg-gray-900 text-white py-12 mt-8">
