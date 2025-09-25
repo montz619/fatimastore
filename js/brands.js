@@ -296,8 +296,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const tags = (it.tags || []).map(t => String(t).toLowerCase());
                     const name = (it.name || '').toLowerCase();
                     const brand = (it.brand || '').toLowerCase();
-                    // Match if any token appears in name, brand, or tags
-                    return tokens.some(tok => name.includes(tok) || brand.includes(tok) || tags.includes(tok));
+                    const subcat = (it.subcategory || '').toLowerCase();
+                    // Match if any token appears in name, brand, tags, or the subcategory
+                    return tokens.some(tok => (
+                        name.includes(tok) || brand.includes(tok) || tags.includes(tok) || subcat.includes(tok)
+                    ));
                 });
             }
 
