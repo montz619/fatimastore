@@ -1,315 +1,531 @@
 [
-	{
-		"id": "4001",
-		"name": "Bond Paper A4 Size",
-		"price": 280,
-		"category": "school-supplies",
-		"subcategory": "Paper & Notebooks",
-		"brand": "Paper",
-		"tags": ["paper","a4","bond"],
-		"stock": 10,
-		"description": "Bond Paper A4 Size",
-		"image_webp": "images/school-supplies/paper-notebooks/bond-paper-a4.webp",
-		"image_url": "images/school-supplies/paper-notebooks/bond-paper-a4.jpg"
-	},
-	{
-		"id": "4002",
-		"name": "Bond Paper F4 Size Legal",
-		"price": 290,
-		"category": "school-supplies",
-		"subcategory": "Paper & Notebooks",
-		"brand": "Paper",
-		"tags": ["paper","f4","legal","bond"],
-		"stock": 10,
-		"description": "Bond Paper F4 Size (Legal)",
-		"image_webp": "images/school-supplies/paper-notebooks/bond-paper-f4.webp",
-		"image_url": "images/school-supplies/paper-notebooks/bond-paper-f4.jpg"
-	},
-	{
-		"id": "4003",
-		"name": "Intermediate Pad Whole (1 Pad)",
-		"price": 50.00,
-		"category": "school-supplies",
-		"subcategory": "Paper & Notebooks",
-		"brand": "Intermediate",
-		"tags": ["pad","intermediate","whole"],
-		"stock": 30,
-		"description": "Intermediate Pad Whole (1 Pad)",
-		"image_webp": "images/school-supplies/paper-notebooks/intermediate-whole.webp",
-		"image_url": "images/school-supplies/paper-notebooks/intermediate-whole.jpg"
-	},
-	{
-		"id": "4004",
-		"name": "Intermediate Pad 1/2 Lengthwise (1 Pad)",
-		"price": 30,
-		"category": "school-supplies",
-		"subcategory": "Paper & Notebooks",
-		"brand": "Intermediate",
-		"tags": ["pad","intermediate","half","lengthwise"],
-		"stock": 30,
-		"description": "Intermediate Pad 1/2 Lengthwise (1 Pad)",
-		"image_webp": "images/school-supplies/paper-notebooks/intermediate-lengthwise.webp",
-		"image_url": "images/school-supplies/paper-notebooks/intermediate-lengthwise.jpg"
-	},
-	{
-		"id": "4005",
-		"name": "Intermediate Pad 1/2 Crosswise (1 Pad)",
-		"price": 30,
-		"category": "school-supplies",
-		"subcategory": "Paper & Notebooks",
-		"brand": "Intermediate",
-		"tags": ["pad","intermediate","half","crosswise"],
-		"stock": 30,
-		"description": "Intermediate Pad 1/2 Crosswise (1 Pad)",
-		"image_webp": "images/school-supplies/paper-notebooks/intermediate-crosswise.webp",
-		"image_url": "images/school-supplies/paper-notebooks/intermediate-crosswise.jpg"
-	},
-	{
-		"id": "4006",
-		"name": "Intermediate Pad 1/4 (1 Pad)",
-		"price": 20,
-		"category": "school-supplies",
-		"subcategory": "Paper & Notebooks",
-		"brand": "Intermediate",
-		"tags": ["pad","intermediate","quarter"],
-		"stock": 30,
-		"description": "Intermediate Pad 1/4 (1 Pad)",
-		"image_webp": "images/school-supplies/paper-notebooks/intermediate-quarter.webp",
-		"image_url": "images/school-supplies/paper-notebooks/intermediate-quarter.jpg"
-	},
-	{
-		"id": "4007",
-		"name": "Intermediate Yellow Pad Whole (1 Pad)",
-		"price": 50,
-		"category": "school-supplies",
-		"subcategory": "Paper & Notebooks",
-		"brand": "Intermediate",
-		"tags": ["pad","yellow","intermediate","whole"],
-		"stock": 30,
-		"description": "Intermediate Yellow Pad Whole (1 Pad)",
-		"image_webp": "images/school-supplies/paper-notebooks/yellow-pad-whole.webp",
-		"image_url": "images/school-supplies/paper-notebooks/yellow-pad-whole.jpg"
-	},
-	{
-		"id": "4008",
-		"name": "Cattleya Spiral Notebook 152x216mm 100 Pages",
-		"price": 50,
-		"category": "school-supplies",
-		"subcategory": "Paper & Notebooks",
-		"brand": "Cattleya",
-		"tags": ["notebook","spiral","100pages"],
-		"stock": 20,
-		"description": "Cattleya Spiral Notebook 152x216mm 100 Pages",
-		"image_webp": "images/school-supplies/paper-notebooks/cattleya-notebook-152x216mm-100pages.webp",
-		"image_url": "images/school-supplies/paper-notebooks/cattleya-notebook-152x216mm-100pages.jpg"
-	},
-	{
-		"id": "4009",
-		"name": "Green Apple Spiral Notebook 80 Pages",
-		"price": 50,
-		"category": "school-supplies",
-		"subcategory": "Paper & Notebooks",
-		"brand": "Green Apple",
-		"tags": ["notebook","spiral","80pages"],
-		"stock": 20,
-		"description": "Green Apple Spiral Notebook 80 Pages",
-		"image_webp": "images/school-supplies/paper-notebooks/greenapple-spiral-80sheets.webp",
-		"image_url": "images/school-supplies/paper-notebooks/greenapple-spiral-80sheets.jpg"
-	},
-	{
-		"id": "4010",
-		"name": "Disney Spiral Notebook",
-		"price": 50,
-		"category": "school-supplies",
-		"subcategory": "Paper & Notebooks",
-		"brand": "Disney",
-		"tags": ["notebook","spiral","disney"],
-		"stock": 20,
-		"description": "Disney Spiral Notebook",
-		"image_webp": "images/school-supplies/paper-notebooks/disney-notebook.webp",
-		"image_url": "images/school-supplies/paper-notebooks/disney-notebook.jpg"
-	},
-	{
-		"id": "4011",
-		"name": "Record Book 200 Pages",
-		"price": 100,
-		"category": "school-supplies",
-		"subcategory": "Paper & Notebooks",
-		"brand": "Record",
-		"tags": ["record","book","200pages"],
-		"stock": 20,
-		"description": "Record Book 200 Pages",
-		"image_webp": "images/school-supplies/paper-notebooks/record-book-200pages.webp",
-		"image_url": "images/school-supplies/paper-notebooks/record-book-200pages.jpg"
-	}
-,
-	{
-		"id": "4012",
-		"name": "HBW 2000 Black Pen",
-		"price": 7.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "HBW",
-		"tags": ["pen","ballpen","black","hbw"],
-		"stock": 100,
-		"description": "HBW 2000 Black Ballpen",
-		"image_webp": "images/school-supplies/writing-materials/ballpen-hbw2000-black.webp",
-		"image_url": "images/school-supplies/writing-materials/ballpen-hbw2000-black.jpg"
-	},
-	{
-		"id": "4013",
-		"name": "HBW 2000 Blue Pen",
-		"price": 7.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "HBW",
-		"tags": ["pen","ballpen","blue","hbw"],
-		"stock": 100,
-		"description": "HBW 2000 Blue Ballpen",
-		"image_webp": "images/school-supplies/writing-materials/ballpen-hbw2000-blue.webp",
-		"image_url": "images/school-supplies/writing-materials/ballpen-hbw2000-blue.jpg"
-	},
-	{
-		"id": "4014",
-		"name": "HBW 2000 Red Pen",
-		"price": 7.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "HBW",
-		"tags": ["pen","ballpen","red","hbw"],
-		"stock": 100,
-		"description": "HBW 2000 Red Ballpen",
-		"image_webp": "images/school-supplies/writing-materials/ballpen-hbw2000-red.webp",
-		"image_url": "images/school-supplies/writing-materials/ballpen-hbw2000-red.jpg"
-	},
-	{
-		"id": "4015",
-		"name": "Multi-color Ballpen",
-		"price": 15.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "HBW",
-		"tags": ["pen","multicolor","ballpen"],
-		"stock": 50,
-		"description": "Multi-color ballpen with multiple ink colors.",
-		"image_webp": "images/school-supplies/writing-materials/multicolor-ballpen.webp",
-		"image_url": "images/school-supplies/writing-materials/multicolor-ballpen.jpg"
-	},
-	{
-		"id": "4016",
-		"name": "Pencil Monggol 2",
-		"price": 8.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "Monggol",
-		"tags": ["pencil","monggol","2"],
-		"stock": 100,
-		"description": "Pencil Monggol #2 for writing and drawing.",
-		"image_webp": "images/school-supplies/writing-materials/pencil-mongol.webp",
-		"image_url": "images/school-supplies/writing-materials/pencil-mongol.jpg"
-	},
-	{
-		"id": "4017",
-		"name": "HBW Permanent Marker Black (Chisel Tip)",
-		"price": 25.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "HBW",
-		"tags": ["marker","permanent","black","chisel"],
-		"stock": 50,
-		"description": "HBW Permanent Marker Black with chisel tip.",
-		"image_webp": "images/school-supplies/writing-materials/permanent-marker-hbw-black-chisel.webp",
-		"image_url": "images/school-supplies/writing-materials/permanent-marker-hbw-black-chisel.jpg"
-	},
-	{
-		"id": "4018",
-		"name": "HBW Permanent Marker Blue (Chisel Tip)",
-		"price": 25.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "HBW",
-		"tags": ["marker","permanent","blue","chisel"],
-		"stock": 50,
-		"description": "HBW Permanent Marker Blue with chisel tip.",
-		"image_webp": "images/school-supplies/writing-materials/permanent-marker-hbw-blue-chisel.webp",
-		"image_url": "images/school-supplies/writing-materials/permanent-marker-hbw-blue-chisel.jpg"
-	},
-	{
-		"id": "4019",
-		"name": "HBW Permanent Marker Red (Chisel Tip)",
-		"price": 25.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "HBW",
-		"tags": ["marker","permanent","red","chisel"],
-		"stock": 50,
-		"description": "HBW Permanent Marker Red with chisel tip.",
-		"image_webp": "images/school-supplies/writing-materials/permanent-marker-hbw-red-chisel.webp",
-		"image_url": "images/school-supplies/writing-materials/permanent-marker-hbw-red-chisel.jpg"
-	},
-	{
-		"id": "4020",
-		"name": "Pilot Gtec C3 0.3 Black",
-		"price": 90.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "Pilot",
-		"tags": ["pen","pilot","gtec","0.3","black"],
-		"stock": 50,
-		"description": "Pilot Gtec C3 0.3 Black rollerball pen.",
-		"image_webp": "images/school-supplies/writing-materials/pilot-gtech-0.3-black.webp",
-		"image_url": "images/school-supplies/writing-materials/pilot-gtech-0.3-black.jpg"
-	},
-	{
-		"id": "4021",
-		"name": "Pilot Gtec C4 0.4 Black",
-		"price": 90.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "Pilot",
-		"tags": ["pen","pilot","gtec","0.4","black"],
-		"stock": 50,
-		"description": "Pilot Gtec C4 0.4 Black rollerball pen.",
-		"image_webp": "images/school-supplies/writing-materials/pilot-gtech-0.4-black.webp",
-		"image_url": "images/school-supplies/writing-materials/pilot-gtech-0.4-black.jpg"
-	},
-	{
-		"id": "4022",
-		"name": "Pilot Gtec C5 0.5 Black",
-		"price": 90.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "Pilot",
-		"tags": ["pen","pilot","gtec","0.5","black"],
-		"stock": 50,
-		"description": "Pilot Gtec C5 0.5 Black rollerball pen.",
-		"image_webp": "images/school-supplies/writing-materials/pilot-gtech-0.5-black.webp",
-		"image_url": "images/school-supplies/writing-materials/pilot-gtech-0.5-black.jpg"
-	},
-	{
-		"id": "4023",
-		"name": "HBW White Board Marker Black (Round Tip)",
-		"price": 50.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "HBW",
-		"tags": ["marker","whiteboard","black","round"],
-		"stock": 50,
-		"description": "HBW Whiteboard Marker Black (Round Tip).",
-		"image_webp": "images/school-supplies/writing-materials/whiteboard-marker-hbw-black.webp",
-		"image_url": "images/school-supplies/writing-materials/whiteboard-marker-hbw-black.jpg"
-	},
-	{
-		"id": "4024",
-		"name": "HBW White Board Marker Blue (Round Tip)",
-		"price": 50.00,
-		"category": "school-supplies",
-		"subcategory": "Writing Materials",
-		"brand": "HBW",
-		"tags": ["marker","whiteboard","blue","round"],
-		"stock": 50,
-		"description": "HBW Whiteboard Marker Blue (Round Tip).",
-		"image_webp": "images/school-supplies/writing-materials/whiteboard-marker-hbw-blue.webp",
-		"image_url": "images/school-supplies/writing-materials/whiteboard-marker-hbw-blue.jpg"
-	}
+    {
+        "id": "4001",
+        "name": "Bond Paper A4 Size",
+        "price": 280,
+        "category": "school-supplies",
+        "subcategory": "Paper & Notebooks",
+        "brand": "Paper",
+        "tags": [
+            "paper",
+            "a4",
+            "bond"
+        ],
+        "stock": 10,
+        "description": "Bond Paper A4 Size",
+        "image_webp": "images/school-supplies/paper-notebooks/bond-paper-a4.webp",
+        "image_url": "images/school-supplies/paper-notebooks/bond-paper-a4.jpg"
+    },
+    {
+        "id": "4002",
+        "name": "Bond Paper F4 Size Legal",
+        "price": 290,
+        "category": "school-supplies",
+        "subcategory": "Paper & Notebooks",
+        "brand": "Paper",
+        "tags": [
+            "paper",
+            "f4",
+            "legal",
+            "bond"
+        ],
+        "stock": 10,
+        "description": "Bond Paper F4 Size (Legal)",
+        "image_webp": "images/school-supplies/paper-notebooks/bond-paper-f4.webp",
+        "image_url": "images/school-supplies/paper-notebooks/bond-paper-f4.jpg"
+    },
+    {
+        "id": "4003",
+        "name": "Intermediate Pad Whole (1 Pad)",
+        "price": 50,
+        "category": "school-supplies",
+        "subcategory": "Paper & Notebooks",
+        "brand": "Intermediate",
+        "tags": [
+            "pad",
+            "intermediate",
+            "whole"
+        ],
+        "stock": 30,
+        "description": "Intermediate Pad Whole (1 Pad)",
+        "image_webp": "images/school-supplies/paper-notebooks/intermediate-whole.webp",
+        "image_url": "images/school-supplies/paper-notebooks/intermediate-whole.jpg"
+    },
+    {
+        "id": "4004",
+        "name": "Intermediate Pad 1/2 Lengthwise (1 Pad)",
+        "price": 30,
+        "category": "school-supplies",
+        "subcategory": "Paper & Notebooks",
+        "brand": "Intermediate",
+        "tags": [
+            "pad",
+            "intermediate",
+            "half",
+            "lengthwise"
+        ],
+        "stock": 30,
+        "description": "Intermediate Pad 1/2 Lengthwise (1 Pad)",
+        "image_webp": "images/school-supplies/paper-notebooks/intermediate-lengthwise.webp",
+        "image_url": "images/school-supplies/paper-notebooks/intermediate-lengthwise.jpg"
+    },
+    {
+        "id": "4005",
+        "name": "Intermediate Pad 1/2 Crosswise (1 Pad)",
+        "price": 30,
+        "category": "school-supplies",
+        "subcategory": "Paper & Notebooks",
+        "brand": "Intermediate",
+        "tags": [
+            "pad",
+            "intermediate",
+            "half",
+            "crosswise"
+        ],
+        "stock": 30,
+        "description": "Intermediate Pad 1/2 Crosswise (1 Pad)",
+        "image_webp": "images/school-supplies/paper-notebooks/intermediate-crosswise.webp",
+        "image_url": "images/school-supplies/paper-notebooks/intermediate-crosswise.jpg"
+    },
+    {
+        "id": "4006",
+        "name": "Intermediate Pad 1/4 (1 Pad)",
+        "price": 20,
+        "category": "school-supplies",
+        "subcategory": "Paper & Notebooks",
+        "brand": "Intermediate",
+        "tags": [
+            "pad",
+            "intermediate",
+            "quarter"
+        ],
+        "stock": 30,
+        "description": "Intermediate Pad 1/4 (1 Pad)",
+        "image_webp": "images/school-supplies/paper-notebooks/intermediate-quarter.webp",
+        "image_url": "images/school-supplies/paper-notebooks/intermediate-quarter.jpg"
+    },
+    {
+        "id": "4007",
+        "name": "Intermediate Yellow Pad Whole (1 Pad)",
+        "price": 50,
+        "category": "school-supplies",
+        "subcategory": "Paper & Notebooks",
+        "brand": "Intermediate",
+        "tags": [
+            "pad",
+            "yellow",
+            "intermediate",
+            "whole"
+        ],
+        "stock": 30,
+        "description": "Intermediate Yellow Pad Whole (1 Pad)",
+        "image_webp": "images/school-supplies/paper-notebooks/yellow-pad-whole.webp",
+        "image_url": "images/school-supplies/paper-notebooks/yellow-pad-whole.jpg"
+    },
+    {
+        "id": "4008",
+        "name": "Cattleya Spiral Notebook 152x216mm 100 Pages",
+        "price": 50,
+        "category": "school-supplies",
+        "subcategory": "Paper & Notebooks",
+        "brand": "Cattleya",
+        "tags": [
+            "notebook",
+            "spiral",
+            "100pages"
+        ],
+        "stock": 20,
+        "description": "Cattleya Spiral Notebook 152x216mm 100 Pages",
+        "image_webp": "images/school-supplies/paper-notebooks/cattleya-notebook-152x216mm-100pages.webp",
+        "image_url": "images/school-supplies/paper-notebooks/cattleya-notebook-152x216mm-100pages.jpg"
+    },
+    {
+        "id": "4009",
+        "name": "Green Apple Spiral Notebook 80 Pages",
+        "price": 50,
+        "category": "school-supplies",
+        "subcategory": "Paper & Notebooks",
+        "brand": "Green Apple",
+        "tags": [
+            "notebook",
+            "spiral",
+            "80pages"
+        ],
+        "stock": 20,
+        "description": "Green Apple Spiral Notebook 80 Pages",
+        "image_webp": "images/school-supplies/paper-notebooks/greenapple-spiral-80sheets.webp",
+        "image_url": "images/school-supplies/paper-notebooks/greenapple-spiral-80sheets.jpg"
+    },
+    {
+        "id": "4010",
+        "name": "Disney Spiral Notebook",
+        "price": 50,
+        "category": "school-supplies",
+        "subcategory": "Paper & Notebooks",
+        "brand": "Disney",
+        "tags": [
+            "notebook",
+            "spiral",
+            "disney"
+        ],
+        "stock": 20,
+        "description": "Disney Spiral Notebook",
+        "image_webp": "images/school-supplies/paper-notebooks/disney-notebook.webp",
+        "image_url": "images/school-supplies/paper-notebooks/disney-notebook.jpg"
+    },
+    {
+        "id": "4011",
+        "name": "Record Book 200 Pages",
+        "price": 100,
+        "category": "school-supplies",
+        "subcategory": "Paper & Notebooks",
+        "brand": "Record",
+        "tags": [
+            "record",
+            "book",
+            "200pages"
+        ],
+        "stock": 20,
+        "description": "Record Book 200 Pages",
+        "image_webp": "images/school-supplies/paper-notebooks/record-book-200pages.webp",
+        "image_url": "images/school-supplies/paper-notebooks/record-book-200pages.jpg"
+    },
+    {
+        "id": "4012",
+        "name": "HBW 2000 Black Pen",
+        "price": 7,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "HBW",
+        "tags": [
+            "pen",
+            "ballpen",
+            "black",
+            "hbw"
+        ],
+        "stock": 100,
+        "description": "HBW 2000 Black Ballpen",
+        "image_webp": "images/school-supplies/writing-materials/ballpen-hbw2000-black.webp",
+        "image_url": "images/school-supplies/writing-materials/ballpen-hbw2000-black.jpg"
+    },
+    {
+        "id": "4013",
+        "name": "HBW 2000 Blue Pen",
+        "price": 7,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "HBW",
+        "tags": [
+            "pen",
+            "ballpen",
+            "blue",
+            "hbw"
+        ],
+        "stock": 100,
+        "description": "HBW 2000 Blue Ballpen",
+        "image_webp": "images/school-supplies/writing-materials/ballpen-hbw2000-blue.webp",
+        "image_url": "images/school-supplies/writing-materials/ballpen-hbw2000-blue.jpg"
+    },
+    {
+        "id": "4014",
+        "name": "HBW 2000 Red Pen",
+        "price": 7,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "HBW",
+        "tags": [
+            "pen",
+            "ballpen",
+            "red",
+            "hbw"
+        ],
+        "stock": 100,
+        "description": "HBW 2000 Red Ballpen",
+        "image_webp": "images/school-supplies/writing-materials/ballpen-hbw2000-red.webp",
+        "image_url": "images/school-supplies/writing-materials/ballpen-hbw2000-red.jpg"
+    },
+    {
+        "id": "4015",
+        "name": "Multi-color Ballpen",
+        "price": 15,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "HBW",
+        "tags": [
+            "pen",
+            "multicolor",
+            "ballpen"
+        ],
+        "stock": 50,
+        "description": "Multi-color ballpen with multiple ink colors.",
+        "image_webp": "images/school-supplies/writing-materials/multicolor-ballpen.webp",
+        "image_url": "images/school-supplies/writing-materials/multicolor-ballpen.jpg"
+    },
+    {
+        "id": "4016",
+        "name": "Pencil Monggol 2",
+        "price": 8,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "Monggol",
+        "tags": [
+            "pencil",
+            "monggol",
+            "2"
+        ],
+        "stock": 100,
+        "description": "Pencil Monggol #2 for writing and drawing.",
+        "image_webp": "images/school-supplies/writing-materials/pencil-mongol.webp",
+        "image_url": "images/school-supplies/writing-materials/pencil-mongol.jpg"
+    },
+    {
+        "id": "4017",
+        "name": "HBW Permanent Marker Black (Chisel Tip)",
+        "price": 25,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "HBW",
+        "tags": [
+            "marker",
+            "permanent",
+            "black",
+            "chisel"
+        ],
+        "stock": 50,
+        "description": "HBW Permanent Marker Black with chisel tip.",
+        "image_webp": "images/school-supplies/writing-materials/permanent-marker-hbw-black-chisel.webp",
+        "image_url": "images/school-supplies/writing-materials/permanent-marker-hbw-black-chisel.jpg"
+    },
+    {
+        "id": "4018",
+        "name": "HBW Permanent Marker Blue (Chisel Tip)",
+        "price": 25,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "HBW",
+        "tags": [
+            "marker",
+            "permanent",
+            "blue",
+            "chisel"
+        ],
+        "stock": 50,
+        "description": "HBW Permanent Marker Blue with chisel tip.",
+        "image_webp": "images/school-supplies/writing-materials/permanent-marker-hbw-blue-chisel.webp",
+        "image_url": "images/school-supplies/writing-materials/permanent-marker-hbw-blue-chisel.jpg"
+    },
+    {
+        "id": "4019",
+        "name": "HBW Permanent Marker Red (Chisel Tip)",
+        "price": 25,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "HBW",
+        "tags": [
+            "marker",
+            "permanent",
+            "red",
+            "chisel"
+        ],
+        "stock": 50,
+        "description": "HBW Permanent Marker Red with chisel tip.",
+        "image_webp": "images/school-supplies/writing-materials/permanent-marker-hbw-red-chisel.webp",
+        "image_url": "images/school-supplies/writing-materials/permanent-marker-hbw-red-chisel.jpg"
+    },
+    {
+        "id": "4020",
+        "name": "Pilot Gtec C3 0.3 Black",
+        "price": 90,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "Pilot",
+        "tags": [
+            "pen",
+            "pilot",
+            "gtec",
+            "0.3",
+            "black"
+        ],
+        "stock": 50,
+        "description": "Pilot Gtec C3 0.3 Black rollerball pen.",
+        "image_webp": "images/school-supplies/writing-materials/pilot-gtech-0.3-black.webp",
+        "image_url": "images/school-supplies/writing-materials/pilot-gtech-0.3-black.jpg"
+    },
+    {
+        "id": "4021",
+        "name": "Pilot Gtec C4 0.4 Black",
+        "price": 90,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "Pilot",
+        "tags": [
+            "pen",
+            "pilot",
+            "gtec",
+            "0.4",
+            "black"
+        ],
+        "stock": 50,
+        "description": "Pilot Gtec C4 0.4 Black rollerball pen.",
+        "image_webp": "images/school-supplies/writing-materials/pilot-gtech-0.4-black.webp",
+        "image_url": "images/school-supplies/writing-materials/pilot-gtech-0.4-black.jpg"
+    },
+    {
+        "id": "4022",
+        "name": "Pilot Gtec C5 0.5 Black",
+        "price": 90,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "Pilot",
+        "tags": [
+            "pen",
+            "pilot",
+            "gtec",
+            "0.5",
+            "black"
+        ],
+        "stock": 50,
+        "description": "Pilot Gtec C5 0.5 Black rollerball pen.",
+        "image_webp": "images/school-supplies/writing-materials/pilot-gtech-0.5-black.webp",
+        "image_url": "images/school-supplies/writing-materials/pilot-gtech-0.5-black.jpg"
+    },
+    {
+        "id": "4023",
+        "name": "HBW White Board Marker Black (Round Tip)",
+        "price": 50,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "HBW",
+        "tags": [
+            "marker",
+            "whiteboard",
+            "black",
+            "round"
+        ],
+        "stock": 50,
+        "description": "HBW Whiteboard Marker Black (Round Tip).",
+        "image_webp": "images/school-supplies/writing-materials/whiteboard-marker-hbw-black.webp",
+        "image_url": "images/school-supplies/writing-materials/whiteboard-marker-hbw-black.jpg"
+    },
+    {
+        "id": "4024",
+        "name": "HBW White Board Marker Blue (Round Tip)",
+        "price": 50,
+        "category": "school-supplies",
+        "subcategory": "Writing Materials",
+        "brand": "HBW",
+        "tags": [
+            "marker",
+            "whiteboard",
+            "blue",
+            "round"
+        ],
+        "stock": 50,
+        "description": "HBW Whiteboard Marker Blue (Round Tip).",
+        "image_webp": "images/school-supplies/writing-materials/whiteboard-marker-hbw-blue.webp",
+        "image_url": "images/school-supplies/writing-materials/whiteboard-marker-hbw-blue.jpg"
+    },
+    {
+        "id": "4025",
+        "name": "Crayola Colored Pencil 12s",
+        "price": 200,
+        "category": "school-supplies",
+        "subcategory": "Coloring Materials",
+        "brand": "Crayola",
+        "tags": [
+            "colored",
+            "pencil",
+            "crayola",
+            "12s"
+        ],
+        "stock": 10,
+        "description": "Crayola Colored Pencil 12s set.",
+        "image_webp": "images/school-supplies/coloring-materials/crayola-color-pencil.webp",
+        "image_url": "images/school-supplies/coloring-materials/crayola-color-pencil.jpg"
+    },
+    {
+        "id": "4026",
+        "name": "Kiddie Crayons 36s",
+        "price": 300,
+        "category": "school-supplies",
+        "subcategory": "Coloring Materials",
+        "brand": "Kiddie",
+        "tags": [
+            "crayons",
+            "kiddie",
+            "36s"
+        ],
+        "stock": 3,
+        "description": "Kiddie Crayons 36 colors pack.",
+        "image_webp": "images/school-supplies/coloring-materials/kiddie-crayons-36colors.webp",
+        "image_url": "images/school-supplies/coloring-materials/kiddie-crayons-36colors.jpg"
+    },
+    {
+        "id": "4027",
+        "name": "Kiddie Crayons 24s",
+        "price": 200,
+        "category": "school-supplies",
+        "subcategory": "Coloring Materials",
+        "brand": "Kiddie",
+        "tags": [
+            "crayons",
+            "kiddie",
+            "24s"
+        ],
+        "stock": 3,
+        "description": "Kiddie Crayons 24 colors pack.",
+        "image_webp": "images/school-supplies/coloring-materials/kiddie-crayons-24colors.webp",
+        "image_url": "images/school-supplies/coloring-materials/kiddie-crayons-24colors.jpg"
+    },
+    {
+        "id": "4028",
+        "name": "Kiddie Crayons 16s",
+        "price": 150,
+        "category": "school-supplies",
+        "subcategory": "Coloring Materials",
+        "brand": "Kiddie",
+        "tags": [
+            "crayons",
+            "kiddie",
+            "16s"
+        ],
+        "stock": 5,
+        "description": "Kiddie Crayons 16 colors pack.",
+        "image_webp": "images/school-supplies/coloring-materials/kiddie-crayons-16colors.webp",
+        "image_url": "images/school-supplies/coloring-materials/kiddie-crayons-16colors.jpg"
+    },
+    {
+        "id": "4029",
+        "name": "Kiddie Crayons 8s",
+        "price": 80,
+        "category": "school-supplies",
+        "subcategory": "Coloring Materials",
+        "brand": "Kiddie",
+        "tags": [
+            "crayons",
+            "kiddie",
+            "8s"
+        ],
+        "stock": 10,
+        "description": "Kiddie Crayons 8 colors pack.",
+        "image_webp": "images/school-supplies/coloring-materials/kiddie-crayons-8colors.webp",
+        "image_url": "images/school-supplies/coloring-materials/kiddie-crayons-8colors.jpg"
+    },
+    {
+        "id": "4030",
+        "name": "Veco Oil Pastel",
+        "price": 150,
+        "category": "school-supplies",
+        "subcategory": "Coloring Materials",
+        "brand": "Veco",
+        "tags": [
+            "oil",
+            "pastel",
+            "veco"
+        ],
+        "stock": 10,
+        "description": "Veco Oil Pastel set for coloring and art.",
+        "image_webp": "images/school-supplies/coloring-materials/veco-oil-pastel.webp",
+        "image_url": "images/school-supplies/coloring-materials/veco-oil-pastel.jpg"
+    }
 ]

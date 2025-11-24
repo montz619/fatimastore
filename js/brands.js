@@ -292,16 +292,27 @@ document.addEventListener('DOMContentLoaded', async () => {
             let filtered = items;
             if (keyword) {
                 const tokens = keyword.split(/\s+|&|\//).map(s => s.trim()).filter(Boolean);
-                filtered = items.filter(it => {
-                    const tags = (it.tags || []).map(t => String(t).toLowerCase());
-                    const name = (it.name || '').toLowerCase();
-                    const brand = (it.brand || '').toLowerCase();
-                    const subcat = (it.subcategory || '').toLowerCase();
-                    // Match if any token appears in name, brand, tags, or the subcategory
-                    return tokens.some(tok => (
-                        name.includes(tok) || brand.includes(tok) || tags.includes(tok) || subcat.includes(tok)
-                    ));
-                });
+                // filter out generic stop-words that would otherwise match too broadly
+                const stopwords = new Set(['materials', 'material', '&', 'and']);
+                const filteredTokens = tokens.filter(t => t && !stopwords.has(t) && t.length > 1);
+                // If any item's subcategory exactly matches the requested title, prefer that exact match
+                const exactSubMatches = items.filter(it => (it.subcategory || '').toLowerCase() === keyword);
+                if (exactSubMatches.length > 0) {
+                    filtered = exactSubMatches.slice();
+                } else {
+                    // Fallback: tokenized matching against name, brand, tags, or subcategory
+                    const toksToUse = filteredTokens.length > 0 ? filteredTokens : tokens;
+                    filtered = items.filter(it => {
+                        const tags = (it.tags || []).map(t => String(t).toLowerCase());
+                        const name = (it.name || '').toLowerCase();
+                        const brand = (it.brand || '').toLowerCase();
+                        const subcat = (it.subcategory || '').toLowerCase();
+                        // Match if any token appears in name, brand, tags, or the subcategory
+                        return toksToUse.some(tok => (
+                            name.includes(tok) || brand.includes(tok) || tags.includes(tok) || subcat.includes(tok)
+                        ));
+                    });
+                }
             }
 
             // Build result: show all matching items for the requested title (brand/subcategory).
@@ -312,10 +323,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (filtered && filtered.length > 0) {
                 // show all filtered matches
                 result = filtered.slice();
-            } else if (items && items.length > 0) {
-                // no filtered matches — show all category items so the modal isn't artificially limited
-                result = items.slice();
+            } else if (!keyword) {
+                // No specific title was requested; show all category items
+                result = (items && items.length > 0) ? items.slice() : [];
             } else {
+                // A specific tile/title was requested but there are no matches.
+                // Do not fall back to showing all category items; allow Coming Soon to display.
                 result = [];
             }
 
@@ -354,7 +367,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 box.appendChild(h);
                 box.appendChild(p);
                 modalItems.appendChild(box);
-                modalSub.textContent = 'No items yet';
+                modalSub.textContent = 'No items yet available';
                 return;
             }
 
