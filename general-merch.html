@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brands - Fatima Store</title>
+    <title>General Merchandise - Fatima Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased text-gray-800 bg-gray-50">
+
     <!-- Header & Navigation -->
     <header class="bg-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -35,7 +38,6 @@
                 </nav>
             </div>
 
-
             <div class="flex items-center space-x-4">
                 <!-- Cart (right-most) -->
                 <a id="nav-cart-link" href="cart.html" class="relative text-gray-600 hover:text-indigo-600 font-medium transition-colors">
@@ -55,13 +57,6 @@
         </div>
     </header>
 
-    <!-- Centered search just below header for brands page -->
-    <div class="max-w-lg mx-auto mt-6 px-4">
-        <div class="flex items-center bg-white rounded-full shadow p-1">
-            <input type="text" placeholder="Search for products..." class="flex-grow px-4 py-3 rounded-l-full focus:outline-none focus:ring-2 focus:ring-indigo-500 search-input">
-            <button class="bg-indigo-600 text-white px-6 py-3 rounded-r-full hover:bg-indigo-700 transition-colors">Search</button>
-        </div>
-    </div>
 
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
@@ -79,29 +74,41 @@
     </div>
 
     <main class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold mb-4">Brands</h1>
-        <p class="text-gray-600 mb-6">Template page for brand listings.</p>
+        <h1 class="text-3xl font-bold mb-4">General Merchandise</h1>
+    <p class="text-gray-600 mb-6">Browse bathing, laundry, kitchen and other cleaning materials. Click a tile to view items in that group.</p>
 
         <div id="brands-list" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-            <!-- We'll show high-level categories and brands as tiles -->
-            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="food" data-title="Chips 'n Cracklings">
+            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="general-merchandise" data-title="Bathing Cleaning Materials">
                 <picture class="mb-3">
-                    <source srcset="images/food/Chips-n-crackers/brand-tile-snacks.webp" type="image/webp">
-                    <img src="images/food/Chips-n-crackers/brand-tile-snacks.jpg" alt="Chips 'n Cracklings" loading="lazy" width="100" height="60" class="mb-3">
+                    <source srcset="images/general-merch/bathing/bathing.webp" type="image/webp">
+                    <img src="images/general-merch/bathing/bathing.jpg" alt="Bathing Cleaning Materials" loading="lazy" width="100" height="60">
                 </picture>
-                <div class="text-sm font-semibold">Chips 'n Cracklings</div>
+                <div class="text-sm font-semibold">Bathing Cleaning Materials</div>
+                <button class="tile-add-btn mt-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm hidden">Add to cart</button>
             </div>
-            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="food" data-title="Drinks">
-                <img src="https://placehold.co/100x60/f8f9fa/212529?text=Drinks" alt="Drinks" class="mb-3">
-                <div class="text-sm font-semibold">Drinks</div>
+            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="general-merchandise" data-title="Laundry Cleaning Materials">
+                <picture class="mb-3">
+                    <source srcset="images/general-merch/laundry/laundry.webp" type="image/webp">
+                    <img src="images/general-merch/laundry/laundry.jpg" alt="Laundry Cleaning Materials" loading="lazy" width="100" height="60">
+                </picture>
+                <div class="text-sm font-semibold">Laundry Cleaning Materials</div>
+                <button class="tile-add-btn mt-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm hidden">Add to cart</button>
             </div>
-            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="school-supplies" data-title="Notebooks">
-                <img src="https://placehold.co/100x60/f8f9fa/212529?text=Notebooks" alt="Notebooks" class="mb-3">
-                <div class="text-sm font-semibold">Notebooks</div>
+            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="general-merchandise" data-title="Kitchen Cleaning Materials">
+                <picture class="mb-3">
+                    <source srcset="images/general-merch/kitchen/kitchen.webp" type="image/webp">
+                    <img src="images/general-merch/kitchen/kitchen.jpg" alt="Kitchen Cleaning Materials" loading="lazy" width="100" height="60">
+                </picture>
+                <div class="text-sm font-semibold">Kitchen Cleaning Materials</div>
+                <button class="tile-add-btn mt-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm hidden">Add to cart</button>
             </div>
-            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="school-supplies" data-title="Writing Materials">
-                <img src="https://placehold.co/100x60/f8f9fa/212529?text=Pens" alt="Writing Materials" class="mb-3">
-                <div class="text-sm font-semibold">Writing Materials</div>
+            <div class="brand-tile bg-white p-6 rounded-3xl shadow-md flex flex-col items-center justify-center hover:shadow-xl cursor-pointer" data-category="general-merchandise" data-title="Other Cleaning Materials">
+                <picture class="mb-3">
+                    <source srcset="images/general-merch/other/other.webp" type="image/webp">
+                    <img src="images/general-merch/other/other.jpg" alt="Other Cleaning Materials" loading="lazy" width="100" height="60">
+                </picture>
+                <div class="text-sm font-semibold">Other Cleaning Materials</div>
+                <button class="tile-add-btn mt-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm hidden">Add to cart</button>
             </div>
         </div>
 
@@ -119,6 +126,7 @@
                 </div>
             </div>
         </div>
+
     </main>
 
     <footer class="bg-gray-900 text-white py-12 mt-8">
