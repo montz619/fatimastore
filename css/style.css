@@ -360,6 +360,15 @@ button:focus-visible, a:focus-visible {
     transform: scale(0.98) translateY(2px);
 }
 
+/* Centralized sizing for brand-tile images to ensure uniform mobile appearance
+   Keep images uncropped (object-fit: contain) to avoid aggressive cropping. */
+.brand-tile img {
+    width: 128px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
 .brand-list .product-row.cursor-pointer:hover {
     background: rgba(99,102,241,0.03);
     transform: translateY(-3px);
