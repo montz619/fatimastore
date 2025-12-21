@@ -150,7 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 img.className = 'w-14 h-14 object-cover rounded-md';
                 img.loading = 'lazy';
                 img.alt = product.name || '';
-                img.src = escapeHTML(product.image_url || '');
+                // Prefer WebP when available, otherwise use the supplied image_url.
+                img.src = product.image_webp || product.image_url || '';
 
                 const meta = document.createElement('div');
                 meta.className = 'flex-1 min-w-0';
@@ -352,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
             imgEl.className = 'rounded-2xl mb-4 w-full h-48 object-cover';
             imgEl.loading = 'lazy';
             imgEl.alt = product.name || '';
-            imgEl.src = escapeHTML(product.image_url || '');
+            imgEl.src = product.image_webp || product.image_url || '';
             productCard.appendChild(imgEl);
 
             const h3 = document.createElement('h3');
@@ -510,7 +511,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.className = 'rounded-2xl mb-6 w-full h-64 object-cover';
         img.loading = 'lazy';
         img.alt = product.name || '';
-        img.src = escapeHTML(product.image_url || '');
+        img.src = product.image_webp || product.image_url || '';
 
         const title = document.createElement('h3');
         title.className = 'text-2xl font-bold mb-2';
