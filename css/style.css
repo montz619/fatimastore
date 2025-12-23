@@ -438,3 +438,22 @@ button:focus-visible, a:focus-visible {
         max-width: 100% !important;
     }
 }
+
+/* Desktop: enforce a centered page container with consistent side gaps
+   This ensures Chrome/Brave render the same comfortable margins as Edge
+   without affecting mobile (rules above still apply for small viewports). */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem; /* keep slight inner padding */
+        padding-right: 1rem;
+    }
+    /* Ensure header/footer use the same centered container constraints */
+    header .container, footer .container {
+        max-width: 1200px !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
