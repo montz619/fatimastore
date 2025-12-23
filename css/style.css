@@ -480,3 +480,16 @@ button:focus-visible, a:focus-visible {
         padding-right: 1rem;
     }
 }
+
+/* Desktop: align all main children (sections) with header container
+   but exclude the hero container itself so the background can remain full-bleed.
+   This forces brand tiles, footers, and other blocks to match header gaps. */
+@media (min-width: 1024px) {
+    main > *:not(.hero) {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
