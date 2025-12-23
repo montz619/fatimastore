@@ -457,3 +457,26 @@ button:focus-visible, a:focus-visible {
         padding-right: 1rem !important;
     }
 }
+
+/* Align hero inner content with the site's centered container on desktop
+   Keep hero background full-bleed but constrain the overlay/text block
+   so its left/right edges align with the header and other content. */
+@media (min-width: 1024px) {
+    .hero > div {
+        left: 0 !important;
+        right: 0 !important;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    /* Also constrain quick-view modal inner content to align with container */
+    #quick-view-modal > div {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
