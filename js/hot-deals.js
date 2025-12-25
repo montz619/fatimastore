@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadHotDeals() {
         try {
-            const dataFiles = ['./data/food.json', './data/school-supplies.json'];
+            const dataFiles = ['./data/food.json', './data/school-supplies.json', './data/general-merchandise.json'];
             const responses = await Promise.all(dataFiles.map(p => fetch(p).catch(e => null)));
             const jsonPromises = responses.map(r => (r && r.ok) ? r.json() : []);
             const arrays = await Promise.all(jsonPromises);
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     img.className = 'rounded-xl mb-2 w-full h-28 object-cover';
                     img.loading = 'lazy';
                     img.alt = product.name || '';
-                    img.src = escapeHTML(product.image_url || '');
+                    img.src = product.image_webp || product.image_url || '';
                     card.appendChild(img);
 
                     const title = document.createElement('h4');
