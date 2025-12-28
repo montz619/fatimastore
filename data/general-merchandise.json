@@ -706,4 +706,97 @@
 		"image_url": "images/general-merch/kitchen/steel-wool.jpg",
 		"image_webp": "images/general-merch/kitchen/steel-wool.webp"
 	}
+
+,
+	{
+		"id": "5055",
+		"name": "Walis Tambo",
+		"price": 100.00,
+		"category": "general-merchandise",
+		"subcategory": "Other Cleaning Materials",
+		"brand": "Walis Tambo",
+		"tags": ["broom","walis","walis-tambo","sweep"],
+		"stock": 5,
+		"description": "Walis Tambo",
+		"image_url": "images/general-merch/other/walis-tambo.jpg",
+		"image_webp": "images/general-merch/other/walis-tambo.webp"
+	},
+	{
+		"id": "5056",
+		"name": "Walis Ting-Ting",
+		"price": 50.00,
+		"category": "general-merchandise",
+		"subcategory": "Other Cleaning Materials",
+		"brand": "Walis Ting-Ting",
+		"tags": ["broom","walis-ting-ting","sweep","other"],
+		"stock": 5,
+		"description": "Walis Ting-Ting",
+		"image_url": "images/general-merch/other/walis-tingting.jpg",
+		"image_webp": "images/general-merch/other/walis-tingting.webp"
+	},
+	{
+		"id": "5057",
+		"name": "Plastic Dust Pan",
+		"price": 100.00,
+		"category": "general-merchandise",
+		"subcategory": "Other Cleaning Materials",
+		"brand": "Generic",
+		"tags": ["dustpan","plastic","pan","other"],
+		"stock": 5,
+		"description": "Plastic Dust Pan",
+		"image_url": "images/general-merch/other/dust-pan.jpg",
+		"image_webp": "images/general-merch/other/dust-pan.webp"
+	},
+	{
+		"id": "5058",
+		"name": "Lampaso Bunot",
+		"price": 50.00,
+		"category": "general-merchandise",
+		"subcategory": "Other Cleaning Materials",
+		"brand": "Lampaso",
+		"tags": ["mop","lampaso","bunot","other"],
+		"stock": 5,
+		"description": "Lampaso Bunot",
+		"image_url": "images/general-merch/other/lampaso-bunot.jpg",
+		"image_webp": "images/general-merch/other/lampaso-bunot.webp"
+	},
+	{
+		"id": "5059",
+		"name": "Floor Wax StarWax 180g",
+		"price": 30.00,
+		"category": "general-merchandise",
+		"subcategory": "Other Cleaning Materials",
+		"brand": "StarWax",
+		"tags": ["floor-wax","starwax","wax","other"],
+		"stock": 10,
+		"description": "Floor Wax StarWax 180g",
+		"image_url": "images/general-merch/other/floorwax-starwax-180g.jpg",
+		"image_webp": "images/general-merch/other/floorwax-starwax-180g.webp"
+	},
+	{
+		"id": "5060",
+		"name": "Plastic Tabo",
+		"price": 30.00,
+		"category": "general-merchandise",
+		"subcategory": "Other Cleaning Materials",
+		"brand": "Generic",
+		"tags": ["tabo","plastic","bathing","other"],
+		"stock": 10,
+		"description": "Plastic Tabo",
+		"image_url": "images/general-merch/other/tabo.jpg",
+		"image_webp": "images/general-merch/other/tabo.webp"
+	},
+	{
+		"id": "5061",
+		"name": "Plunger",
+		"price": 80.00,
+		"category": "general-merchandise",
+		"subcategory": "Other Cleaning Materials",
+		"brand": "Generic",
+		"tags": ["plunger","toilet","cleaning","other"],
+		"stock": 5,
+		"description": "Plunger",
+		"image_url": "images/general-merch/other/plunger.jpg",
+		"image_webp": "images/general-merch/other/plunger.webp"
+	}
 ]
