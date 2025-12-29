@@ -1,7 +1,7 @@
 [
     {
         "id": "1001",
-        "name": "Oishi Prawn Crackers (Big, Original)",
+        "name": "Oishi Prawn Crackers Original 90g",
         "price": 30.00,
         "originalPrice": 35.00,
         "category": "food",
@@ -14,7 +14,7 @@
     },
     {
         "id": "1003",
-        "name": "Oishi Prawn Crackers (Small, Spicy)",
+        "name": "Oishi Prawn Crackers Spicy 24g",
         "price": 10.00,
         "category": "food",
         "brand": "Oishi",
@@ -26,7 +26,7 @@
     },
     {
         "id": "1004",
-        "name": "Oishi Prawn Crackers (Small, Original)",
+        "name": "Oishi Prawn Crackers Original 24g",
         "price": 10.00,
         "category": "food",
         "brand": "Oishi",
@@ -38,7 +38,7 @@
     },
     {
         "id": "1005",
-        "name": "Oishi Seafood Curls (Big, Spicy)",
+        "name": "Oishi Seafood Curls Spicy 90g",
         "price": 30.00,
         "originalPrice": 34.00,
         "category": "food",
@@ -51,7 +51,7 @@
     },
     {
         "id": "1006",
-        "name": "Oishi Seafood Curls (Small, Spicy)",
+        "name": "Oishi Seafood Curls Spicy 24g",
         "price": 10.00,
         "category": "food",
         "brand": "Oishi",
@@ -63,7 +63,7 @@
     },
     {
         "id": "1007",
-        "name": "Oishi Fish Crackers (Big)",
+        "name": "Oishi Fish Crackers 90g",
         "price": 30.00,
         "category": "food",
         "brand": "Oishi",
@@ -75,7 +75,7 @@
     },
     {
         "id": "1008",
-        "name": "Oishi Fish Crackers (Small)",
+        "name": "Oishi Fish Crackers 24g",
         "price": 10.00,
         "category": "food",
         "brand": "Oishi",
@@ -87,7 +87,7 @@
     },
     {
         "id": "1009",
-        "name": "Oishi Marty's Cracklin' (Big, Spicy)",
+        "name": "Oishi Marty's Cracklin' Spicy 90g",
         "price": 30.00,
         "category": "food",
         "brand": "Oishi",
@@ -99,7 +99,7 @@
     },
     {
         "id": "1010",
-        "name": "Oishi Marty's Cracklin' (Small, Spicy)",
+        "name": "Oishi Marty's Cracklin' Spicy 26g",
         "price": 10.00,
         "category": "food",
         "brand": "Oishi",
@@ -111,7 +111,7 @@
     },
     {
         "id": "1011",
-        "name": "Oishi Crispy Patata (Big)",
+        "name": "Oishi Crispy Patata 90g",
         "price": 30.00,
         "originalPrice": 34.00,
         "category": "food",
@@ -124,7 +124,7 @@
     },
     {
         "id": "1012",
-        "name": "Oishi Crispy Patata (Small)",
+        "name": "Oishi Crispy Patata 24g",
         "price": 10.00,
         "category": "food",
         "brand": "Oishi",
