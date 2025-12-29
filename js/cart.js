@@ -33,6 +33,89 @@
 
     // Expose for manual calls
     window.updateCartBadge = updateBadge;
+
+    // Serverless-safe: revalidate cart items against authoritative data files.
+    // TTL: avoid frequent network calls; stored timestamp key is `cart_last_checked` (ms).
+    async function revalidateCart(opts) {
+        opts = opts || {};
+        const TTL_MS = (opts.ttlSeconds || 600) * 1000; // default 10 minutes
+        const force = !!opts.force;
+        try {
+            const last = parseInt(localStorage.getItem('cart_last_checked') || '0', 10) || 0;
+            const now = Date.now();
+            if (!force && last && (now - last) < TTL_MS) return { ok: true, skipped: true };
+
+            const cartRaw = localStorage.getItem('cart') || '[]';
+            let cart = [];
+            try { cart = JSON.parse(cartRaw); } catch (e) { cart = []; }
+            if (!Array.isArray(cart) || cart.length === 0) {
+                localStorage.setItem('cart_last_checked', String(now));
+                return { ok: true, updated: false };
+            }
+
+            const dataFiles = ['./data/food.json', './data/school-supplies.json', './data/general-merchandise.json'];
+            const responses = await Promise.all(dataFiles.map(p => fetch(p).catch(() => null)));
+            const jsons = await Promise.all(responses.map(r => (r && r.ok) ? r.json() : []));
+            const products = jsons.flat();
+            const byId = new Map();
+            const byName = new Map();
+            products.forEach(p => {
+                if (!p) return;
+                if (p.id) byId.set(String(p.id), p);
+                if (p.name) byName.set(String(p.name).toLowerCase(), p);
+            });
+
+            let changed = false;
+            const adjustments = [];
+            const newCart = cart.map(item => {
+                try {
+                    const idKey = item.id ? String(item.id) : null;
+                    const prod = idKey && byId.has(idKey) ? byId.get(idKey) : (item.name ? byName.get(String(item.name).toLowerCase()) : null);
+                    if (!prod) {
+                        if (item.quantity && item.quantity > 0) {
+                            // treat as out of stock
+                            adjustments.push({ id: item.id, name: item.name, oldQty: item.quantity, newQty: 0 });
+                            changed = true;
+                            return null; // remove
+                        }
+                        return item;
+                    }
+                    const avail = Number(prod.stock || 0);
+                    if (avail <= 0) {
+                        adjustments.push({ id: item.id, name: item.name, oldQty: item.quantity, newQty: 0 });
+                        changed = true;
+                        return null;
+                    }
+                    if (Number(item.quantity) > avail) {
+                        adjustments.push({ id: item.id, name: item.name, oldQty: item.quantity, newQty: avail });
+                        changed = true;
+                        return { ...item, quantity: avail };
+                    }
+                    return item;
+                } catch (e) { return item; }
+            }).filter(Boolean);
+
+            if (changed) {
+                localStorage.setItem('cart', JSON.stringify(newCart));
+                try { window.dispatchEvent(new Event('cart-updated')); } catch (e) {}
+            }
+            localStorage.setItem('cart_last_checked', String(now));
+            return { ok: true, updated: changed, adjustments };
+        } catch (err) {
+            console.error('revalidateCart failed', err);
+            return { ok: false, error: String(err) };
+        }
+    }
+    window.revalidateCart = revalidateCart;
+
+    // Revalidate cart when the user returns to the tab to keep stock fresh (focus-based refresh)
+    window.addEventListener('focus', () => {
+        try { revalidateCart({ ttlSeconds: 600 }).then(res => { if (res && res.updated && Array.isArray(res.adjustments) && res.adjustments.length) {
+                // Notify user briefly that cart was adjusted
+                const msg = res.adjustments.map(a => `${a.name}: ${a.oldQty} → ${a.newQty}`).join('\n');
+                try { alert('Cart updated due to stock changes:\n' + msg); } catch (e) {}
+            } }); } catch (e) {}
+    });
 })();
 
 // Quantity modal helper (exposed)

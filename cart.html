@@ -95,6 +95,7 @@
     }
 
     function saveCart(cart) { localStorage.setItem('cart', JSON.stringify(cart)); }
+    function saveCartWithMeta(cart) { localStorage.setItem('cart', JSON.stringify(cart)); localStorage.setItem('cart_last_checked', String(Date.now())); }
 
     function renderCart() {
     const cart = getCart();
@@ -178,7 +179,7 @@
     document.addEventListener('DOMContentLoaded', () => {
         renderCart();
         document.getElementById('clear-cart').addEventListener('click', () => {
-            if (confirm('Clear cart?')) { saveCart([]); try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {} renderCart(); }
+            if (confirm('Clear cart?')) { saveCartWithMeta([]); try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {} renderCart(); }
         });
 
         document.getElementById('confirm-order').addEventListener('click', async () => {
@@ -187,6 +188,38 @@
                 alert('Cart is empty.');
                 return;
             }
+
+            // Revalidate cart against authoritative JSON before confirming
+            try {
+                const dataFiles = ['./data/food.json', './data/school-supplies.json', './data/general-merchandise.json'];
+                const responses = await Promise.all(dataFiles.map(p => fetch(p).catch(() => null)));
+                const jsons = await Promise.all(responses.map(r => (r && r.ok) ? r.json() : []));
+                const products = jsons.flat();
+                const byId = new Map();
+                const byName = new Map();
+                products.forEach(p => { if (!p) return; if (p.id) byId.set(String(p.id), p); if (p.name) byName.set(String(p.name).toLowerCase(), p); });
+
+                const problems = [];
+                for (const item of cart) {
+                    const idKey = item.id ? String(item.id) : null;
+                    const prod = idKey && byId.has(idKey) ? byId.get(idKey) : (item.name ? byName.get(String(item.name).toLowerCase()) : null);
+                    const avail = prod ? Number(prod.stock || 0) : 0;
+                    if (avail <= 0) {
+                        problems.push(`${item.name}: out of stock`);
+                    } else if (Number(item.quantity) > avail) {
+                        problems.push(`${item.name}: requested ${item.quantity}, available ${avail}`);
+                    }
+                }
+                if (problems.length) {
+                    alert('Cannot confirm order — stock changed:\n' + problems.join('\n') + '\nPlease adjust your cart before confirming.');
+                    // update cart_last_checked so user revalidates after adjustments
+                    localStorage.setItem('cart_last_checked', String(Date.now()));
+                    return;
+                }
+            } catch (err) {
+                console.warn('Pre-confirm revalidation failed — proceeding optimistically', err);
+            }
+
             let total = 0;
             const lines = cart.map(item => {
                 const line = `${item.quantity} x ${item.name} @ ${formatCurrency(item.price)} = ${formatCurrency(item.price * item.quantity)}`;
@@ -207,6 +240,12 @@
                 ta.remove();
                 alert('Order copied to clipboard (fallback).');
             }
+
+            // Clear cart locally after a successful confirm to force fresh fetch on return
+            saveCartWithMeta([]);
+            try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {}
+            renderCart();
+            alert('Cart cleared locally.');
         });
     });
     </script>
