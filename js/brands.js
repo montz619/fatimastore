@@ -440,6 +440,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const addBtn = document.createElement('button');
                 addBtn.className = 'add-to-cart-btn inline-block mt-2 bg-indigo-600 text-white px-3 py-1 rounded-full';
                 addBtn.textContent = 'Add to cart';
+                // disable add button when item is out of stock
+                try {
+                    if (Number(it.stock || 0) <= 0) {
+                        addBtn.disabled = true;
+                        addBtn.setAttribute('aria-disabled', 'true');
+                        addBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                        addBtn.textContent = 'Out of stock';
+                    }
+                } catch (e) { /* ignore */ }
                 addWrap.appendChild(addBtn);
 
                 row.appendChild(left);
@@ -467,7 +476,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 // Attach add-to-cart button handler
                 setTimeout(() => {
                     const btn = row.querySelector('.add-to-cart-btn');
-                    if (btn) {
+                    if (btn && !btn.disabled) {
                         btn.addEventListener('click', (e) => {
                             e.stopPropagation();
                             if (window.showQuantityModal) {
@@ -528,6 +537,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                             } catch (err) { }
                             const match = items.find(it => (it.name || '').toLowerCase().includes((title||'').toLowerCase()) || (it.tags||[]).map(x=>x.toLowerCase()).includes((title||'').toLowerCase()));
                             const sample = match || items[0] || { id: null, name: title || 'Item', price: 0, stock: 0 };
+                            if (sample && Number(sample.stock || 0) <= 0) {
+                                alert('The selected item is currently out of stock.');
+                                return;
+                            }
                             if (window.showQuantityModal) {
                                 window.showQuantityModal(sample, 1, (qty) => {
                                     if (window.addToCart) {

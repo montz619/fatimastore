@@ -716,7 +716,7 @@
 		"subcategory": "Other Cleaning Materials",
 		"brand": "Walis Tambo",
 		"tags": ["broom","walis","walis-tambo","sweep"],
-		"stock": 5,
+		"stock": 0,
 		"description": "Walis Tambo",
 		"image_url": "images/general-merch/other/walis-tambo.jpg",
 		"image_webp": "images/general-merch/other/walis-tambo.webp"
@@ -729,7 +729,7 @@
 		"subcategory": "Other Cleaning Materials",
 		"brand": "Walis Ting-Ting",
 		"tags": ["broom","walis-ting-ting","sweep","other"],
-		"stock": 5,
+		"stock": 0,
 		"description": "Walis Ting-Ting",
 		"image_url": "images/general-merch/other/walis-tingting.jpg",
 		"image_webp": "images/general-merch/other/walis-tingting.webp"
@@ -742,7 +742,7 @@
 		"subcategory": "Other Cleaning Materials",
 		"brand": "Generic",
 		"tags": ["dustpan","plastic","pan","other"],
-		"stock": 5,
+		"stock": 0,
 		"description": "Plastic Dust Pan",
 		"image_url": "images/general-merch/other/dust-pan.jpg",
 		"image_webp": "images/general-merch/other/dust-pan.webp"
@@ -755,7 +755,7 @@
 		"subcategory": "Other Cleaning Materials",
 		"brand": "Lampaso",
 		"tags": ["mop","lampaso","bunot","other"],
-		"stock": 5,
+		"stock": 0,
 		"description": "Lampaso Bunot",
 		"image_url": "images/general-merch/other/lampaso-bunot.jpg",
 		"image_webp": "images/general-merch/other/lampaso-bunot.webp"
@@ -781,7 +781,7 @@
 		"subcategory": "Other Cleaning Materials",
 		"brand": "Generic",
 		"tags": ["tabo","plastic","bathing","other"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Plastic Tabo",
 		"image_url": "images/general-merch/other/tabo.jpg",
 		"image_webp": "images/general-merch/other/tabo.webp"
@@ -794,7 +794,7 @@
 		"subcategory": "Other Cleaning Materials",
 		"brand": "Generic",
 		"tags": ["plunger","toilet","cleaning","other"],
-		"stock": 5,
+		"stock": 0,
 		"description": "Plunger",
 		"image_url": "images/general-merch/other/plunger.jpg",
 		"image_webp": "images/general-merch/other/plunger.webp"

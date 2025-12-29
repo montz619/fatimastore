@@ -135,23 +135,32 @@ document.addEventListener('DOMContentLoaded', () => {
                     const btn = document.createElement('button');
                     btn.className = 'mt-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm add-to-cart-btn';
                     btn.textContent = 'Add to cart';
+                    // disable button when out of stock
+                    if (Number(product.stock || 0) <= 0) {
+                        btn.disabled = true;
+                        btn.setAttribute('aria-disabled', 'true');
+                        btn.classList.add('opacity-50', 'cursor-not-allowed');
+                        btn.textContent = 'Out of stock';
+                    }
                     card.appendChild(btn);
 
-                    btn.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        const qtyStr = prompt(`Enter quantity for "${product.name}" (available: ${product.stock}):`, '1');
-                        if (qtyStr === null) return;
-                        const qty = parseInt(qtyStr, 10);
-                        if (!qty || qty <= 0) { alert('Please enter a valid quantity.'); return; }
-                        if (product.stock && qty > product.stock) { alert('Requested quantity exceeds available stock.'); return; }
-                        if (window.addToCart) {
-                            window.addToCart(product, qty);
-                            try { window.dispatchEvent(new Event('cart-updated')); } catch (e) {}
-                            alert(`Added ${qty} x ${product.name} to cart.`);
-                        } else {
-                            alert('Cart helper not available.');
-                        }
-                    });
+                    if (!btn.disabled) {
+                        btn.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            const qtyStr = prompt(`Enter quantity for "${product.name}" (available: ${product.stock}):`, '1');
+                            if (qtyStr === null) return;
+                            const qty = parseInt(qtyStr, 10);
+                            if (!qty || qty <= 0) { alert('Please enter a valid quantity.'); return; }
+                            if (product.stock && qty > product.stock) { alert('Requested quantity exceeds available stock.'); return; }
+                            if (window.addToCart) {
+                                window.addToCart(product, qty);
+                                try { window.dispatchEvent(new Event('cart-updated')); } catch (e) {}
+                                alert(`Added ${qty} x ${product.name} to cart.`);
+                            } else {
+                                alert('Cart helper not available.');
+                            }
+                        });
+                    }
 
                     grid.appendChild(card);
                 });
