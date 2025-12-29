@@ -491,13 +491,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addToCart(product, quantity) {
         const cart = getCart();
-        // Guard: do not add out-of-stock items
+        // Guard: only block when product.stock is explicitly present and indicates zero/insufficient
         try {
-            if (product && (Number(product.stock || 0) <= 0)) {
+            const hasStockField = product && (product.stock !== undefined && product.stock !== null);
+            if (hasStockField && Number(product.stock) <= 0) {
                 alert('Item is out of stock.');
                 return;
             }
-            if (product && quantity && Number(product.stock) && Number(quantity) > Number(product.stock)) {
+            if (hasStockField && quantity && Number(quantity) > Number(product.stock)) {
                 alert('Requested quantity exceeds available stock.');
                 return;
             }
