@@ -282,7 +282,11 @@
             const summary = `Order from Fatima Store:\n${lines.join('\n')}\nTotal: ${formatCurrency(total)}`;
             try {
                 await navigator.clipboard.writeText(summary);
-                window.notify && window.notify.success ? window.notify.success('Order copied to clipboard. You can paste it into your messenger app.') : alert('Order copied to clipboard. You can paste it into your messenger app.');
+                if (window.notify && window.notify.confirm) {
+                    await window.notify.confirm('Order copied to clipboard. You can paste it into your messenger app.', { okOnly: true });
+                } else {
+                    alert('Order copied to clipboard. You can paste it into your messenger app.');
+                }
             } catch (e) {
                 // Fallback
                 const ta = document.createElement('textarea');
@@ -291,7 +295,11 @@
                 ta.select();
                 document.execCommand('copy');
                 ta.remove();
-                window.notify && window.notify.success ? window.notify.success('Order copied to clipboard (fallback).') : alert('Order copied to clipboard (fallback).');
+                if (window.notify && window.notify.confirm) {
+                    await window.notify.confirm('Order copied to clipboard (fallback). You can paste it into your messenger app.', { okOnly: true });
+                } else {
+                    alert('Order copied to clipboard (fallback). You can paste it into your messenger app.');
+                }
             }
 
             // Mark all items as ordered (visual highlight) but do not remove them.

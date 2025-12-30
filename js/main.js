@@ -118,9 +118,15 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         document.body.appendChild(modal);
         const closeBtn = modal.querySelector('#search-modal-close');
-        closeBtn && closeBtn.addEventListener('click', () => { modal.classList.add('hidden'); });
+        function clearSearchInputs() {
+            try {
+                const inputs = Array.from(document.querySelectorAll('.search-input'));
+                inputs.forEach(i => { i.value = ''; i.blur && i.blur(); });
+            } catch (e) { /* ignore */ }
+        }
+        closeBtn && closeBtn.addEventListener('click', () => { modal.classList.add('hidden'); clearSearchInputs(); });
         modal.addEventListener('click', (e) => {
-            if (e.target === modal) modal.classList.add('hidden');
+            if (e.target === modal) { modal.classList.add('hidden'); clearSearchInputs(); }
         });
         return modal;
     }
