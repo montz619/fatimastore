@@ -2,19 +2,47 @@
 (function(){
     const TOAST_DURATION = 4500;
 
-    // Create toast container
+    // Create toast container (centered, placed right below the site header when possible)
     let toastContainer = document.getElementById('toast-container');
     if (!toastContainer) {
         toastContainer = document.createElement('div');
         toastContainer.id = 'toast-container';
         toastContainer.style.position = 'fixed';
-        toastContainer.style.right = '1rem';
-        toastContainer.style.bottom = '1rem';
+        toastContainer.style.left = '50%';
+        toastContainer.style.transform = 'translateX(-50%)';
+        // default top until we compute header height
+        toastContainer.style.top = '4rem';
         toastContainer.style.zIndex = '14000';
         toastContainer.style.display = 'flex';
         toastContainer.style.flexDirection = 'column';
+        toastContainer.style.alignItems = 'center';
         toastContainer.style.gap = '0.5rem';
+        toastContainer.style.pointerEvents = 'none';
         document.body.appendChild(toastContainer);
+
+        // Compute and set top to sit just below the header if present
+        const updateToastTop = () => {
+            try {
+                const header = document.querySelector('header');
+                if (header) {
+                    const rect = header.getBoundingClientRect();
+                    // If header is fixed/sticky at top, its height determines our top offset
+                    const topOffset = Math.max(8, Math.round(rect.height + 8));
+                    toastContainer.style.top = topOffset + 'px';
+                } else {
+                    // fallback
+                    toastContainer.style.top = '4rem';
+                }
+            } catch (e) {
+                toastContainer.style.top = '4rem';
+            }
+        };
+        updateToastTop();
+        window.addEventListener('resize', updateToastTop);
+        // Also update on page layout changes (in case header height changes)
+        const observer = new MutationObserver(updateToastTop);
+        const hdr = document.querySelector('header');
+        if (hdr) observer.observe(hdr, { attributes: true, childList: true, subtree: true });
     }
 
     // Create confirm modal container
@@ -47,6 +75,7 @@
         el.style.maxWidth = '360px';
         el.style.boxSizing = 'border-box';
         el.setAttribute('role','status');
+        el.style.pointerEvents = 'auto';
 
         const txt = document.createElement('div');
         txt.style.flex = '1';
@@ -78,9 +107,32 @@
 
         toastContainer.appendChild(el);
         // auto-dismiss
-        const t = setTimeout(remove, opts.duration || TOAST_DURATION);
-        // pause on hover
-        el.addEventListener('mouseenter', () => clearTimeout(t));
+        // Auto-dismiss with pause/resume on hover
+        let duration = opts.duration || TOAST_DURATION;
+        let start = Date.now();
+        let remaining = duration;
+        let timer = setTimeout(remove, remaining);
+
+        function pause() {
+            if (timer) {
+                clearTimeout(timer);
+                timer = null;
+                const elapsed = Date.now() - start;
+                remaining = Math.max(0, remaining - elapsed);
+            }
+        }
+        function resume() {
+            if (!timer) {
+                start = Date.now();
+                timer = setTimeout(remove, remaining);
+            }
+        }
+
+        el.addEventListener('mouseenter', pause);
+        el.addEventListener('mouseleave', resume);
+        // allow tap/click to immediately dismiss (helpful on mobile)
+        el.addEventListener('click', () => { remove(); });
+        // expose removal handle
         return { remove };
     }
 
@@ -91,6 +143,13 @@
         const cancelBtn = confirmModal.querySelector('#notify-confirm-cancel');
 
         msgEl.textContent = message || '';
+        // If caller requests ok-only dialogs (no cancel), hide cancel button
+        if (options.okOnly) {
+            cancelBtn.style.display = 'none';
+        } else {
+            cancelBtn.style.display = '';
+        }
+
         confirmModal.classList.remove('hidden');
         // focus management
         setTimeout(() => { okBtn.focus(); }, 60);
@@ -104,7 +163,12 @@
             }
             function onOk() { cleanup(); resolve(true); }
             function onCancel() { cleanup(); resolve(false); }
-            function onKey(e) { if (e.key === 'Escape') { onCancel(); } }
+            function onKey(e) {
+                if (e.key === 'Escape') {
+                    // If okOnly, treat Escape as OK to allow quick dismissal; otherwise cancel
+                    if (options.okOnly) onOk(); else onCancel();
+                }
+            }
             okBtn.addEventListener('click', onOk);
             cancelBtn.addEventListener('click', onCancel);
             document.addEventListener('keydown', onKey);

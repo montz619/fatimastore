@@ -152,9 +152,36 @@
                 const found = c.find(x => x.id === item.id);
                 if (!found) return;
                 found.quantity = newQty;
-                saveCart(c);
-                window.dispatchEvent(new Event('cart-updated'));
-                renderCart();
+                        saveCart(c);
+                        window.dispatchEvent(new Event('cart-updated'));
+                        renderCart();
+                        // After local update, check authoritative stock for this item and warn if exceeded
+                        (async function checkAndWarn() {
+                            try {
+                                const dataFiles = ['./data/food.json', './data/school-supplies.json', './data/general-merchandise.json'];
+                                const responses = await Promise.all(dataFiles.map(p => fetch(p).catch(() => null)));
+                                const jsons = await Promise.all(responses.map(r => (r && r.ok) ? r.json() : []));
+                                const products = jsons.flat();
+                                const byId = new Map();
+                                const byName = new Map();
+                                products.forEach(p => { if (!p) return; if (p.id) byId.set(String(p.id), p); if (p.name) byName.set(String(p.name).toLowerCase(), p); });
+                                const idKey = found.id ? String(found.id) : null;
+                                const prod = idKey && byId.has(idKey) ? byId.get(idKey) : (found.name ? byName.get(String(found.name).toLowerCase()) : null);
+                                const avail = prod ? Number(prod.stock || 0) : 0;
+                                if (avail <= 0) {
+                                    const msg = `${found.name}: out of stock. Please remove this item or replace before confirming your order.`;
+                                    if (window.notify && window.notify.confirm) await window.notify.confirm(msg, { okOnly: true });
+                                    else alert(msg);
+                                    // mark last checked so user is prompted later
+                                    localStorage.setItem('cart_last_checked', String(Date.now()));
+                                } else if (Number(found.quantity) > avail) {
+                                    const msg = `${found.name}: requested ${found.quantity}, available ${avail}. Please adjust this item before confirming your order.`;
+                                    if (window.notify && window.notify.confirm) await window.notify.confirm(msg, { okOnly: true });
+                                    else alert(msg);
+                                    localStorage.setItem('cart_last_checked', String(Date.now()));
+                                }
+                            } catch (e) { /* ignore */ }
+                        })();
             }
 
             decr.addEventListener('click', () => {
