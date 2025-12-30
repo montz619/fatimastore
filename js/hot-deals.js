@@ -150,14 +150,14 @@ document.addEventListener('DOMContentLoaded', () => {
                             const qtyStr = prompt(`Enter quantity for "${product.name}" (available: ${product.stock}):`, '1');
                             if (qtyStr === null) return;
                             const qty = parseInt(qtyStr, 10);
-                            if (!qty || qty <= 0) { alert('Please enter a valid quantity.'); return; }
-                            if (product.stock && qty > product.stock) { alert('Requested quantity exceeds available stock.'); return; }
+                            if (!qty || qty <= 0) { if (window.notify && window.notify.error) window.notify.error('Please enter a valid quantity.'); else alert('Please enter a valid quantity.'); return; }
+                            if (product.stock && qty > product.stock) { if (window.notify && window.notify.error) window.notify.error('Requested quantity exceeds available stock.'); else alert('Requested quantity exceeds available stock.'); return; }
                             if (window.addToCart) {
                                 window.addToCart(product, qty);
                                 try { window.dispatchEvent(new Event('cart-updated')); } catch (e) {}
-                                alert(`Added ${qty} x ${product.name} to cart.`);
+                                if (window.notify && window.notify.success) window.notify.success(`Added ${qty} x ${product.name} to cart.`);
                             } else {
-                                alert('Cart helper not available.');
+                                if (window.notify && window.notify.error) window.notify.error('Cart helper not available.'); else alert('Cart helper not available.');
                             }
                         });
                     }

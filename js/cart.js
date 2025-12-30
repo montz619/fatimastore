@@ -113,7 +113,10 @@
         try { revalidateCart({ ttlSeconds: 600 }).then(res => { if (res && res.updated && Array.isArray(res.adjustments) && res.adjustments.length) {
                 // Notify user briefly that cart was adjusted
                 const msg = res.adjustments.map(a => `${a.name}: ${a.oldQty} → ${a.newQty}`).join('\n');
-                try { alert('Cart updated due to stock changes:\n' + msg); } catch (e) {}
+                    try {
+                        if (window.notify && window.notify.info) window.notify.info('Cart updated due to stock changes:\n' + msg);
+                        else alert('Cart updated due to stock changes:\n' + msg);
+                    } catch (e) {}
             } }); } catch (e) {}
     });
 })();
@@ -203,8 +206,8 @@
         cancel.onclick = () => { close(); }; 
         ok.onclick = () => {
             const qty = parseInt(input.value || '0', 10);
-            if (!qty || qty <= 0) { alert('Enter a valid quantity'); return; }
-            if (product.stock && qty > product.stock) { alert('Quantity exceeds stock'); return; }
+            if (!qty || qty <= 0) { if (window.notify && window.notify.error) window.notify.error('Enter a valid quantity'); else alert('Enter a valid quantity'); return; }
+            if (product.stock && qty > product.stock) { if (window.notify && window.notify.error) window.notify.error('Quantity exceeds stock'); else alert('Quantity exceeds stock'); return; }
             close();
             if (typeof cb === 'function') cb(qty);
         };

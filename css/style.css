@@ -9,6 +9,37 @@ body {
     background-color: #f7fafc;
 }
 
+/* Notifications: toasts and confirm modal (simple, responsive) */
+#toast-container {
+    pointer-events: none; /* allow clicks to pass through except on buttons */
+}
+.notify-toast {
+    pointer-events: auto;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 8px 20px rgba(2,6,23,0.12);
+}
+.notify-toast .notify-undo-btn {
+    background: transparent;
+    border: none;
+    color: #3b82f6;
+}
+
+/* Confirm modal wrapper (used by js/notifications.js) */
+.notify-confirm.hidden { display: none; }
+.notify-confirm .notify-confirm-overlay { z-index: 14100; }
+.notify-confirm-inner { max-width: 520px; width: 94%; }
+
+/* Make confirm modal buttons easier to tap on mobile */
+@media (max-width: 640px) {
+    .notify-confirm-inner .flex { flex-direction: column-reverse; gap: 0.5rem; }
+    .notify-confirm-inner button { min-height: 44px; width: 100%; }
+}
+
+
 /* Make the page a column flex container so the footer sticks to the bottom on short pages */
 body {
     display: flex;
@@ -279,7 +310,8 @@ button:focus-visible, a:focus-visible {
     display: none;
     align-items: center;
     justify-content: center;
-    z-index: 60;
+    /* raise brand overlay above normal content but below in-page modals like quantity modal */
+    z-index: 11100;
 }
 .brand-overlay.open {
     display: flex;
@@ -368,6 +400,9 @@ button:focus-visible, a:focus-visible {
     object-fit: contain;
     display: block;
 }
+
+/* The per-tile quick-add button was removed from brand tiles; keep tile-add-btn hidden by default. */
+.brand-tile .tile-add-btn { display: none !important; }
 
 .brand-list .product-row.cursor-pointer:hover {
     background: rgba(99,102,241,0.03);

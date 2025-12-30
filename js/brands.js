@@ -209,8 +209,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         function openQuickView() {
             quickViewModal.classList.remove('hidden');
             quickViewModal.classList.add('modal-open');
-            // ensure it's above the brand overlay
-            quickViewModal.style.zIndex = 200;
+            // ensure it's above the brand overlay but below the quantity modal (quantity uses ~12200)
+            quickViewModal.style.zIndex = '12000';
             console.debug('[quickview] opened quick-view modal');
         }
 
@@ -480,28 +480,28 @@ document.addEventListener('DOMContentLoaded', async () => {
                         btn.addEventListener('click', (e) => {
                             e.stopPropagation();
                             if (window.showQuantityModal) {
-                                window.showQuantityModal(it, 1, (qty) => {
-                                    if (it.stock && qty > it.stock) { alert('Requested quantity exceeds available stock.'); return; }
-                                    if (window.addToCart) {
-                                        window.addToCart({ id: it.id || null, name: it.name, price: it.price || 0, category }, qty);
-                                        alert(`Added ${qty} x ${it.name} to cart.`);
-                                        try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {}
-                                    } else {
-                                        alert('Cart functionality not available.');
-                                    }
-                                });
-                            } else {
+                                    window.showQuantityModal(it, 1, (qty) => {
+                                        if (it.stock && qty > it.stock) { if (window.notify && window.notify.error) window.notify.error('Requested quantity exceeds available stock.'); else alert('Requested quantity exceeds available stock.'); return; }
+                                        if (window.addToCart) {
+                                            window.addToCart({ id: it.id || null, name: it.name, price: it.price || 0, category }, qty);
+                                            if (window.notify && window.notify.success) window.notify.success(`Added ${qty} x ${it.name} to cart.`);
+                                            try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {}
+                                        } else {
+                                            if (window.notify && window.notify.error) window.notify.error('Cart functionality not available.'); else alert('Cart functionality not available.');
+                                        }
+                                    });
+                                } else {
                                 const qtyStr = prompt(`Enter quantity for "${it.name}" (available: ${it.stock || 0}):`, '1');
                                 if (qtyStr === null) return;
                                 const qty = parseInt(qtyStr, 10);
-                                if (!qty || qty <= 0) { alert('Please enter a valid quantity.'); return; }
-                                if (it.stock && qty > it.stock) { alert('Requested quantity exceeds available stock.'); return; }
+                                if (!qty || qty <= 0) { if (window.notify && window.notify.error) window.notify.error('Please enter a valid quantity.'); else alert('Please enter a valid quantity.'); return; }
+                                if (it.stock && qty > it.stock) { if (window.notify && window.notify.error) window.notify.error('Requested quantity exceeds available stock.'); else alert('Requested quantity exceeds available stock.'); return; }
                                 if (window.addToCart) {
                                     window.addToCart({ id: it.id || null, name: it.name, price: it.price || 0, category }, qty);
-                                    alert(`Added ${qty} x ${it.name} to cart.`);
+                                    if (window.notify && window.notify.success) window.notify.success(`Added ${qty} x ${it.name} to cart.`);
                                     try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {}
                                 } else {
-                                    alert('Cart functionality not available.');
+                                    if (window.notify && window.notify.error) window.notify.error('Cart functionality not available.'); else alert('Cart functionality not available.');
                                 }
                             }
                         });
@@ -512,62 +512,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // Attach showCategoryInModal to static/dynamic tiles
-        tiles.forEach(t => {
-            // add small add-to-cart button inside each tile for quick adds
-            try {
-                if (!t.querySelector('.tile-add-btn')) {
-                    const btn = document.createElement('button');
-                    btn.className = 'tile-add-btn mt-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm';
-                    btn.textContent = 'Add to cart';
-                    btn.style.display = 'none';
-                    t.appendChild(btn);
-                    // show the button on hover via simple listeners
-                    t.addEventListener('mouseenter', () => btn.style.display = 'inline-block');
-                    t.addEventListener('mouseleave', () => btn.style.display = 'none');
-                    btn.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        const category = t.dataset.category;
-                        const title = t.dataset.title || '';
-                        // when adding from tile, attempt to find a sample product from the category with this title
-                        (async () => {
-                            let items = [];
-                            try {
-                                const r = await fetch(`./data/${category}.json`);
-                                if (r.ok) items = await r.json();
-                            } catch (err) { }
-                            const match = items.find(it => (it.name || '').toLowerCase().includes((title||'').toLowerCase()) || (it.tags||[]).map(x=>x.toLowerCase()).includes((title||'').toLowerCase()));
-                            const sample = match || items[0] || { id: null, name: title || 'Item', price: 0, stock: 0 };
-                            if (sample && Number(sample.stock || 0) <= 0) {
-                                alert('The selected item is currently out of stock.');
-                                return;
-                            }
-                            if (window.showQuantityModal) {
-                                window.showQuantityModal(sample, 1, (qty) => {
-                                    if (window.addToCart) {
-                                        window.addToCart({ id: sample.id || null, name: sample.name, price: sample.price || 0, category }, qty);
-                                        window.dispatchEvent(new Event('cart-updated'));
-                                        alert(`Added ${qty} x ${sample.name} to cart.`);
-                                    }
-                                });
-                            } else {
-                                const qStr = prompt(`Enter quantity for "${sample.name}" (available: ${sample.stock || 0}):`, '1');
-                                if (qStr === null) return;
-                                const q = parseInt(qStr, 10);
-                                if (!q || q <= 0) { alert('Please enter a valid quantity.'); return; }
-                                if (sample.stock && q > sample.stock) { alert('Requested quantity exceeds available stock.'); return; }
-                                if (window.addToCart) { window.addToCart({ id: sample.id || null, name: sample.name, price: sample.price || 0, category }, q); try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {} }
-                            }
-                        })();
-                    });
-                }
-            } catch(e) { /* ignore */ }
-
-            t.addEventListener('click', () => {
-                const category = t.dataset.category;
-                const title = t.dataset.title || '';
-                showCategoryInModal(category, title);
+            tiles.forEach(t => {
+                // Do not create quick-add "tile" buttons here — brand tiles should only open the
+                // centered category/brand modal. This removes hover/touch quick-adds that appeared
+                // on brand lists and caused unwanted Add-to-cart buttons on mobile.
+                t.addEventListener('click', () => {
+                    const category = t.dataset.category;
+                    const title = t.dataset.title || '';
+                    showCategoryInModal(category, title);
+                });
             });
-        });
 
     // Bind nav/menu links with data-open-category to open the same modal on a normal left-click
         // but allow modifier keys (Ctrl/Cmd/Shift/Alt) and middle-clicks to perform normal navigation.

@@ -80,6 +80,7 @@
         </div>
     </footer>
 
+    <script src="js/notifications.js"></script>
     <script>
     // Simple cart page script
     function formatCurrency(value) {
@@ -167,8 +168,9 @@
             qty.addEventListener('change', () => {
                 const v = Math.max(1, parseInt(qty.value || '1', 10)); qty.value = v; updateQuantity(v);
             });
-            removeBtn.addEventListener('click', () => {
-                if (!confirm('Remove this item?')) return;
+            removeBtn.addEventListener('click', async () => {
+                const ok = await (window.notify && window.notify.confirm ? window.notify.confirm('Remove this item?') : Promise.resolve(confirm('Remove this item?')));
+                if (!ok) return;
                 const c = getCart().filter(x => x.id !== item.id);
                 saveCart(c); window.dispatchEvent(new Event('cart-updated')); renderCart();
             });
@@ -178,14 +180,19 @@
 
     document.addEventListener('DOMContentLoaded', () => {
         renderCart();
-        document.getElementById('clear-cart').addEventListener('click', () => {
-            if (confirm('Clear cart?')) { saveCartWithMeta([]); try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {} renderCart(); }
+        document.getElementById('clear-cart').addEventListener('click', async () => {
+            const ok = await (window.notify && window.notify.confirm ? window.notify.confirm('Clear cart?') : Promise.resolve(confirm('Clear cart?')));
+            if (!ok) return;
+            saveCartWithMeta([]);
+            try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {}
+            renderCart();
+            window.notify && window.notify.info && window.notify.info('Cart cleared.');
         });
 
         document.getElementById('confirm-order').addEventListener('click', async () => {
             const cart = getCart();
             if (!cart || cart.length === 0) {
-                alert('Cart is empty.');
+                window.notify && window.notify.info ? window.notify.info('Cart is empty.') : alert('Cart is empty.');
                 return;
             }
 
@@ -211,7 +218,8 @@
                     }
                 }
                 if (problems.length) {
-                    alert('Cannot confirm order — stock changed:\n' + problems.join('\n') + '\nPlease adjust your cart before confirming.');
+                    const msg = 'Cannot confirm order — stock changed:\n' + problems.join('\n') + '\nPlease adjust your cart before confirming.';
+                    window.notify && window.notify.error ? window.notify.error(msg) : alert(msg);
                     // update cart_last_checked so user revalidates after adjustments
                     localStorage.setItem('cart_last_checked', String(Date.now()));
                     return;
@@ -229,7 +237,7 @@
             const summary = `Order from Fatima Store:\n${lines.join('\n')}\nTotal: ${formatCurrency(total)}`;
             try {
                 await navigator.clipboard.writeText(summary);
-                alert('Order copied to clipboard. You can paste it into your messenger app.');
+                window.notify && window.notify.success ? window.notify.success('Order copied to clipboard. You can paste it into your messenger app.') : alert('Order copied to clipboard. You can paste it into your messenger app.');
             } catch (e) {
                 // Fallback
                 const ta = document.createElement('textarea');
@@ -238,14 +246,14 @@
                 ta.select();
                 document.execCommand('copy');
                 ta.remove();
-                alert('Order copied to clipboard (fallback).');
+                window.notify && window.notify.success ? window.notify.success('Order copied to clipboard (fallback).') : alert('Order copied to clipboard (fallback).');
             }
 
             // Clear cart locally after a successful confirm to force fresh fetch on return
             saveCartWithMeta([]);
             try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {}
             renderCart();
-            alert('Cart cleared locally.');
+            window.notify && window.notify.info ? window.notify.info('Cart cleared locally.') : alert('Cart cleared locally.');
         });
     });
     </script>
