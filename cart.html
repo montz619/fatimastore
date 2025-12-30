@@ -120,17 +120,28 @@
 
             const nameCol = document.createElement('div');
             nameCol.className = 'flex-1 min-w-0';
+            // Create a small header to hold the item name and the ordered badge side-by-side
+            const nameHeader = document.createElement('div');
+            nameHeader.className = 'flex items-center gap-2';
             const nameInner = document.createElement('div');
             nameInner.className = 'font-semibold break-words';
             nameInner.textContent = item.name;
-            nameCol.appendChild(nameInner);
+            nameHeader.appendChild(nameInner);
+            // If this item was previously marked as ordered, show a small badge next to the name
+            if (item.ordered) {
+                const badge = document.createElement('span');
+                badge.className = 'ordered-badge';
+                badge.textContent = 'Ordered';
+                nameHeader.appendChild(badge);
+            }
+            nameCol.appendChild(nameHeader);
 
             const controls = document.createElement('div');
             controls.className = 'flex items-center gap-2 flex-none';
             const decr = document.createElement('button'); decr.className = 'px-2 py-1 bg-gray-200 rounded'; decr.textContent = '-';
             const qty = document.createElement('input'); qty.type = 'number'; qty.value = item.quantity; qty.min = 1; qty.className = 'w-16 text-center border rounded';
             const incr = document.createElement('button'); incr.className = 'px-2 py-1 bg-gray-200 rounded'; incr.textContent = '+';
-            const removeBtn = document.createElement('button'); removeBtn.className = 'ml-2 px-3 py-1 bg-red-600 text-white rounded'; removeBtn.textContent = 'Remove';
+            const removeBtn = document.createElement('button'); removeBtn.className = 'ml-2 px-3 py-1 bg-red-600 text-white rounded remove-item'; removeBtn.textContent = 'Remove';
             controls.appendChild(decr); controls.appendChild(qty); controls.appendChild(incr); controls.appendChild(removeBtn);
 
             const priceCol = document.createElement('div');
@@ -145,6 +156,13 @@
             row.appendChild(nameCol);
             row.appendChild(controls);
             row.appendChild(priceCol);
+            // Apply ordered styles/disabled state if needed
+            if (item.ordered) {
+                row.classList.add('cart-row-ordered');
+                // disable controls to prevent changes after confirming
+                try { qty.disabled = true; decr.disabled = true; incr.disabled = true; removeBtn.disabled = true; } catch (e) {}
+            }
+
             itemsEl.appendChild(row);
 
             function updateQuantity(newQty) {
@@ -276,11 +294,15 @@
                 window.notify && window.notify.success ? window.notify.success('Order copied to clipboard (fallback).') : alert('Order copied to clipboard (fallback).');
             }
 
-            // Clear cart locally after a successful confirm to force fresh fetch on return
-            saveCartWithMeta([]);
-            try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {}
-            renderCart();
-            window.notify && window.notify.info ? window.notify.info('Cart cleared locally.') : alert('Cart cleared locally.');
+            // Mark all items as ordered (visual highlight) but do not remove them.
+            try {
+                const c = getCart();
+                c.forEach(it => { try { it.ordered = true; } catch (e) {} });
+                saveCart(c);
+                try { window.dispatchEvent(new Event('cart-updated')); } catch (e) {}
+                renderCart();
+            } catch (e) { /* ignore */ }
+            window.notify && window.notify.info ? window.notify.info('Order copied — items marked as ordered and remain in your cart.') : alert('Order copied — items marked as ordered and remain in your cart.');
         });
     });
     </script>
