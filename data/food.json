@@ -2,32 +2,32 @@
     {
         "id": "1001",
         "name": "Oishi Prawn Crackers Original 90g",
-        "price": 30.00,
+        "price": 32.00,
         "originalPrice": 35.00,
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","seafood"],
-        "stock": 10,
+        "stock": 5,
         "description": "Classic Oishi prawn crackers in original flavor, large pack.",
         "image_url": "images/food/Chips-n-crackers/oishi-original-big.jpg",
         "image_webp": "images/food/Chips-n-crackers/oishi-original-big.webp"
     },
     {
         "id": "1003",
-        "name": "Oishi Prawn Crackers Spicy 24g",
-        "price": 10.00,
+        "name": "Oishi Prawn Crackers Spicy 90g",
+        "price": 32.00,
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","seafood","single-serve"],
-        "stock": 10,
-        "description": "Small spicy-sized prawn crackers — perfect for snacking.",
-        "image_url": "images/food/Chips-n-crackers/oishi-spicy-small.jpg",
-        "image_webp": "images/food/Chips-n-crackers/oishi-spicy-small.webp"
+        "stock": 5,
+        "description": "Big spicy-sized prawn crackers — perfect for snacking.",
+        "image_url": "images/food/Chips-n-crackers/oishi-spicy-big.jpg",
+        "image_webp": "images/food/Chips-n-crackers/oishi-spicy-big.webp"
     },
     {
         "id": "1004",
         "name": "Oishi Prawn Crackers Original 24g",
-        "price": 10.00,
+        "price": 11.00,
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","single-serve"],
@@ -38,21 +38,21 @@
     },
     {
         "id": "1005",
-        "name": "Oishi Seafood Curls Spicy 90g",
+        "name": "Oishi Marty's Cracklin' Plain Salted 90g",
         "price": 30.00,
         "originalPrice": 34.00,
         "category": "food",
         "brand": "Oishi",
-        "tags": ["chips","oishi","snack","seafood","curls"],
-        "stock": 10,
-        "description": "Oishi Seafood Curls — big spicy pack with ring-shaped crisps.",
-        "image_url": "images/food/Chips-n-crackers/oishi-curls-spicy-big.jpg",
-        "image_webp": "images/food/Chips-n-crackers/oishi-curls-spicy-big.webp"
+        "tags": ["chips","oishi","snack","martys","cracklings"],
+        "stock": 5,
+        "description": "Oishi Marty's Cracklin' Plain Salted — big pack of savory cracklings.",
+        "image_url": "images/food/Chips-n-crackers/martys-plain-90g.jpg",
+        "image_webp": "images/food/Chips-n-crackers/martys-plain-90g.webp"
     },
     {
         "id": "1006",
         "name": "Oishi Seafood Curls Spicy 24g",
-        "price": 10.00,
+        "price": 11.00,
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","single-serve","curls"],
@@ -64,11 +64,11 @@
     {
         "id": "1007",
         "name": "Oishi Fish Crackers 90g",
-        "price": 30.00,
+        "price": 32.00,
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","fish"],
-        "stock": 10,
+        "stock": 5,
         "description": "Oishi Fish Crackers — large pack, savory fish flavor.",
         "image_url": "images/food/Chips-n-crackers/oishi-fish-crackers-big.jpg",
         "image_webp": "images/food/Chips-n-crackers/oishi-fish-crackers-big.webp"
@@ -76,7 +76,7 @@
     {
         "id": "1008",
         "name": "Oishi Fish Crackers 24g",
-        "price": 10.00,
+        "price": 11.00,
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","single-serve","fish"],
@@ -92,32 +92,32 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","cracklins"],
-        "stock": 10,
+        "stock": 5,
         "description": "Marty's Cracklin' — big spicy cracklings by Oishi.",
         "image_url": "images/food/Chips-n-crackers/martys-big.jpg",
         "image_webp": "images/food/Chips-n-crackers/martys-big.webp"
     },
     {
         "id": "1010",
-        "name": "Oishi Marty's Cracklin' Spicy 26g",
-        "price": 10.00,
+        "name": "Oishi Marty's Cracklin' Spicy Salt and Vinegar 26g",
+        "price": 11.00,
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","single-serve","cracklins"],
         "stock": 10,
-    "description": "Small spicy Marty's Cracklin' by Oishi.",
-        "image_url": "images/food/Chips-n-crackers/martys-small.jpg",
-        "image_webp": "images/food/Chips-n-crackers/martys-small.webp"
+        "description": "Small Marty's Cracklin' by Oishi.",
+        "image_url": "images/food/Chips-n-crackers/martys-saltvinegar-26g.jpg",
+        "image_webp": "images/food/Chips-n-crackers/martys-saltvinegar-26g.webp"
     },
     {
         "id": "1011",
         "name": "Oishi Crispy Patata 90g",
-        "price": 30.00,
+        "price": 32.00,
         "originalPrice": 34.00,
         "category": "food",
         "brand": "Oishi",
-        "tags": ["chips","oishi","snack","potato"],
-        "stock": 10,
+        "tags": ["chips","oishi","snack","potato","patata"],
+        "stock": 5,
         "description": "Crispy Patata — big potato chips pack by Oishi.",
         "image_url": "images/food/Chips-n-crackers/crispy-patata-big.jpg",
         "image_webp": "images/food/Chips-n-crackers/crispy-patata-big.webp"
@@ -125,7 +125,7 @@
     {
         "id": "1012",
         "name": "Oishi Crispy Patata 24g",
-        "price": 10.00,
+        "price": 11.00,
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","single-serve","potato"],
@@ -135,14 +135,26 @@
         "image_webp": "images/food/Chips-n-crackers/crispy-patata-small.webp"
     },
     {
+        "id": "1013",
+        "name": "Tattoos Corn Chips BBQ Flavor 58g",
+        "price": 11.00,
+        "category": "food",
+        "brand": "Tattoos",
+        "tags": ["chips","tattoos","snack","single-serve","corn"],
+        "stock": 10,
+        "description": "Tattoos Corn Chips BBQ Flavor — small pack of corn chips.",
+        "image_url": "images/food/Chips-n-crackers/tattoos-bbq-58g.jpg",
+        "image_webp": "images/food/Chips-n-crackers/tattoos-bbq-58g.webp"
+    },
+    {
         "id": "2001",
         "name": "Alaska Fortified 300g",
-        "price": 350.00,
+        "price": 100.00,
         "originalPrice": 380.00,
         "category": "food",
         "brand": "Alaska",
         "tags": ["powdered","milk","drink","fortified"],
-        "stock": 5,
+        "stock": 2,
         "description": "Alaska Fortified milk powder 300g — fortified with vitamins.",
         "image_url": "images/food/powdered-drinks/alaska-300g.jpg",
         "image_webp": "images/food/powdered-drinks/alaska-300g.webp"
@@ -150,11 +162,11 @@
     {
         "id": "2002",
         "name": "Alaska Fortified 150g",
-        "price": 230.00,
+        "price": 57.00,
         "category": "food",
         "brand": "Alaska",
         "tags": ["powdered","milk","drink","fortified"],
-        "stock": 10,
+        "stock": 4,
         "description": "Alaska Fortified milk powder 150g — convenient pack for families.",
         "image_url": "images/food/powdered-drinks/alaska-150g.jpg",
         "image_webp": "images/food/powdered-drinks/alaska-150g.webp"
@@ -162,11 +174,11 @@
     {
         "id": "2003",
         "name": "Alaska Fortified 33g",
-        "price": 12.00,
+        "price": 14.00,
         "category": "food",
         "brand": "Alaska",
         "tags": ["powdered","milk","drink","single-serve"],
-        "stock": 20,
+        "stock": 10,
         "description": "Single-serve Alaska milk powder 33g — quick and easy.",
         "image_url": "images/food/powdered-drinks/alaska-33g.jpg",
         "image_webp": "images/food/powdered-drinks/alaska-33g.webp"
@@ -174,12 +186,12 @@
     {
         "id": "2004",
         "name": "Bear Brand 680g",
-        "price": 400.00,
+        "price": 270.00,
         "originalPrice": 440.00,
         "category": "food",
         "brand": "Bear Brand",
         "tags": ["powdered","milk","drink","premium"],
-        "stock": 3,
+        "stock": 1,
         "description": "Bear Brand full cream milk powder — large 680g can.",
         "image_url": "images/food/powdered-drinks/bearbrand-680g.jpg",
         "image_webp": "images/food/powdered-drinks/bearbrand-680g.webp"
@@ -187,11 +199,11 @@
     {
         "id": "2005",
         "name": "Bear Brand 135g",
-        "price": 250.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Bear Brand",
         "tags": ["powdered","milk","drink"],
-        "stock": 10,
+        "stock": 0,
         "description": "Bear Brand 135g — smaller can for households.",
         "image_url": "images/food/powdered-drinks/bearbrand-135g.jpg",
         "image_webp": "images/food/powdered-drinks/bearbrand-135g.webp"
@@ -199,11 +211,11 @@
     {
         "id": "2006",
         "name": "Bear Brand 33g",
-        "price": 12.00,
+        "price": 16.00,
         "category": "food",
         "brand": "Bear Brand",
         "tags": ["powdered","milk","drink","single-serve"],
-        "stock": 20,
+        "stock": 10,
         "description": "Bear Brand single-serve sachet 33g.",
         "image_url": "images/food/powdered-drinks/bearbrand-33g.jpg",
         "image_webp": "images/food/powdered-drinks/bearbrand-33g.webp"
@@ -211,12 +223,12 @@
     {
         "id": "2007",
         "name": "Birch Tree Fortified 300g",
-        "price": 300.00,
+        "price": 110.00,
         "originalPrice": 330.00,
         "category": "food",
         "brand": "Birch Tree",
         "tags": ["powdered","milk","drink","fortified"],
-        "stock": 5,
+        "stock": 2,
         "description": "Birch Tree fortified milk powder 300g — nutritious option.",
         "image_url": "images/food/powdered-drinks/birchtree-300g.jpg",
         "image_webp": "images/food/powdered-drinks/birchtree-300g.webp"
@@ -224,11 +236,11 @@
     {
         "id": "2008",
         "name": "Birch Tree Fortified 33g",
-        "price": 12.00,
+        "price": 14.00,
         "category": "food",
         "brand": "Birch Tree",
         "tags": ["powdered","milk","drink","single-serve"],
-        "stock": 20,
+        "stock": 10,
         "description": "Birch Tree single-serve 33g sachet — fortified milk.",
         "image_url": "images/food/powdered-drinks/birchtree-33g.jpg",
         "image_webp": "images/food/powdered-drinks/birchtree-33g.webp"
@@ -236,11 +248,11 @@
     {
         "id": "2009",
         "name": "Nescafe Creamy Latte 20g",
-        "price": 12.00,
+        "price": 13.00,
         "category": "food",
         "brand": "Nescafe",
         "tags": ["powdered","coffee","instant"],
-        "stock": 20,
+        "stock": 10,
         "description": "Nescafe Creamy Latte instant coffee stick 20g.",
         "image_url": "images/food/powdered-drinks/nescafe-creamylatte-20g.jpg",
         "image_webp": "images/food/powdered-drinks/nescafe-creamylatte-20g.webp"
@@ -248,11 +260,11 @@
     {
         "id": "2010",
         "name": "Nescafe Creamy White 20g",
-        "price": 12.00,
+        "price": 13.00,
         "category": "food",
         "brand": "Nescafe",
         "tags": ["powdered","coffee","instant"],
-        "stock": 20,
+        "stock": 10,
         "description": "Nescafe Creamy White instant 20g stick — smooth and milky.",
         "image_url": "images/food/powdered-drinks/nescafe-creamywhite-20g.jpg",
         "image_webp": "images/food/powdered-drinks/nescafe-creamywhite-20g.webp"
@@ -260,11 +272,11 @@
     {
         "id": "2011",
         "name": "Nescafe Original 20g",
-        "price": 12.00,
+        "price": 13.00,
         "category": "food",
         "brand": "Nescafe",
         "tags": ["powdered","coffee","instant"],
-        "stock": 20,
+        "stock": 10,
         "description": "Nescafe Original instant coffee stick 20g.",
         "image_url": "images/food/powdered-drinks/nescafe-original-20g.jpg",
         "image_webp": "images/food/powdered-drinks/nescafe-original-20g.webp"
@@ -272,11 +284,11 @@
     {
         "id": "2012",
         "name": "Nescafe Original Twin Pack 40g",
-        "price": 18.00,
+        "price": 17.00,
         "category": "food",
         "brand": "Nescafe",
         "tags": ["powdered","coffee","multi-pack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Twin pack of Nescafe Original instant coffee (2x20g).",
         "image_url": "images/food/powdered-drinks/nescafe-original-twinpack-40g.jpg",
         "image_webp": "images/food/powdered-drinks/nescafe-original-twinpack-40g.webp"
@@ -284,11 +296,11 @@
     {
         "id": "2013",
         "name": "Nescafe Sticks",
-        "price": 5.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Nescafe",
         "tags": ["powdered","coffee","stick","single-serve"],
-        "stock": 96,
+        "stock": 0,
         "description": "Nescafe instant coffee sticks — convenient single-serve packets.",
         "image_url": "images/food/powdered-drinks/nescafe-sticks.jpg",
         "image_webp": "images/food/powdered-drinks/nescafe-sticks.webp"
@@ -296,11 +308,11 @@
     {
         "id": "2014",
         "name": "Nestea Lemon 250g",
-        "price": 150.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Nestea",
         "tags": ["powdered","tea","drink","lemon"],
-        "stock": 5,
+        "stock": 0,
         "description": "Nestea powdered lemon tea 250g — great for making iced tea.",
         "image_url": "images/food/powdered-drinks/nestea-lemon-250g.jpg",
         "image_webp": "images/food/powdered-drinks/nestea-lemon-250g.webp"
@@ -308,11 +320,11 @@
     {
         "id": "2015",
         "name": "Nestea Lemon 20g",
-        "price": 30.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Nestea",
         "tags": ["powdered","tea","drink","single-serve"],
-        "stock": 20,
+        "stock": 0,
         "description": "Single-serve Nestea lemon 20g sachet — make a quick glass of iced tea.",
         "image_url": "images/food/powdered-drinks/nestea-lemon-20g.jpg",
         "image_webp": "images/food/powdered-drinks/nestea-lemon-20g.webp"
@@ -332,39 +344,39 @@
     },
     {
         "id": "2017",
-        "name": "Tang Orange 14g",
+        "name": "Tang Orange 19g",
         "price": 30.00,
         "category": "food",
         "brand": "Tang",
-        "tags": ["powdered","drink","single-serve","orange"],
-        "stock": 20,
-        "description": "Tang orange single-serve 14g sachet.",
-        "image_url": "images/food/powdered-drinks/tang-orange-14g.jpg",
-        "image_webp": "images/food/powdered-drinks/tang-orange-14g.webp"
+        "tags": ["powdered","drink","tang","orange"],
+        "stock": 10,
+        "description": "Tang orange single-serve 19g sachet.",
+        "image_url": "images/food/powdered-drinks/tang-orange-19g.jpg",
+        "image_webp": "images/food/powdered-drinks/tang-orange-19g.webp"
     },
     {
         "id": "2018",
-        "name": "Tang Grapes 19g",
+        "name": "Tang Dalandan 19g",
         "price": 30.00,
         "category": "food",
         "brand": "Tang",
-        "tags": ["powdered","drink","single-serve","grapes"],
-        "stock": 20,
-        "description": "Tang grapes 19g single-serve.",
-        "image_url": "images/food/powdered-drinks/tang-grapes-19g.jpg",
-        "image_webp": "images/food/powdered-drinks/tang-grapes-19g.webp"
+        "tags": ["powdered","drink","tang","dalandan"],
+        "stock": 10,
+        "description": "Tang dalandan 19g single-serve.",
+        "image_url": "images/food/powdered-drinks/tang-dalandan-19g.jpg",
+        "image_webp": "images/food/powdered-drinks/tang-dalandan-19g.webp"
     },
     {
         "id": "2019",
-        "name": "Tang Pomelo 19g",
+        "name": "Tang Mango 19g",
         "price": 30.00,
         "category": "food",
         "brand": "Tang",
-        "tags": ["powdered","drink","single-serve","pomelo"],
-        "stock": 20,
-        "description": "Tang pomelo 19g single-serve.",
-        "image_url": "images/food/powdered-drinks/tang-pomelo-19g.jpg",
-        "image_webp": "images/food/powdered-drinks/tang-pomelo-19g.webp"
+        "tags": ["powdered","drink","tang","mango"],
+        "stock": 10,
+        "description": "Tang mango 19g single-serve.",
+        "image_url": "images/food/powdered-drinks/tang-mango-19g.jpg",
+        "image_webp": "images/food/powdered-drinks/tang-mango-19g.webp"
     },
     {
         "id": "2020",
@@ -372,8 +384,8 @@
         "price": 30.00,
         "category": "food",
         "brand": "Tang",
-        "tags": ["powdered","drink","single-serve","strawberry"],
-        "stock": 20,
+        "tags": ["powdered","drink","tang","strawberry"],
+        "stock": 10,
         "description": "Tang strawberry 19g single-serve.",
         "image_url": "images/food/powdered-drinks/tang-strawberry-19g.jpg",
         "image_webp": "images/food/powdered-drinks/tang-strawberry-19g.webp"
@@ -382,11 +394,11 @@
     {
         "id": "3001",
         "name": "Silver Swan Soy Sauce 350ml",
-        "price": 28.00,
+        "price": 25.00,
         "category": "food",
         "brand": "Silver Swan",
         "tags": ["spices","condiment","soy"],
-        "stock": 10,
+        "stock": 5,
         "description": "Silver Swan Soy Sauce 350ml",
         "image_url": "images/food/spices-n-condiments/silver-swan-soy-350ml.jpg",
         "image_webp": "images/food/spices-n-condiments/silver-swan-soy-350ml.webp"
@@ -394,11 +406,11 @@
     {
         "id": "3002",
         "name": "Silver Swan Vinegar 350ml",
-        "price": 28.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Silver Swan",
         "tags": ["spices","condiment","vinegar"],
-        "stock": 10,
+        "stock": 0,
         "description": "Silver Swan Vinegar 350ml",
         "image_url": "images/food/spices-n-condiments/silver-swan-vinegar-350ml.jpg",
         "image_webp": "images/food/spices-n-condiments/silver-swan-vinegar-350ml.webp"
@@ -418,7 +430,7 @@
     {
         "id": "3004",
         "name": "Silver Swan Vinegar 200ml",
-        "price": 15.00,
+        "price": 13.00,
         "category": "food",
         "brand": "Silver Swan",
         "tags": ["spices","condiment","vinegar"],
@@ -430,11 +442,11 @@
     {
         "id": "3005",
         "name": "UFC Banana Catsup 320g",
-        "price": 38.00,
+        "price": 0.00,
         "category": "food",
         "brand": "UFC",
         "tags": ["spices","condiment","catsup"],
-        "stock": 10,
+        "stock": 0,
         "description": "UFC Banana Catsup 320g",
         "image_url": "images/food/spices-n-condiments/ufc-catsup-320g.jpg",
         "image_webp": "images/food/spices-n-condiments/ufc-catsup-320g.webp"
@@ -442,11 +454,11 @@
     {
         "id": "3006",
         "name": "Beer na Beer Pilsen Grande",
-        "price": 120.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Beer na Beer",
         "tags": ["liquor","beer"],
-        "stock": 10,
+        "stock": 0,
         "description": "Beer na Beer Pilsen Grande",
         "image_url": "images/food/liquor-n-beverages/pilsen-grande.jpg",
         "image_webp": "images/food/liquor-n-beverages/pilsen-grande.webp"
@@ -454,11 +466,11 @@
     {
         "id": "3007",
         "name": "Red Horse Beer 1L",
-        "price": 120.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Red Horse",
         "tags": ["liquor","beer"],
-        "stock": 10,
+        "stock": 0,
         "description": "Red Horse Beer 1L",
         "image_url": "images/food/liquor-n-beverages/red-horse-beer-litro.jpg",
         "image_webp": "images/food/liquor-n-beverages/red-horse-beer-litro.webp"
@@ -466,11 +478,11 @@
     {
         "id": "3008",
         "name": "Tanduay Rhum 5 Years 375ml",
-        "price": 75.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Tanduay",
         "tags": ["liquor","rhum"],
-        "stock": 10,
+        "stock": 0,
         "description": "Tanduay Rhum 5 Years 375ml",
         "image_url": "images/food/liquor-n-beverages/tanduay-rhum-5years-375ml.jpg",
         "image_webp": "images/food/liquor-n-beverages/tanduay-rhum-5years-375ml.webp"
@@ -478,11 +490,11 @@
     {
         "id": "3009",
         "name": "Tanduay Rhum 5 Years 750ml",
-        "price": 180.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Tanduay",
         "tags": ["liquor","rhum"],
-        "stock": 5,
+        "stock": 0,
         "description": "Tanduay Rhum 5 Years 750ml",
         "image_url": "images/food/liquor-n-beverages/tanduay-rhum-5years-750ml.jpg",
         "image_webp": "images/food/liquor-n-beverages/tanduay-rhum-5years-750ml.webp"
@@ -490,11 +502,11 @@
     {
         "id": "3010",
         "name": "Tanduay Rhum Light 750ml",
-        "price": 150.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Tanduay",
         "tags": ["liquor","rhum","light"],
-        "stock": 5,
+        "stock": 0,
         "description": "Tanduay Rhum Light 750ml",
         "image_url": "images/food/liquor-n-beverages/tanduay-rhum-light-750ml.jpg",
         "image_webp": "images/food/liquor-n-beverages/tanduay-rhum-light-750ml.webp"
@@ -554,7 +566,7 @@
         "category": "food",
         "brand": "Mama Sita's",
         "tags": ["spices","marinade","bbq"],
-        "stock": 5,
+        "stock": 4,
         "description": "Mama Sita's BBQ Marinade 150ml",
         "image_url": "images/food/spices-n-condiments/mama-sitas-bbq-marinade-150ml.jpg",
         "image_webp": "images/food/spices-n-condiments/mama-sitas-bbq-marinade-150ml.webp"
@@ -562,11 +574,11 @@
     {
         "id": "3016",
         "name": "Mang Tomas 550g",
-        "price": 70.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Mang Tomas",
         "tags": ["spices","condiment","sauce"],
-        "stock": 10,
+        "stock": 0,
         "description": "Mang Tomas 550g",
         "image_url": "images/food/spices-n-condiments/mang-tomas-550g.jpg",
         "image_webp": "images/food/spices-n-condiments/mang-tomas-550g.webp"
@@ -574,11 +586,11 @@
     {
         "id": "3017",
         "name": "Mang Tomas Spicy 325g",
-        "price": 50.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Mang Tomas",
         "tags": ["spices","condiment","sauce","spicy"],
-        "stock": 10,
+        "stock": 0,
         "description": "Mang Tomas Spicy 325g",
         "image_url": "images/food/spices-n-condiments/mang-tomas-spicy-325g.jpg",
         "image_webp": "images/food/spices-n-condiments/mang-tomas-spicy-325g.webp"
@@ -586,11 +598,11 @@
     {
         "id": "3018",
         "name": "Mang Tomas Spicy 550g",
-        "price": 70.00,
+        "price": 0.00,
         "category": "food",
         "brand": "Mang Tomas",
         "tags": ["spices","condiment","sauce","spicy"],
-        "stock": 10,
+        "stock": 0,
         "description": "Mang Tomas Spicy 550g",
         "image_url": "images/food/spices-n-condiments/mang-tomas-spicy-550g.jpg",
         "image_webp": "images/food/spices-n-condiments/mang-tomas-spicy-550g.webp"
@@ -598,11 +610,11 @@
     {
         "id": "3019",
         "name": "UFC Banana Catsup 530g",
-        "price": 60.00,
+        "price": 0.00,
         "category": "food",
         "brand": "UFC",
         "tags": ["spices","condiment","catsup"],
-        "stock": 10,
+        "stock": 0,
         "description": "UFC Banana Catsup 530g",
         "image_url": "images/food/spices-n-condiments/ufc-catsup-530g.jpg",
         "image_webp": "images/food/spices-n-condiments/ufc-catsup-530g.webp"
@@ -610,25 +622,24 @@
     {
         "id": "3020",
         "name": "UFC Banana Catsup Spicy 320g",
-        "price": 50.00,
+        "price": 0.00,
         "category": "food",
         "brand": "UFC",
         "tags": ["spices","condiment","catsup","spicy"],
-        "stock": 10,
+        "stock": 0,
         "description": "UFC Banana Catsup Spicy 320g",
         "image_url": "images/food/spices-n-condiments/ufc-catsup-spicy-320g.jpg",
         "image_webp": "images/food/spices-n-condiments/ufc-catsup-spicy-320g.webp"
-    }
-,
+    },
     {
         "id": "3101",
         "name": "Today's 836g",
-        "price": 100.00,
+        "price": 0.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "Today's",
         "tags": ["canned","meat","preserved"],
-        "stock": 5,
+        "stock": 0,
         "description": "Today's canned meat 836g",
         "image_url": "images/food/canned-goods/today's-836g.jpg",
         "image_webp": "images/food/canned-goods/today's-836g.webp"
@@ -636,12 +647,12 @@
     {
         "id": "3102",
         "name": "555 Fried Sardines Bistek 155g",
-        "price": 40.00,
+        "price": 0.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "555",
         "tags": ["canned","sardines","fish"],
-        "stock": 10,
+        "stock": 0,
         "description": "555 Fried Sardines Bistek 155g",
         "image_url": "images/food/canned-goods/555-sardines-bistek-155g.jpg",
         "image_webp": "images/food/canned-goods/555-sardines-bistek-155g.webp"
@@ -654,7 +665,7 @@
         "subcategory": "Canned Goods",
         "brand": "555",
         "tags": ["canned","sardines","spicy","fish"],
-        "stock": 10,
+        "stock": 5,
         "description": "555 Fried Sardines Hot & Spicy 155g",
         "image_url": "images/food/canned-goods/555-sardines-fried-hot&spicy-155g.jpg",
         "image_webp": "images/food/canned-goods/555-sardines-fried-hot&spicy-155g.webp"
@@ -662,12 +673,12 @@
     {
         "id": "3104",
         "name": "555 Sardines Non-Spicy 155g",
-        "price": 28.00,
+        "price": 0.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "555",
         "tags": ["canned","sardines","fish"],
-        "stock": 10,
+        "stock": 0,
         "description": "555 Sardines Non-Spicy 155g",
         "image_url": "images/food/canned-goods/555-sardines-nonspicy-155g.jpg",
         "image_webp": "images/food/canned-goods/555-sardines-nonspicy-155g.webp"
@@ -680,7 +691,7 @@
         "subcategory": "Canned Goods",
         "brand": "555",
         "tags": ["canned","sardines","spanish","fish"],
-        "stock": 10,
+        "stock": 5,
         "description": "555 Spanish Sardines 155g",
         "image_url": "images/food/canned-goods/555-sardines-spanish-155g.jpg",
         "image_webp": "images/food/canned-goods/555-sardines-spanish-155g.webp"
@@ -688,12 +699,12 @@
     {
         "id": "3106",
         "name": "555 Sardines Spicy 155g",
-        "price": 28.00,
+        "price": 0.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "555",
         "tags": ["canned","sardines","spicy","fish"],
-        "stock": 10,
+        "stock": 0,
         "description": "555 Sardines Spicy 155g",
         "image_url": "images/food/canned-goods/555-sardines-spicy-155g.jpg",
         "image_webp": "images/food/canned-goods/555-sardines-spicy-155g.webp"
@@ -701,12 +712,12 @@
     {
         "id": "3107",
         "name": "555 Fried Sardines Tausi 155g",
-        "price": 40.00,
+        "price": 0.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "555",
         "tags": ["canned","sardines","tausi","fish"],
-        "stock": 10,
+        "stock": 0,
         "description": "555 Fried Sardines Tausi 155g",
         "image_url": "images/food/canned-goods/555-sardines-tausi-155g.jpg",
         "image_webp": "images/food/canned-goods/555-sardines-tausi-155g.webp"
@@ -714,7 +725,7 @@
     {
         "id": "3108",
         "name": "Century Tuna Non-Spicy 155g",
-        "price": 42.00,
+        "price": 0.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "Century",
@@ -727,12 +738,12 @@
     {
         "id": "3109",
         "name": "Century Tuna Spicy 155g",
-        "price": 42.00,
+        "price": 0.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "Century",
         "tags": ["canned","tuna","spicy","fish"],
-        "stock": 10,
+        "stock": 0,
         "description": "Century Tuna Spicy 155g",
         "image_url": "images/food/canned-goods/century-tuna-spicy-155g.jpg",
         "image_webp": "images/food/canned-goods/century-tuna-spicy-155g.webp"
@@ -740,12 +751,12 @@
     {
         "id": "3110",
         "name": "Mega Sardines Extra Hot 155g",
-        "price": 30.00,
+        "price": 33.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "Mega",
         "tags": ["canned","sardines","extra-hot","fish"],
-        "stock": 10,
+        "stock": 5,
         "description": "Mega Sardines Extra Hot 155g",
         "image_url": "images/food/canned-goods/mega-sardines-extrahot-155g.jpg",
         "image_webp": "images/food/canned-goods/mega-sardines-extrahot-155g.webp"
@@ -754,12 +765,12 @@
     {
         "id": "3111",
         "name": "Mega Sardines Non-Spicy 155g",
-        "price": 28.00,
+        "price": 32.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "Mega",
         "tags": ["canned","sardines","non-spicy","fish"],
-        "stock": 10,
+        "stock": 5,
         "description": "Mega Sardines Non-Spicy 155g",
         "image_url": "images/food/canned-goods/mega-sardines-nonspicy-155g.jpg",
         "image_webp": "images/food/canned-goods/mega-sardines-nonspicy-155g.webp"
@@ -767,12 +778,12 @@
     {
         "id": "3112",
         "name": "Mega Sardines Spicy 155g",
-        "price": 28.00,
+        "price": 32.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "Mega",
         "tags": ["canned","sardines","spicy","fish"],
-        "stock": 10,
+        "stock": 5,
         "description": "Mega Sardines Spicy 155g",
         "image_url": "images/food/canned-goods/mega-sardines-spicy-155g.jpg",
         "image_webp": "images/food/canned-goods/mega-sardines-spicy-155g.webp"
@@ -781,12 +792,12 @@
     {
         "id": "3113",
         "name": "Argentina Corned Beef 175g",
-        "price": 48.00,
+        "price": 0.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "Argentina",
         "tags": ["canned","corned beef","meat"],
-        "stock": 10,
+        "stock": 0,
         "description": "Argentina Corned Beef 175g",
         "image_url": "images/food/canned-goods/argentina-corned-beef-175g.jpg",
         "image_webp": "images/food/canned-goods/argentina-corned-beef-175g.webp"
@@ -794,12 +805,12 @@
     {
         "id": "3114",
         "name": "Argentina Meat Loaf 150g",
-        "price": 30.00,
+        "price": 0.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "Argentina",
         "tags": ["canned","meatloaf","meat"],
-        "stock": 10,
+        "stock": 0,
         "description": "Argentina Meat Loaf 150g",
         "image_url": "images/food/canned-goods/argentina-meatloaf-150g.jpg",
         "image_webp": "images/food/canned-goods/argentina-meatloaf-150g.webp"
@@ -807,7 +818,7 @@
     {
         "id": "3115",
         "name": "Bingo Corned Beef 100g",
-        "price": 20.00,
+        "price": 22.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "Bingo",
@@ -820,12 +831,12 @@
     {
         "id": "3116",
         "name": "Bingo Corned Beef 150g",
-        "price": 30.00,
+        "price": 0.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "Bingo",
         "tags": ["canned","corned beef","meat"],
-        "stock": 10,
+        "stock": 0,
         "description": "Bingo Corned Beef 150g",
         "image_url": "images/food/canned-goods/bingo-corned-beef-150g.jpg",
         "image_webp": "images/food/canned-goods/bingo-corned-beef-150g.webp"
@@ -833,12 +844,12 @@
     {
         "id": "3117",
         "name": "CDO Carne Norte Classic 150g",
-        "price": 50.00,
+        "price": 40.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "CDO",
         "tags": ["canned","corned beef","carne norte"],
-        "stock": 10,
+        "stock": 5,
         "description": "CDO Carne Norte Classic 150g",
         "image_url": "images/food/canned-goods/cdo-carnenorte-classic-150g.jpg",
         "image_webp": "images/food/canned-goods/cdo-carnenorte-classic-150g.webp"
@@ -846,12 +857,12 @@
     {
         "id": "3118",
         "name": "Holiday Vienna Sausage 90g",
-        "price": 32.00,
+        "price": 0.00,
         "category": "food",
         "subcategory": "Canned Goods",
         "brand": "Holiday",
         "tags": ["canned","vienna sausage","meat"],
-        "stock": 10,
+        "stock": 0,
         "description": "Holiday Vienna Sausage 90g",
         "image_url": "images/food/canned-goods/holiday-vienna-sausage-90g.jpg",
         "image_webp": "images/food/canned-goods/holiday-vienna-sausage-90g.webp"
@@ -859,13 +870,13 @@
     ,
     {
         "id": "3119",
-        "name": "Fita Crackers 30g",
+        "name": "Fita Crackers Plain 30g",
         "price": 9.00,
         "category": "food",
         "subcategory": "Biscuits",
         "brand": "Fita",
         "tags": ["biscuits","crackers","snack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Fita Crackers 30g",
         "image_url": "images/food/biscuits/fita-30g.jpg",
         "image_webp": "images/food/biscuits/fita-30g.webp"
@@ -873,12 +884,12 @@
     {
         "id": "3120",
         "name": "Hansel Sandwich Milk 31g",
-        "price": 10.00,
+        "price": 9.00,
         "category": "food",
         "subcategory": "Biscuits",
         "brand": "Hansel",
         "tags": ["biscuits","sandwich","milk","snack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Hansel Sandwich Milk 31g",
         "image_url": "images/food/biscuits/hansel-milk-31g.jpg",
         "image_webp": "images/food/biscuits/hansel-milk-31g.webp"
@@ -886,12 +897,12 @@
     {
         "id": "3121",
         "name": "Hansel Sandwich Mocha 31g",
-        "price": 10.00,
+        "price": 9.00,
         "category": "food",
         "subcategory": "Biscuits",
         "brand": "Hansel",
         "tags": ["biscuits","sandwich","mocha","snack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Hansel Sandwich Mocha 31g",
         "image_url": "images/food/biscuits/hansel-mocha-31g.jpg",
         "image_webp": "images/food/biscuits/hansel-mocha-31g.webp"
@@ -904,7 +915,7 @@
         "subcategory": "Biscuits",
         "brand": "Magic Creams",
         "tags": ["biscuits","cream","butter","snack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Magic Creams Butter 28g",
         "image_url": "images/food/biscuits/magic-creams-butter-28g.jpg",
         "image_webp": "images/food/biscuits/magic-creams-butter-28g.webp"
@@ -917,7 +928,7 @@
         "subcategory": "Biscuits",
         "brand": "Magic Creams",
         "tags": ["biscuits","cream","peanut","snack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Magic Creams Peanut Butter 28g",
         "image_url": "images/food/biscuits/magic-creams-peanutbutter-28g.jpg",
         "image_webp": "images/food/biscuits/magic-creams-peanutbutter-28g.webp"
@@ -930,33 +941,33 @@
         "subcategory": "Biscuits",
         "brand": "Rebisco",
         "tags": ["biscuits","chocolate","snack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Rebisco Choco 32g",
         "image_url": "images/food/biscuits/rebisco-choco-32g.jpg",
         "image_webp": "images/food/biscuits/rebisco-choco-32g.webp"
     },
     {
         "id": "3125",
-        "name": "Rebisco Crackers 32g",
+        "name": "Rebisco Crackers 33g",
         "price": 9.00,
         "category": "food",
         "subcategory": "Biscuits",
         "brand": "Rebisco",
         "tags": ["biscuits","crackers","snack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Rebisco Crackers 32g",
         "image_url": "images/food/biscuits/rebisco-crackers-32g.jpg",
         "image_webp": "images/food/biscuits/rebisco-crackers-32g.webp"
     },
     {
         "id": "3126",
-        "name": "Rebisco Butter Crackers 32g",
+        "name": "Rebisco Butter Crackers Sandwich 32g",
         "price": 9.00,
         "category": "food",
         "subcategory": "Biscuits",
         "brand": "Rebisco",
         "tags": ["biscuits","butter","crackers","snack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Rebisco Butter Crackers 32g",
         "image_url": "images/food/biscuits/rebisco-crackers-butter-32g.jpg",
         "image_webp": "images/food/biscuits/rebisco-crackers-butter-32g.webp"
@@ -969,7 +980,7 @@
         "subcategory": "Biscuits",
         "brand": "Rebisco",
         "tags": ["biscuits","honey","butter","crackers","snack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Rebisco Honey Butter Crackers 32g",
         "image_url": "images/food/biscuits/rebisco-crackers-honeybutter-32g.jpg",
         "image_webp": "images/food/biscuits/rebisco-crackers-honeybutter-32g.webp"
@@ -982,7 +993,7 @@
         "subcategory": "Biscuits",
         "brand": "Rebisco",
         "tags": ["biscuits","strawberry","crackers","snack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Rebisco Crackers Strawberry 32g",
         "image_url": "images/food/biscuits/rebisco-crackers-strawberry-32g.jpg",
         "image_webp": "images/food/biscuits/rebisco-crackers-strawberry-32g.webp"
@@ -995,7 +1006,7 @@
         "subcategory": "Biscuits",
         "brand": "SkyFlakes",
         "tags": ["biscuits","crackers","snack"],
-        "stock": 20,
+        "stock": 10,
         "description": "Sky Flakes 25g",
         "image_url": "images/food/biscuits/skyflakes-25g.jpg",
         "image_webp": "images/food/biscuits/skyflakes-25g.webp"
