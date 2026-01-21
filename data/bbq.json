@@ -1,0 +1,74 @@
+[ 
+  {
+    "id": "bbq-1",
+    "name": "BBQ Sauce",
+    "price": 4.50,
+    "category": "bbq",
+    "brand": "Fatima",
+    "tags": ["sauce","bbq","condiment"],
+    "stock": 12,
+    "description": "Classic BBQ sauce — sweet and smoky.",
+    "image_url": "images/main-img/bbq-1.png",
+    "image_webp": "images/main-img/bbq-1.webp"
+  },
+  {
+    "id": "bbq-2",
+    "name": "Grill Rub",
+    "price": 3.25,
+    "category": "bbq",
+    "brand": "Fatima",
+    "tags": ["rub","spices","bbq"],
+    "stock": 8,
+    "description": "All-purpose grill rub for meats and vegetables.",
+    "image_url": "images/main-img/bbq-2.png",
+    "image_webp": "images/main-img/bbq-2.webp"
+  },
+  {
+    "id": "bbq-3",
+    "name": "Charcoal Bag",
+    "price": 9.99,
+    "category": "bbq",
+    "brand": "Charcoal Co",
+    "tags": ["charcoal","fuel","grill"],
+    "stock": 0,
+    "description": "Premium lump charcoal for high-heat grilling.",
+    "image_url": "images/main-img/bbq-3.png",
+    "image_webp": "images/main-img/bbq-3.webp"
+  },
+  {
+    "id": "bbq-4",
+    "name": "Skewers Set",
+    "price": 6.00,
+    "category": "bbq",
+    "brand": "GrillWare",
+    "tags": ["skewers","accessories","bbq"],
+    "stock": 20,
+    "description": "Reusable stainless steel skewers set — ideal for kebabs.",
+    "image_url": "images/main-img/bbq-4.png",
+    "image_webp": "images/main-img/bbq-4.webp"
+  },
+  {
+    "id": "bbq-5",
+    "name": "BBQ Glaze",
+    "price": 5.50,
+    "category": "bbq",
+    "brand": "Fatima",
+    "tags": ["glaze","sauce","bbq"],
+    "stock": 5,
+    "description": "Sweet and sticky BBQ glaze for finishing meats.",
+    "image_url": "images/main-img/bbq-5.png",
+    "image_webp": "images/main-img/bbq-5.webp"
+  },
+  {
+    "id": "bbq-6",
+    "name": "Grill Brush",
+    "price": 7.00,
+    "category": "bbq",
+    "brand": "GrillWare",
+    "tags": ["brush","tool","bbq"],
+    "stock": 3,
+    "description": "Durable grill brush for cleaning grates.",
+    "image_url": "images/main-img/bbq-6.png",
+    "image_webp": "images/main-img/bbq-6.webp"
+  }
+]
