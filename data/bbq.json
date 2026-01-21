@@ -1,15 +1,15 @@
 [ 
   {
     "id": "bbq-1",
-    "name": "BBQ Sauce",
-    "price": 4.50,
+    "name": "Isaw",
+    "price": 10,
     "category": "bbq",
     "brand": "Fatima",
-    "tags": ["sauce","bbq","condiment"],
+    "tags": ["isaw","bbq","intestines"],
     "stock": 12,
-    "description": "Classic BBQ sauce — sweet and smoky.",
-    "image_url": "images/main-img/bbq-1.png",
-    "image_webp": "images/main-img/bbq-1.webp"
+    "description": "Classic isaw — sweet and smoky.",
+    "image_url": "images/bbq/isaw.jpg",
+    "image_webp": "images/bbq/isaw.webp"
   },
   {
     "id": "bbq-2",

@@ -78,7 +78,10 @@
             <!-- Item 1 -->
             <div class="product-card bg-white rounded-2xl shadow-sm p-4 flex flex-col" data-index="0">
                 <div class="h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                    <svg class="w-12 h-12 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v4a1 1 0 001 1h3m10-6v10a1 1 0 01-1 1h-3m-8 0h12"/></svg>
+                    <picture class="product-image w-full h-full flex items-center justify-center">
+                        <source class="product-webp" type="image/webp">
+                        <img class="product-img object-contain w-full h-full" src="" alt="" loading="lazy">
+                    </picture>
                 </div>
                 <div class="mt-3 flex items-baseline justify-between">
                     <div class="product-name text-sm font-medium">BBQ Sauce — Placeholder</div>
@@ -91,7 +94,10 @@
             <!-- Item 2 -->
             <div class="product-card bg-white rounded-2xl shadow-sm p-4 flex flex-col" data-index="1">
                 <div class="h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                    <svg class="w-12 h-12 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v4a1 1 0 001 1h3m10-6v10a1 1 0 01-1 1h-3m-8 0h12"/></svg>
+                    <picture class="product-image w-full h-full flex items-center justify-center">
+                        <source class="product-webp" type="image/webp">
+                        <img class="product-img object-contain w-full h-full" src="" alt="" loading="lazy">
+                    </picture>
                 </div>
                 <div class="mt-3 flex items-baseline justify-between">
                     <div class="product-name text-sm font-medium">Grill Rub — Placeholder</div>
@@ -104,7 +110,10 @@
             <!-- Item 3 -->
             <div class="product-card bg-white rounded-2xl shadow-sm p-4 flex flex-col" data-index="2">
                 <div class="h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                    <svg class="w-12 h-12 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v4a1 1 0 001 1h3m10-6v10a1 1 0 01-1 1h-3m-8 0h12"/></svg>
+                    <picture class="product-image w-full h-full flex items-center justify-center">
+                        <source class="product-webp" type="image/webp">
+                        <img class="product-img object-contain w-full h-full" src="" alt="" loading="lazy">
+                    </picture>
                 </div>
                 <div class="mt-3 flex items-baseline justify-between">
                     <div class="product-name text-sm font-medium">Charcoal Bag — Placeholder</div>
@@ -117,7 +126,10 @@
             <!-- Item 4 -->
             <div class="product-card bg-white rounded-2xl shadow-sm p-4 flex flex-col" data-index="3">
                 <div class="h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                    <svg class="w-12 h-12 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v4a1 1 0 001 1h3m10-6v10a1 1 0 01-1 1h-3m-8 0h12"/></svg>
+                    <picture class="product-image w-full h-full flex items-center justify-center">
+                        <source class="product-webp" type="image/webp">
+                        <img class="product-img object-contain w-full h-full" src="" alt="" loading="lazy">
+                    </picture>
                 </div>
                 <div class="mt-3 flex items-baseline justify-between">
                     <div class="product-name text-sm font-medium">Skewers Set — Placeholder</div>
@@ -130,7 +142,10 @@
             <!-- Item 5 -->
             <div class="product-card bg-white rounded-2xl shadow-sm p-4 flex flex-col" data-index="4">
                 <div class="h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                    <svg class="w-12 h-12 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v4a1 1 0 001 1h3m10-6v10a1 1 0 01-1 1h-3m-8 0h12"/></svg>
+                    <picture class="product-image w-full h-full flex items-center justify-center">
+                        <source class="product-webp" type="image/webp">
+                        <img class="product-img object-contain w-full h-full" src="" alt="" loading="lazy">
+                    </picture>
                 </div>
                 <div class="mt-3 flex items-baseline justify-between">
                     <div class="product-name text-sm font-medium">BBQ Glaze — Placeholder</div>
@@ -172,10 +187,29 @@
                     const nameEl = card.querySelector('.product-name');
                     const stockEl = card.querySelector('.stock-line');
                     const btn = card.querySelector('.add-to-cart-btn');
-                    if(prod && nameEl) nameEl.textContent = prod.name;
+                    if (prod && nameEl) nameEl.textContent = prod.name;
                     const priceEl = card.querySelector('.product-price');
-                    if(prod && priceEl) priceEl.textContent = '₱' + (Number(prod.price) || 0).toFixed(2);
-                    if(prod && stockEl) stockEl.textContent = 'Stock: ' + (prod.stock || 0);
+                    if (prod && priceEl) priceEl.textContent = '₱' + (Number(prod.price) || 0).toFixed(2);
+                    if (prod && stockEl) stockEl.textContent = 'Stock: ' + (prod.stock || 0);
+                    // Populate image sources if available
+                    const imgEl = card.querySelector('.product-img');
+                    const webpEl = card.querySelector('.product-webp');
+                    if (prod && imgEl) {
+                        if (webpEl && prod.image_webp) webpEl.setAttribute('srcset', prod.image_webp);
+                        if (prod.image_url) imgEl.setAttribute('src', prod.image_url);
+                        imgEl.setAttribute('alt', prod.name || 'Product image');
+                    }
+                    // Disable add button when out of stock
+                    if (prod && btn) {
+                        if (Number(prod.stock || 0) <= 0) {
+                            btn.disabled = true;
+                            btn.classList.add('opacity-50', 'cursor-not-allowed');
+                            if (stockEl) stockEl.textContent = 'Out of stock';
+                        } else {
+                            btn.disabled = false;
+                            btn.classList.remove('opacity-50', 'cursor-not-allowed');
+                        }
+                    }
                     if(!btn) return;
                     btn.addEventListener('click', function(){
                         if(!prod) {
