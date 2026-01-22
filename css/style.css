@@ -557,3 +557,20 @@ button:focus-visible, a:focus-visible {
     pointer-events: none;
 }
 
+/* Improve mobile touch behavior and remove tap highlight on supported browsers */
+button, a, .add-to-cart-btn, .category-tile, .product-card, .brand-item {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    touch-action: manipulation;
+}
+
+/* Ensure interactive elements meet minimum recommended touch target on all viewports */
+button, .add-to-cart-btn, .tile-add-btn, .brand-item, .category-tile {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Small screens: prevent accidental hover lift by disabling transform on active for large interactive tiles */
+@media (max-width: 640px) {
+    .category-tile, .brand-item, .product-card { transform: none !important; }
+}
+
