@@ -252,6 +252,8 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="js/supabase-client.js"></script>
     <script src="js/notifications.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/utils.js"></script>
@@ -304,16 +306,16 @@
                             try {
                                 window.showQuantityModal(prod, 1, function(qty){
                                     if(!qty || qty <= 0) return;
-                                    try { window.addToCart(prod, qty); } catch(e){ console.error(e); }
+                                    try { if (window.reserveThenAdd) { window.reserveThenAdd(prod, qty); } else { window.addToCart && window.addToCart(prod, qty); } } catch(e){ console.error(e); }
                                     try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {}
                                     if(window.notify && window.notify.success) window.notify.success('Added ' + qty + ' x ' + prod.name + ' to cart.');
                                 });
                             } catch(e) {
                                 console.error('Quantity modal failed, adding 1 instead', e);
-                                try { window.addToCart(prod, 1); if(window.notify && window.notify.success) window.notify.success('Added 1 x ' + prod.name + ' to cart.'); } catch(err){ console.error(err); }
+                                try { if (window.reserveThenAdd) { window.reserveThenAdd(prod, 1); if(window.notify && window.notify.success) window.notify.success('Added 1 x ' + prod.name + ' to cart.'); } else { window.addToCart && window.addToCart(prod, 1); if(window.notify && window.notify.success) window.notify.success('Added 1 x ' + prod.name + ' to cart.'); } } catch(err){ console.error(err); }
                             }
                         } else {
-                            try { window.addToCart(prod, 1); if(window.notify && window.notify.success) window.notify.success('Added 1 x ' + prod.name + ' to cart.'); } catch(e) { console.error(e); }
+                            try { if (window.reserveThenAdd) { window.reserveThenAdd(prod, 1); if(window.notify && window.notify.success) window.notify.success('Added 1 x ' + prod.name + ' to cart.'); } else { window.addToCart && window.addToCart(prod, 1); if(window.notify && window.notify.success) window.notify.success('Added 1 x ' + prod.name + ' to cart.'); } } catch(e) { console.error(e); }
                         }
                     });
                 });

@@ -5,17 +5,18 @@
   "main": "scripts/smoke-test.js",
   "scripts": {
     "start": "npx http-server -p 8000",
-  "smoke": "node scripts/smoke-test.js",
-  "convert-webp": "node scripts/convert-to-webp.js",
-  "gen-hero": "node scripts/generate-hero-crops.js",
-  "validate-data": "node scripts/validate-data.js"
+    "smoke": "node scripts/smoke-test.js",
+    "convert-webp": "node scripts/convert-to-webp.js",
+    "gen-hero": "node scripts/generate-hero-crops.js",
+    "validate-data": "node scripts/validate-data.js"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@supabase/supabase-js": "^2.91.0"
   },
   "devDependencies": {
-    "sharp": "^0.32.0",
-    "puppeteer": "^21.0.0"
+    "puppeteer": "^21.0.0",
+    "sharp": "^0.32.0"
   }
 }

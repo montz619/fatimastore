@@ -482,7 +482,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                             if (window.showQuantityModal) {
                                     window.showQuantityModal(it, 1, (qty) => {
                                         if (it.stock && qty > it.stock) { if (window.notify && window.notify.error) window.notify.error('Requested quantity exceeds available stock.'); else alert('Requested quantity exceeds available stock.'); return; }
-                                        if (window.addToCart) {
+                                        if (window.reserveThenAdd) {
+                                            window.reserveThenAdd({ id: it.id || null, name: it.name, price: it.price || 0, category }, qty).then(() => { if (window.notify && window.notify.success) window.notify.success(`Added ${qty} x ${it.name} to cart.`); try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {} });
+                                        } else if (window.addToCart) {
                                             window.addToCart({ id: it.id || null, name: it.name, price: it.price || 0, category }, qty);
                                             if (window.notify && window.notify.success) window.notify.success(`Added ${qty} x ${it.name} to cart.`);
                                             try { window.dispatchEvent(new Event('cart-updated')); } catch(e) {}

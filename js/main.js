@@ -212,13 +212,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // wire add button only when in stock
                 if (!addBtn.disabled) {
-                            addBtn.addEventListener('click', (e) => {
+                    addBtn.addEventListener('click', (e) => {
                         e.stopPropagation();
                         if (window.showQuantityModal) {
-                            window.showQuantityModal(product, 1, (qty) => { addToCart(product, qty); try { window.dispatchEvent(new Event('cart-updated')); } catch (e) {} if (window.notify && window.notify.success) window.notify.success(`Added ${qty} x ${product.name} to cart.`, { undo: () => { /* noop undo for now */ } }); });
+                            window.showQuantityModal(product, 1, (qty) => { 
+                                // attempt server reservation first
+                                if (window.reserveThenAdd) {
+                                    window.reserveThenAdd(product, qty).then(() => { try { window.dispatchEvent(new Event('cart-updated')); } catch (e) {} if (window.notify && window.notify.success) window.notify.success(`Added ${qty} x ${product.name} to cart.`, { undo: () => { /* noop undo for now */ } }); });
+                                } else {
+                                    addToCart(product, qty); try { window.dispatchEvent(new Event('cart-updated')); } catch (e) {} if (window.notify && window.notify.success) window.notify.success(`Added ${qty} x ${product.name} to cart.`, { undo: () => { /* noop undo for now */ } });
+                                }
+                            });
                         } else {
                             const qtyStr = prompt(`Enter quantity for "${product.name}" (available: ${product.stock}):`, '1');
-                            if (qtyStr === null) return; const qty = parseInt(qtyStr, 10); if (!qty || qty <= 0) { if (window.notify && window.notify.error) window.notify.error('Please enter a valid quantity.'); else alert('Please enter a valid quantity.'); return; } if (product.stock && qty > product.stock) { if (window.notify && window.notify.error) window.notify.error('Requested quantity exceeds available stock.'); else alert('Requested quantity exceeds available stock.'); return; } addToCart(product, qty); try { window.dispatchEvent(new Event('cart-updated')); } catch (e) {} if (window.notify && window.notify.success) window.notify.success(`Added ${qty} x ${product.name} to cart.`);
+                            if (qtyStr === null) return; const qty = parseInt(qtyStr, 10); if (!qty || qty <= 0) { if (window.notify && window.notify.error) window.notify.error('Please enter a valid quantity.'); else alert('Please enter a valid quantity.'); return; } if (product.stock && qty > product.stock) { if (window.notify && window.notify.error) window.notify.error('Requested quantity exceeds available stock.'); else alert('Requested quantity exceeds available stock.'); return; }
+                            if (window.reserveThenAdd) {
+                                window.reserveThenAdd(product, qty).then(() => { try { window.dispatchEvent(new Event('cart-updated')); } catch (e) {} if (window.notify && window.notify.success) window.notify.success(`Added ${qty} x ${product.name} to cart.`); });
+                            } else {
+                                addToCart(product, qty); try { window.dispatchEvent(new Event('cart-updated')); } catch (e) {} if (window.notify && window.notify.success) window.notify.success(`Added ${qty} x ${product.name} to cart.`);
+                            }
                         }
                     });
                 }
@@ -521,7 +533,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (existing) {
             existing.quantity = (existing.quantity || 0) + quantity;
         } else {
-            cart.push({ id: pid, name: product.name, price: product.price, quantity, category: product.category });
+            cart.push({ id: pid, name: product.name, price: product.price, quantity, category: product.category, reservation_id: product.reservation_id || product.__reservation_id || null });
         }
         saveCart(cart);
     // notify other parts of the app to update badges/UI
@@ -532,6 +544,33 @@ document.addEventListener('DOMContentLoaded', () => {
     window.getCart = getCart;
     window.saveCart = saveCart;
     window.addToCart = addToCart;
+
+    // Try to reserve item on server via Supabase RPC, then add to cart.
+    async function reserveThenAdd(product, quantity, ttlSeconds = 900) {
+        try {
+            if (window.supabase && product && product.id) {
+                const { data, error } = await window.supabase.rpc('reserve_item', { p_product_id: product.id, p_qty: quantity, p_ttl_seconds: ttlSeconds });
+                if (error) {
+                    if (window.notify && window.notify.error) window.notify.error(error.message || 'Reservation failed');
+                    return;
+                }
+                const row = Array.isArray(data) ? data[0] : data;
+                if (row && row.ok) {
+                    try { product.reservation_id = row.reservation_id || row.reservation_id; } catch (e) {}
+                    addToCart(product, quantity);
+                    return;
+                } else {
+                    if (window.notify && window.notify.error) window.notify.error(row && row.message ? row.message : 'Reservation failed');
+                    return;
+                }
+            }
+        } catch (e) {
+            console.error('reserveThenAdd error', e);
+        }
+        // fallback: just add locally
+        addToCart(product, quantity);
+    }
+    window.reserveThenAdd = reserveThenAdd;
 
     /**
      * Shows a modal with the detailed product information.
