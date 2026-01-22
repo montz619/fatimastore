@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* --- Global search: attaches to any input.search-input and shows results in a modal --- */
     async function fetchAllProductsForSearch() {
         try {
-            const dataFiles = ['./data/food.json', './data/school-supplies.json', './data/general-merchandise.json'];
+            const dataFiles = ['./data/food.json', './data/school-supplies.json', './data/general-merchandise.json', './data/bbq.json'];
             const responses = await Promise.all(dataFiles.map(path => fetch(path).catch(() => null)));
             const jsonPromises = responses.map(r => (r && r.ok) ? r.json() : []);
             const arrays = await Promise.all(jsonPromises);
