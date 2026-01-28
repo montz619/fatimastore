@@ -26,7 +26,7 @@
   {
     "id": "bbq-3",
     "name": "Chicken Feet Adidas",
-    "price": 7,
+    "price": 10,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["adidas","chicken","feet","bbq"],
@@ -38,7 +38,7 @@
   {
     "id": "bbq-4",
     "name": "Ulo ng Manok",
-    "price": 10,
+    "price": 12,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["skewers","ulo","bbq"],
@@ -62,7 +62,7 @@
   {
     "id": "bbq-6",
     "name": "Atay ng Manok",
-    "price": 10,
+    "price": 12,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["atay","liver","bbq","chicken"],
@@ -86,7 +86,7 @@
   {
     "id": "bbq-8",
     "name": "Chicken Pecho",
-    "price": 18,
+    "price": 90,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["pecho","bbq","chicken"],
@@ -110,7 +110,7 @@
   {
     "id": "bbq-10",
     "name": "Grilled Pusit",
-    "price": 60,
+    "price": 80,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["pusit","squid","bbq"],
@@ -122,7 +122,7 @@
   {
     "id": "bbq-11",
     "name": "Mais",
-    "price": 25,
+    "price": 30,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["corn","mais","bbq"],
