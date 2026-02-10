@@ -6,7 +6,7 @@
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["isaw","bbq","intestines","chicken"],
-    "stock": 12,
+    "stock": 50,
     "description": "Classic isaw — sweet and smoky.",
     "image_url": "images/bbq/isaw.jpg",
     "image_webp": "images/bbq/isaw.webp"
@@ -14,11 +14,11 @@
   {
     "id": "bbq-2",
     "name": "Chicken Baticolon",
-    "price": 10,
+    "price": 15,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["batikolon","baticolon","bbq","gizzards","chicken"],
-    "stock": 8,
+    "stock": 26,
     "description": "Delicious chicken baticolon skewers.",
     "image_url": "images/bbq/baticolon.jpg",
     "image_webp": "images/bbq/baticolon.webp"
@@ -26,11 +26,11 @@
   {
     "id": "bbq-3",
     "name": "Chicken Feet Adidas",
-    "price": 10,
+    "price": 15,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["adidas","chicken","feet","bbq"],
-    "stock": 10,
+    "stock": 17,
     "description": "Tender chicken feet marinated and grilled to perfection.",
     "image_url": "images/bbq/adidas.jpg",
     "image_webp": "images/bbq/adidas.webp"
@@ -38,11 +38,11 @@
   {
     "id": "bbq-4",
     "name": "Ulo ng Manok",
-    "price": 12,
+    "price": 15,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["skewers","ulo","bbq"],
-    "stock": 20,
+    "stock": 14,
     "description": "Grilled chicken heads on skewers.",
     "image_url": "images/bbq/ulo-ng-manok.jpg",
     "image_webp": "images/bbq/ulo-ng-manok.webp"
@@ -50,11 +50,11 @@
   {
     "id": "bbq-5",
     "name": "Hotdog",
-    "price": 12,
+    "price": 0,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["hotdog","chicken","bbq"],
-    "stock": 5,
+    "stock":0,
     "description": "Juicy grilled chicken hotdogs.",
     "image_url": "images/bbq/hotdog.jpg",
     "image_webp": "images/bbq/hotdog.webp"
@@ -62,11 +62,11 @@
   {
     "id": "bbq-6",
     "name": "Atay ng Manok",
-    "price": 12,
+    "price": 25,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["atay","liver","bbq","chicken"],
-    "stock": 3,
+    "stock": 20,
     "description": "Savory grilled chicken liver skewers.",
     "image_url": "images/bbq/atay.jpg",
     "image_webp": "images/bbq/atay.webp"
@@ -74,11 +74,11 @@
   {
     "id": "bbq-7",
     "name": "Chicken Paa",
-    "price": 80,
+    "price": 0,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["chicken","paa","bbq"],
-    "stock": 10,
+    "stock": 0,
     "description": "Grilled chicken feet marinated in special sauce.",
     "image_url": "images/bbq/paa.jpg",
     "image_webp": "images/bbq/paa.webp"
@@ -86,11 +86,11 @@
   {
     "id": "bbq-8",
     "name": "Chicken Pecho",
-    "price": 90,
+    "price": 0,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["pecho","bbq","chicken"],
-    "stock": 7,
+    "stock": 0,
     "description": "Tender grilled chicken breast skewers.",
     "image_url": "images/bbq/pecho.jpg",
     "image_webp": "images/bbq/pecho.webp"
@@ -98,37 +98,37 @@
   {
     "id": "bbq-9",
     "name": "Grilled Bangus",
-    "price": 80,
+    "price": 0,
     "category": "bbq",
     "brand": "Grilled Food Items",
     "tags": ["bangus","fish","bbq"],
-    "stock": 25,
+    "stock": 0,
     "description": "Grilled bangus with a hint of spices.",
     "image_url": "images/bbq/bangus.jpg",
     "image_webp": "images/bbq/bangus.webp"
   },
   {
     "id": "bbq-10",
-    "name": "Grilled Pusit",
-    "price": 80,
+    "name": "Leeg ng Manok",
+    "price": 15,
     "category": "bbq",
     "brand": "Grilled Food Items",
-    "tags": ["pusit","squid","bbq"],
-    "stock": 6,
-    "description": "Savory grilled pusit with a hint of spices.",
-    "image_url": "images/bbq/pusit.jpg",
-    "image_webp": "images/bbq/pusit.webp"
+    "tags": ["leeg","manok","bbq"],
+    "stock": 16,
+    "description": "Savory grilled leeg ng manok with a hint of spices.",
+    "image_url": "images/bbq/leeg.jpg",
+    "image_webp": "images/bbq/leeg.webp"
   },
   {
     "id": "bbq-11",
-    "name": "Mais",
-    "price": 30,
+    "name": "Chicken Skin",
+    "price": 10,
     "category": "bbq",
     "brand": "Grilled Food Items",
-    "tags": ["corn","mais","bbq"],
-    "stock": 14,
-    "description": "Grilled corn on the cob with butter and spices.",
-    "image_url": "images/bbq/mais.jpg",
-    "image_webp": "images/bbq/mais.webp"
+    "tags": ["chicken","skin","bbq"],
+    "stock": 27,
+    "description": "Grilled chicken skin with a hint of spices.",
+    "image_url": "images/bbq/chicken-skin.jpg",
+    "image_webp": "images/bbq/chicken-skin.webp"
   }
 ]
