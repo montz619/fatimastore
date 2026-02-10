@@ -7,7 +7,7 @@
 		"subcategory": "Bathing Cleaning Materials",
 		"brand": "Bioderm",
 		"tags": ["soap","bathing","bioderm"],
-		"stock": 3,
+		"stock": 0,
 		"description": "Bioderm Coolness 135g",
 		"image_url": "images/general-merch/bathing/bioderm-coolness-135g.jpg",
 		"image_webp": "images/general-merch/bathing/bioderm-coolness-135g.webp"
@@ -20,7 +20,7 @@
 		"subcategory": "Bathing Cleaning Materials",
 		"brand": "Bioderm",
 		"tags": ["soap","bathing","bioderm","travel"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Bioderm Coolness 60g",
 		"image_url": "images/general-merch/bathing/bioderm-coolness-60g.jpg",
 		"image_webp": "images/general-merch/bathing/bioderm-coolness-60g.webp"
@@ -33,7 +33,7 @@
 		"subcategory": "Bathing Cleaning Materials",
 		"brand": "Bioderm",
 		"tags": ["soap","bathing","bioderm"],
-		"stock": 3,
+		"stock": 0,
 		"description": "Bioderm Freshen 135g",
 		"image_url": "images/general-merch/bathing/bioderm-freshen-135g.jpg",
 		"image_webp": "images/general-merch/bathing/bioderm-freshen-135g.webp"
@@ -46,7 +46,7 @@
 		"subcategory": "Bathing Cleaning Materials",
 		"brand": "Bioderm",
 		"tags": ["soap","bathing","bioderm","travel"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Bioderm Freshen 60g",
 		"image_url": "images/general-merch/bathing/bioderm-freshen-60g.jpg",
 		"image_webp": "images/general-merch/bathing/bioderm-freshen-60g.webp"
@@ -59,7 +59,7 @@
 		"subcategory": "Bathing Cleaning Materials",
 		"brand": "Bioderm",
 		"tags": ["soap","bathing","bioderm","pink"],
-		"stock": 3,
+		"stock": 0,
 		"description": "Bioderm Pink Bloom 135g",
 		"image_url": "images/general-merch/bathing/bioderm-pinkbloom-135g.jpg",
 		"image_webp": "images/general-merch/bathing/bioderm-pinkbloom-135g.webp"
@@ -72,7 +72,7 @@
 		"subcategory": "Bathing Cleaning Materials",
 		"brand": "Bioderm",
 		"tags": ["soap","bathing","bioderm","pink","travel"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Bioderm Pink Bloom 60g",
 		"image_url": "images/general-merch/bathing/bioderm-pinkbloom-60g.jpg",
 		"image_webp": "images/general-merch/bathing/bioderm-pinkbloom-60g.webp"
@@ -111,7 +111,7 @@
 		"subcategory": "Bathing Cleaning Materials",
 		"brand": "Safeguard",
 		"tags": ["soap","safeguard","fresh","travel"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Safeguard Fresh Green 60g",
 		"image_url": "images/general-merch/bathing/safeguard-freshgreen-60g.jpg",
 		"image_webp": "images/general-merch/bathing/safeguard-freshgreen-60g.webp"
@@ -137,7 +137,7 @@
 		"subcategory": "Bathing Cleaning Materials",
 		"brand": "Safeguard",
 		"tags": ["soap","safeguard","floral","travel"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Safeguard Floral Pink 60g",
 		"image_url": "images/general-merch/bathing/safeguard-floralpink-60g.jpg",
 		"image_webp": "images/general-merch/bathing/safeguard-floralpink-60g.webp"
@@ -163,7 +163,7 @@
 		"subcategory": "Bathing Cleaning Materials",
 		"brand": "Sunsilk",
 		"tags": ["shampoo","sachet","sunsilk"],
-		"stock": 12,
+		"stock": 0,
 		"description": "Sunsilk Smooth and Manageable 15ml",
 		"image_url": "images/general-merch/bathing/sunsilk-pink-sachet.jpg",
 		"image_webp": "images/general-merch/bathing/sunsilk-pink-sachet.webp"
@@ -202,7 +202,7 @@
 		"subcategory": "Bathing Cleaning Materials",
 		"brand": "Head & Shoulders",
 		"tags": ["shampoo","sachet","head-and-shoulders","menthol"],
-		"stock": 12,
+		"stock": 0,
 		"description": "Head and Shoulders Cool Menthol 12ml",
 		"image_url": "images/general-merch/bathing/headnshoulders-menthol-sachet.jpg",
 		"image_webp": "images/general-merch/bathing/headnshoulders-menthol-sachet.webp"
@@ -215,7 +215,7 @@
 		"subcategory": "Bathing Cleaning Materials",
 		"brand": "Creamsilk",
 		"tags": ["shampoo","sachet","creamsilk"],
-		"stock": 12,
+		"stock": 0,
 		"description": "Creamsilk Standout Straight Sachet",
 		"image_url": "images/general-merch/bathing/creamsilk-sachet.jpg",
 		"image_webp": "images/general-merch/bathing/creamsilk-sachet.webp"
@@ -255,7 +255,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Zonrox",
 		"tags": ["bleach","zonrox","laundry"],
-		"stock": 5,
+		"stock": 0,
 		"description": "Zonrox Original 500ml",
 		"image_url": "images/general-merch/laundry/zonrox-orig-500ml.jpg",
 		"image_webp": "images/general-merch/laundry/zonrox-orig-500ml.webp"
@@ -268,7 +268,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Zonrox",
 		"tags": ["bleach","zonrox","laundry"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Zonrox Original 250ml",
 		"image_url": "images/general-merch/laundry/zonrox-orig-250ml.jpg",
 		"image_webp": "images/general-merch/laundry/zonrox-orig-250ml.webp"
@@ -281,7 +281,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Zonrox",
 		"tags": ["bleach","zonrox","laundry"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Zonrox Original 100ml",
 		"image_url": "images/general-merch/laundry/zonrox-orig-100ml.jpg",
 		"image_webp": "images/general-merch/laundry/zonrox-orig-100ml.webp"
@@ -294,7 +294,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Zonrox",
 		"tags": ["bleach","zonrox","color-safe","laundry"],
-		"stock": 5,
+		"stock": 0,
 		"description": "Zonrox Color Safe 500ml",
 		"image_url": "images/general-merch/laundry/zonrox-colorsafe-500ml.jpg",
 		"image_webp": "images/general-merch/laundry/zonrox-colorsafe-500ml.webp"
@@ -307,7 +307,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Zonrox",
 		"tags": ["bleach","zonrox","color-safe","laundry"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Zonrox Color Safe 225ml",
 		"image_url": "images/general-merch/laundry/zonrox-colorsafe-225ml.jpg",
 		"image_webp": "images/general-merch/laundry/zonrox-colorsafe-225ml.webp"
@@ -320,7 +320,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Zonrox",
 		"tags": ["bleach","zonrox","color-safe","laundry"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Zonrox Color Safe 95ml",
 		"image_url": "images/general-merch/laundry/zonrox-colorsafe-95ml.jpg",
 		"image_webp": "images/general-merch/laundry/zonrox-colorsafe-95ml.webp"
@@ -333,7 +333,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Wings",
 		"tags": ["detergent","wings","laundry","sachet"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Wings Summer Sunshine 70g",
 		"image_url": "images/general-merch/laundry/wings-summersunshine-70g.jpg",
 		"image_webp": "images/general-merch/laundry/wings-summersunshine-70g.webp"
@@ -346,7 +346,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Wings",
 		"tags": ["detergent","wings","laundry","sachet"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Wings Floral Fresh 70g",
 		"image_url": "images/general-merch/laundry/wings-floralfresh-70g.jpg",
 		"image_webp": "images/general-merch/laundry/wings-floralfresh-70g.webp"
@@ -359,7 +359,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Wings",
 		"tags": ["detergent","wings","laundry","sachet"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Wings Calamansi 70g",
 		"image_url": "images/general-merch/laundry/wings-calamansi-70g.jpg",
 		"image_webp": "images/general-merch/laundry/wings-calamansi-70g.webp"
@@ -372,7 +372,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Surf",
 		"tags": ["detergent","surf","laundry","sachet"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Surf Sun Fresh 65g",
 		"image_url": "images/general-merch/laundry/surf-sunfresh-65g.jpg",
 		"image_webp": "images/general-merch/laundry/surf-sunfresh-65g.webp"
@@ -386,7 +386,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Surf",
 		"tags": ["detergent","surf","laundry","sachet","rose"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Surf Rose Fresh 65g",
 		"image_url": "images/general-merch/laundry/surf-rosefresh-65g.jpg",
 		"image_webp": "images/general-merch/laundry/surf-rosefresh-65g.webp"
@@ -399,7 +399,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Surf",
 		"tags": ["detergent","surf","laundry","sachet","kalamansi"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Surf Kalamansi 65g",
 		"image_url": "images/general-merch/laundry/surf-kalamansi-65g.jpg",
 		"image_webp": "images/general-merch/laundry/surf-kalamansi-65g.webp"
@@ -412,7 +412,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Calla",
 		"tags": ["detergent","calla","laundry","sachet","rose"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Calla Rose Garden 45g",
 		"image_url": "images/general-merch/laundry/calla-rosegarden-45g.jpg",
 		"image_webp": "images/general-merch/laundry/calla-rosegarden-45g.webp"
@@ -425,7 +425,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Calla",
 		"tags": ["detergent","calla","laundry","sachet","kalamansi"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Calla Kalamansi 45g",
 		"image_url": "images/general-merch/laundry/calla-kalamansi-45g.jpg",
 		"image_webp": "images/general-merch/laundry/calla-kalamansi-45g.webp"
@@ -438,7 +438,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Calla",
 		"tags": ["detergent","calla","laundry","sachet","floral"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Calla Floral Fresh 45g",
 		"image_url": "images/general-merch/laundry/calla-floralfresh-45g.jpg",
 		"image_webp": "images/general-merch/laundry/calla-floralfresh-45g.webp"
@@ -451,7 +451,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Ariel",
 		"tags": ["detergent","ariel","downy","laundry"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Ariel with Downy 64g",
 		"image_url": "images/general-merch/laundry/ariel-withdowny-64g.jpg",
 		"image_webp": "images/general-merch/laundry/ariel-withdowny-64g.webp"
@@ -464,7 +464,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Tide",
 		"tags": ["detergent","tide","laundry"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Tide Original 69g",
 		"image_url": "images/general-merch/laundry/tide-powder-69g.jpg",
 		"image_webp": "images/general-merch/laundry/tide-powder-69g.webp"
@@ -477,7 +477,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Downy",
 		"tags": ["downy","fabric-softener","antibac","laundry"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Downy Antibac 26ml",
 		"image_url": "images/general-merch/laundry/downy-antibac-26ml.jpg",
 		"image_webp": "images/general-merch/laundry/downy-antibac-26ml.webp"
@@ -490,7 +490,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Downy",
 		"tags": ["downy","fabric-softener","garden-bloom","laundry"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Downy Garden Bloom 26ml",
 		"image_url": "images/general-merch/laundry/downy-gardenbloom-26ml.jpg",
 		"image_webp": "images/general-merch/laundry/downy-gardenbloom-26ml.webp"
@@ -503,7 +503,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Downy",
 		"tags": ["downy","fabric-softener","perfume","laundry"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Downy Mystique Perfume 33ml",
 		"image_url": "images/general-merch/laundry/downy-mystique-33ml.jpg",
 		"image_webp": "images/general-merch/laundry/downy-mystique-33ml.webp"
@@ -517,7 +517,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Downy",
 		"tags": ["downy","fabric-softener","sunrise","laundry"],
-		"stock": 20,
+		"stock": 0,
 		"description": "Downy Sunrise Fresh 26ml",
 		"image_url": "images/general-merch/laundry/downy-sunrisefresh-26ml.jpg",
 		"image_webp": "images/general-merch/laundry/downy-sunrisefresh-26ml.webp"
@@ -530,7 +530,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Surf",
 		"tags": ["detergent","surf","bar","blossom"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Surf Bar Blossom Fresh 120g",
 		"image_url": "images/general-merch/laundry/surfbar-blossomfresh-120g.jpg",
 		"image_webp": "images/general-merch/laundry/surfbar-blossomfresh-120g.webp"
@@ -543,7 +543,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Surf",
 		"tags": ["detergent","surf","bar","kalamansi"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Surf Bar Kalamansi 120g",
 		"image_url": "images/general-merch/laundry/surfbar-kalamansi-120g.jpg",
 		"image_webp": "images/general-merch/laundry/surfbar-kalamansi-120g.webp"
@@ -556,7 +556,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Surf",
 		"tags": ["detergent","surf","bar","sunfresh"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Surf Bar Sun Fresh 120g",
 		"image_url": "images/general-merch/laundry/surfbar-sunfresh-120g.jpg",
 		"image_webp": "images/general-merch/laundry/surfbar-sunfresh-120g.webp"
@@ -569,7 +569,7 @@
 		"subcategory": "Laundry Cleaning Materials",
 		"brand": "Tide",
 		"tags": ["detergent","tide","bar","taba"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Tide Taba Bar Original 125g",
 		"image_url": "images/general-merch/laundry/tidebar-tabaorigscent-125g.jpg",
 		"image_webp": "images/general-merch/laundry/tidebar-tabaorigscent-125g.webp"
@@ -584,7 +584,7 @@
 		"subcategory": "Kitchen Cleaning Materials",
 		"brand": "Joy",
 		"tags": ["dishwashing","joy","calamansi","kitchen"],
-		"stock": 5,
+		"stock": 0,
 		"description": "Joy Calamansi 250ml",
 		"image_url": "images/general-merch/kitchen/joy-calamansi-250ml.jpg",
 		"image_webp": "images/general-merch/kitchen/joy-calamansi-250ml.webp"
@@ -597,7 +597,7 @@
 		"subcategory": "Kitchen Cleaning Materials",
 		"brand": "Joy",
 		"tags": ["dishwashing","joy","calamansi","sachet","kitchen"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Joy Calamansi 40ml",
 		"image_url": "images/general-merch/kitchen/joy-calamansi-40ml.jpg",
 		"image_webp": "images/general-merch/kitchen/joy-calamansi-40ml.webp"
@@ -610,7 +610,7 @@
 		"subcategory": "Kitchen Cleaning Materials",
 		"brand": "Joy",
 		"tags": ["dishwashing","joy","lemon","kitchen"],
-		"stock": 5,
+		"stock": 0,
 		"description": "Joy Lemon 250ml",
 		"image_url": "images/general-merch/kitchen/joy-lemon-250ml.jpg",
 		"image_webp": "images/general-merch/kitchen/joy-lemon-250ml.webp"
@@ -623,7 +623,7 @@
 		"subcategory": "Kitchen Cleaning Materials",
 		"brand": "Joy",
 		"tags": ["dishwashing","joy","lemon","sachet","kitchen"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Joy Lemon 40ml",
 		"image_url": "images/general-merch/kitchen/joy-lemon-40ml.jpg",
 		"image_webp": "images/general-merch/kitchen/joy-lemon-40ml.webp"
@@ -636,7 +636,7 @@
 		"subcategory": "Kitchen Cleaning Materials",
 		"brand": "Smart",
 		"tags": ["dishwashing","paste","smart","calamansi","kitchen"],
-		"stock": 5,
+		"stock": 0,
 		"description": "Smart Dishwashing Paste Calamansi 400g",
 		"image_url": "images/general-merch/kitchen/smart-dishwashing-paste-calamansi-400g.jpg",
 		"image_webp": "images/general-merch/kitchen/smart-dishwashing-paste-calamansi-400g.webp"
@@ -649,7 +649,7 @@
 		"subcategory": "Kitchen Cleaning Materials",
 		"brand": "Smart",
 		"tags": ["dishwashing","paste","smart","calamansi","kitchen"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Smart Dishwashing Paste Calamansi 200g",
 		"image_url": "images/general-merch/kitchen/smart-dishwashing-paste-calamansi-200g.jpg",
 		"image_webp": "images/general-merch/kitchen/smart-dishwashing-paste-calamansi-200g.webp"
@@ -662,7 +662,7 @@
 		"subcategory": "Kitchen Cleaning Materials",
 		"brand": "Smart",
 		"tags": ["dishwashing","paste","smart","lemon","kitchen"],
-		"stock": 5,
+		"stock": 0,
 		"description": "Smart Dishwashing Paste Lemon 400g",
 		"image_url": "images/general-merch/kitchen/smart-dishwashing-paste-lemon-400g.jpg",
 		"image_webp": "images/general-merch/kitchen/smart-dishwashing-paste-lemon-400g.webp"
@@ -675,7 +675,7 @@
 		"subcategory": "Kitchen Cleaning Materials",
 		"brand": "Smart",
 		"tags": ["dishwashing","paste","smart","lemon","kitchen"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Smart Dishwashing Paste Lemon 200g",
 		"image_url": "images/general-merch/kitchen/smart-dishwashing-paste-lemon-200g.jpg",
 		"image_webp": "images/general-merch/kitchen/smart-dishwashing-paste-lemon-200g.webp"
@@ -688,7 +688,7 @@
 		"subcategory": "Kitchen Cleaning Materials",
 		"brand": "Scotch-Brite",
 		"tags": ["scotch-brite","sponge","kitchen","scouring"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Scotch Brite 100mm x 75mm x 30mm",
 		"image_url": "images/general-merch/kitchen/scotch-brite-100x75x30mm.jpg",
 		"image_webp": "images/general-merch/kitchen/scotch-brite-100x75x30mm.webp"
@@ -701,7 +701,7 @@
 		"subcategory": "Kitchen Cleaning Materials",
 		"brand": "Steel Wool",
 		"tags": ["scouring","steel-wool","kitchen"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Steel Wool",
 		"image_url": "images/general-merch/kitchen/steel-wool.jpg",
 		"image_webp": "images/general-merch/kitchen/steel-wool.webp"
@@ -768,7 +768,7 @@
 		"subcategory": "Other Cleaning Materials",
 		"brand": "StarWax",
 		"tags": ["floor-wax","starwax","wax","other"],
-		"stock": 10,
+		"stock": 0,
 		"description": "Floor Wax StarWax 180g",
 		"image_url": "images/general-merch/other/floorwax-starwax-180g.jpg",
 		"image_webp": "images/general-merch/other/floorwax-starwax-180g.webp"

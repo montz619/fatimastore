@@ -7,7 +7,7 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","seafood"],
-        "stock": 5,
+        "stock": 0,
         "description": "Classic Oishi prawn crackers in original flavor, large pack.",
         "image_url": "images/food/Chips-n-crackers/oishi-original-big.jpg",
         "image_webp": "images/food/Chips-n-crackers/oishi-original-big.webp"
@@ -19,7 +19,7 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","seafood","single-serve"],
-        "stock": 5,
+        "stock": 0,
         "description": "Big spicy-sized prawn crackers — perfect for snacking.",
         "image_url": "images/food/Chips-n-crackers/oishi-spicy-big.jpg",
         "image_webp": "images/food/Chips-n-crackers/oishi-spicy-big.webp"
@@ -31,7 +31,7 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","single-serve"],
-        "stock": 10,
+        "stock": 0,
         "description": "Small original prawn crackers by Oishi — light and crispy.",
         "image_url": "images/food/Chips-n-crackers/oishi-original-small.jpg",
         "image_webp": "images/food/Chips-n-crackers/oishi-original-small.webp"
@@ -44,7 +44,7 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","martys","cracklings"],
-        "stock": 5,
+        "stock": 0,
         "description": "Oishi Marty's Cracklin' Plain Salted — big pack of savory cracklings.",
         "image_url": "images/food/Chips-n-crackers/martys-plain-90g.jpg",
         "image_webp": "images/food/Chips-n-crackers/martys-plain-90g.webp"
@@ -56,7 +56,7 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","single-serve","curls"],
-        "stock": 10,
+        "stock": 0,
         "description": "Small pack of Oishi Seafood Curls, spicy flavor.",
         "image_url": "images/food/Chips-n-crackers/oishi-curls-spicy-small.jpg",
         "image_webp": "images/food/Chips-n-crackers/oishi-curls-spicy-small.webp"
@@ -68,7 +68,7 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","fish"],
-        "stock": 5,
+        "stock": 0,
         "description": "Oishi Fish Crackers — large pack, savory fish flavor.",
         "image_url": "images/food/Chips-n-crackers/oishi-fish-crackers-big.jpg",
         "image_webp": "images/food/Chips-n-crackers/oishi-fish-crackers-big.webp"
@@ -80,7 +80,7 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","single-serve","fish"],
-        "stock": 10,
+        "stock": 0,
         "description": "Small pack of Oishi Fish Crackers — perfect for on-the-go.",
         "image_url": "images/food/Chips-n-crackers/oishi-fish-crackers-small.jpg",
         "image_webp": "images/food/Chips-n-crackers/oishi-fish-crackers-small.webp"
@@ -92,7 +92,7 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","cracklins"],
-        "stock": 5,
+        "stock": 0,
         "description": "Marty's Cracklin' — big spicy cracklings by Oishi.",
         "image_url": "images/food/Chips-n-crackers/martys-big.jpg",
         "image_webp": "images/food/Chips-n-crackers/martys-big.webp"
@@ -104,7 +104,7 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","single-serve","cracklins"],
-        "stock": 10,
+        "stock": 0,
         "description": "Small Marty's Cracklin' by Oishi.",
         "image_url": "images/food/Chips-n-crackers/martys-saltvinegar-26g.jpg",
         "image_webp": "images/food/Chips-n-crackers/martys-saltvinegar-26g.webp"
@@ -117,7 +117,7 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","potato","patata"],
-        "stock": 5,
+        "stock": 0,
         "description": "Crispy Patata — big potato chips pack by Oishi.",
         "image_url": "images/food/Chips-n-crackers/crispy-patata-big.jpg",
         "image_webp": "images/food/Chips-n-crackers/crispy-patata-big.webp"
@@ -129,7 +129,7 @@
         "category": "food",
         "brand": "Oishi",
         "tags": ["chips","oishi","snack","single-serve","potato"],
-        "stock": 10,
+        "stock": 0,
         "description": "Small Crispy Patata pack by Oishi.",
         "image_url": "images/food/Chips-n-crackers/crispy-patata-small.jpg",
         "image_webp": "images/food/Chips-n-crackers/crispy-patata-small.webp"
@@ -141,7 +141,7 @@
         "category": "food",
         "brand": "Tattoos",
         "tags": ["chips","tattoos","snack","single-serve","corn"],
-        "stock": 10,
+        "stock": 0,
         "description": "Tattoos Corn Chips BBQ Flavor — small pack of corn chips.",
         "image_url": "images/food/Chips-n-crackers/tattoos-bbq-58g.jpg",
         "image_webp": "images/food/Chips-n-crackers/tattoos-bbq-58g.webp"
@@ -154,7 +154,7 @@
         "category": "food",
         "brand": "Alaska",
         "tags": ["powdered","milk","drink","fortified"],
-        "stock": 2,
+        "stock": 0,
         "description": "Alaska Fortified milk powder 300g — fortified with vitamins.",
         "image_url": "images/food/powdered-drinks/alaska-300g.jpg",
         "image_webp": "images/food/powdered-drinks/alaska-300g.webp"
@@ -166,7 +166,7 @@
         "category": "food",
         "brand": "Alaska",
         "tags": ["powdered","milk","drink","fortified"],
-        "stock": 4,
+        "stock": 0,
         "description": "Alaska Fortified milk powder 150g — convenient pack for families.",
         "image_url": "images/food/powdered-drinks/alaska-150g.jpg",
         "image_webp": "images/food/powdered-drinks/alaska-150g.webp"
@@ -178,7 +178,7 @@
         "category": "food",
         "brand": "Alaska",
         "tags": ["powdered","milk","drink","single-serve"],
-        "stock": 10,
+        "stock": 0,
         "description": "Single-serve Alaska milk powder 33g — quick and easy.",
         "image_url": "images/food/powdered-drinks/alaska-33g.jpg",
         "image_webp": "images/food/powdered-drinks/alaska-33g.webp"
@@ -191,7 +191,7 @@
         "category": "food",
         "brand": "Bear Brand",
         "tags": ["powdered","milk","drink","premium"],
-        "stock": 1,
+        "stock": 0,
         "description": "Bear Brand full cream milk powder — large 680g can.",
         "image_url": "images/food/powdered-drinks/bearbrand-680g.jpg",
         "image_webp": "images/food/powdered-drinks/bearbrand-680g.webp"
@@ -215,7 +215,7 @@
         "category": "food",
         "brand": "Bear Brand",
         "tags": ["powdered","milk","drink","single-serve"],
-        "stock": 10,
+        "stock": 0,
         "description": "Bear Brand single-serve sachet 33g.",
         "image_url": "images/food/powdered-drinks/bearbrand-33g.jpg",
         "image_webp": "images/food/powdered-drinks/bearbrand-33g.webp"
@@ -228,7 +228,7 @@
         "category": "food",
         "brand": "Birch Tree",
         "tags": ["powdered","milk","drink","fortified"],
-        "stock": 2,
+        "stock": 0,
         "description": "Birch Tree fortified milk powder 300g — nutritious option.",
         "image_url": "images/food/powdered-drinks/birchtree-300g.jpg",
         "image_webp": "images/food/powdered-drinks/birchtree-300g.webp"
@@ -240,7 +240,7 @@
         "category": "food",
         "brand": "Birch Tree",
         "tags": ["powdered","milk","drink","single-serve"],
-        "stock": 10,
+        "stock": 0,
         "description": "Birch Tree single-serve 33g sachet — fortified milk.",
         "image_url": "images/food/powdered-drinks/birchtree-33g.jpg",
         "image_webp": "images/food/powdered-drinks/birchtree-33g.webp"
@@ -252,7 +252,7 @@
         "category": "food",
         "brand": "Nescafe",
         "tags": ["powdered","coffee","instant"],
-        "stock": 10,
+        "stock": 0,
         "description": "Nescafe Creamy Latte instant coffee stick 20g.",
         "image_url": "images/food/powdered-drinks/nescafe-creamylatte-20g.jpg",
         "image_webp": "images/food/powdered-drinks/nescafe-creamylatte-20g.webp"
@@ -264,7 +264,7 @@
         "category": "food",
         "brand": "Nescafe",
         "tags": ["powdered","coffee","instant"],
-        "stock": 10,
+        "stock": 0,
         "description": "Nescafe Creamy White instant 20g stick — smooth and milky.",
         "image_url": "images/food/powdered-drinks/nescafe-creamywhite-20g.jpg",
         "image_webp": "images/food/powdered-drinks/nescafe-creamywhite-20g.webp"
@@ -276,7 +276,7 @@
         "category": "food",
         "brand": "Nescafe",
         "tags": ["powdered","coffee","instant"],
-        "stock": 10,
+        "stock": 0,
         "description": "Nescafe Original instant coffee stick 20g.",
         "image_url": "images/food/powdered-drinks/nescafe-original-20g.jpg",
         "image_webp": "images/food/powdered-drinks/nescafe-original-20g.webp"
@@ -288,7 +288,7 @@
         "category": "food",
         "brand": "Nescafe",
         "tags": ["powdered","coffee","multi-pack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Twin pack of Nescafe Original instant coffee (2x20g).",
         "image_url": "images/food/powdered-drinks/nescafe-original-twinpack-40g.jpg",
         "image_webp": "images/food/powdered-drinks/nescafe-original-twinpack-40g.webp"
@@ -337,7 +337,7 @@
         "category": "food",
         "brand": "Tang",
         "tags": ["powdered","drink","juice","orange"],
-        "stock": 3,
+        "stock": 0,
         "description": "Tang powdered juice orange 375g — great for parties.",
         "image_url": "images/food/powdered-drinks/tang-orange-375g.jpg",
         "image_webp": "images/food/powdered-drinks/tang-orange-375g.webp"
@@ -349,7 +349,7 @@
         "category": "food",
         "brand": "Tang",
         "tags": ["powdered","drink","tang","orange"],
-        "stock": 10,
+        "stock": 0,
         "description": "Tang orange single-serve 19g sachet.",
         "image_url": "images/food/powdered-drinks/tang-orange-19g.jpg",
         "image_webp": "images/food/powdered-drinks/tang-orange-19g.webp"
@@ -361,7 +361,7 @@
         "category": "food",
         "brand": "Tang",
         "tags": ["powdered","drink","tang","dalandan"],
-        "stock": 10,
+        "stock": 0,
         "description": "Tang dalandan 19g single-serve.",
         "image_url": "images/food/powdered-drinks/tang-dalandan-19g.jpg",
         "image_webp": "images/food/powdered-drinks/tang-dalandan-19g.webp"
@@ -373,7 +373,7 @@
         "category": "food",
         "brand": "Tang",
         "tags": ["powdered","drink","tang","mango"],
-        "stock": 10,
+        "stock": 0,
         "description": "Tang mango 19g single-serve.",
         "image_url": "images/food/powdered-drinks/tang-mango-19g.jpg",
         "image_webp": "images/food/powdered-drinks/tang-mango-19g.webp"
@@ -385,7 +385,7 @@
         "category": "food",
         "brand": "Tang",
         "tags": ["powdered","drink","tang","strawberry"],
-        "stock": 10,
+        "stock": 0,
         "description": "Tang strawberry 19g single-serve.",
         "image_url": "images/food/powdered-drinks/tang-strawberry-19g.jpg",
         "image_webp": "images/food/powdered-drinks/tang-strawberry-19g.webp"
@@ -398,7 +398,7 @@
         "category": "food",
         "brand": "Silver Swan",
         "tags": ["spices","condiment","soy"],
-        "stock": 5,
+        "stock": 0,
         "description": "Silver Swan Soy Sauce 350ml",
         "image_url": "images/food/spices-n-condiments/silver-swan-soy-350ml.jpg",
         "image_webp": "images/food/spices-n-condiments/silver-swan-soy-350ml.webp"
@@ -422,7 +422,7 @@
         "category": "food",
         "brand": "Silver Swan",
         "tags": ["spices","condiment","soy"],
-        "stock": 10,
+        "stock": 0,
         "description": "Silver Swan Soy Sauce 200ml",
         "image_url": "images/food/spices-n-condiments/silver-swan-soy-200ml.jpg",
         "image_webp": "images/food/spices-n-condiments/silver-swan-soy-200ml.webp"
@@ -434,7 +434,7 @@
         "category": "food",
         "brand": "Silver Swan",
         "tags": ["spices","condiment","vinegar"],
-        "stock": 10,
+        "stock": 0,
         "description": "Silver Swan Vinegar 200ml",
         "image_url": "images/food/spices-n-condiments/silver-swan-vinegar-200ml.jpg",
         "image_webp": "images/food/spices-n-condiments/silver-swan-vinegar-200ml.webp"
@@ -518,7 +518,7 @@
         "category": "food",
         "brand": "Knorr",
         "tags": ["spices","condiment","bouillon","knorr"],
-        "stock": 20,
+        "stock": 0,
         "description": "Knorr Beef Cubes 10g",
         "image_url": "images/food/spices-n-condiments/knorr-beef-cubes-10g.jpg",
         "image_webp": "images/food/spices-n-condiments/knorr-beef-cubes-10g.webp"
@@ -530,7 +530,7 @@
         "category": "food",
         "brand": "Knorr",
         "tags": ["spices","condiment","bouillon","knorr"],
-        "stock": 20,
+        "stock": 0,
         "description": "Knorr Chicken Cubes 10g",
         "image_url": "images/food/spices-n-condiments/knorr-chicken-cubes-10g.jpg",
         "image_webp": "images/food/spices-n-condiments/knorr-chicken-cubes-10g.webp"
@@ -542,7 +542,7 @@
         "category": "food",
         "brand": "Knorr",
         "tags": ["spices","condiment","bouillon","knorr"],
-        "stock": 20,
+        "stock": 0,
         "description": "Knorr Pork Cubes 10g",
         "image_url": "images/food/spices-n-condiments/knorr-pork-cubes-10g.jpg",
         "image_webp": "images/food/spices-n-condiments/knorr-pork-cubes-10g.webp"
@@ -554,7 +554,7 @@
         "category": "food",
         "brand": "Knorr",
         "tags": ["spices","condiment","bouillon","knorr"],
-        "stock": 20,
+        "stock": 0,
         "description": "Knorr Shrimp Cubes 10g",
         "image_url": "images/food/spices-n-condiments/knorr-shrimp-cubes-10g.jpg",
         "image_webp": "images/food/spices-n-condiments/knorr-shrimp-cubes-10g.webp"
@@ -566,7 +566,7 @@
         "category": "food",
         "brand": "Mama Sita's",
         "tags": ["spices","marinade","bbq"],
-        "stock": 4,
+        "stock": 0,
         "description": "Mama Sita's BBQ Marinade 150ml",
         "image_url": "images/food/spices-n-condiments/mama-sitas-bbq-marinade-150ml.jpg",
         "image_webp": "images/food/spices-n-condiments/mama-sitas-bbq-marinade-150ml.webp"
@@ -665,7 +665,7 @@
         "subcategory": "Canned Goods",
         "brand": "555",
         "tags": ["canned","sardines","spicy","fish"],
-        "stock": 5,
+        "stock": 0,
         "description": "555 Fried Sardines Hot & Spicy 155g",
         "image_url": "images/food/canned-goods/555-sardines-fried-hot&spicy-155g.jpg",
         "image_webp": "images/food/canned-goods/555-sardines-fried-hot&spicy-155g.webp"
@@ -691,7 +691,7 @@
         "subcategory": "Canned Goods",
         "brand": "555",
         "tags": ["canned","sardines","spanish","fish"],
-        "stock": 5,
+        "stock": 0,
         "description": "555 Spanish Sardines 155g",
         "image_url": "images/food/canned-goods/555-sardines-spanish-155g.jpg",
         "image_webp": "images/food/canned-goods/555-sardines-spanish-155g.webp"
@@ -730,7 +730,7 @@
         "subcategory": "Canned Goods",
         "brand": "Century",
         "tags": ["canned","tuna","non-spicy","fish"],
-        "stock": 10,
+        "stock": 0,
         "description": "Century Tuna Non-Spicy 155g",
         "image_url": "images/food/canned-goods/century-tuna-nonspicy-155g.jpg",
         "image_webp": "images/food/canned-goods/century-tuna-nonspicy-155g.webp"
@@ -756,7 +756,7 @@
         "subcategory": "Canned Goods",
         "brand": "Mega",
         "tags": ["canned","sardines","extra-hot","fish"],
-        "stock": 5,
+        "stock": 0,
         "description": "Mega Sardines Extra Hot 155g",
         "image_url": "images/food/canned-goods/mega-sardines-extrahot-155g.jpg",
         "image_webp": "images/food/canned-goods/mega-sardines-extrahot-155g.webp"
@@ -770,7 +770,7 @@
         "subcategory": "Canned Goods",
         "brand": "Mega",
         "tags": ["canned","sardines","non-spicy","fish"],
-        "stock": 5,
+        "stock": 0,
         "description": "Mega Sardines Non-Spicy 155g",
         "image_url": "images/food/canned-goods/mega-sardines-nonspicy-155g.jpg",
         "image_webp": "images/food/canned-goods/mega-sardines-nonspicy-155g.webp"
@@ -783,7 +783,7 @@
         "subcategory": "Canned Goods",
         "brand": "Mega",
         "tags": ["canned","sardines","spicy","fish"],
-        "stock": 5,
+        "stock": 0,
         "description": "Mega Sardines Spicy 155g",
         "image_url": "images/food/canned-goods/mega-sardines-spicy-155g.jpg",
         "image_webp": "images/food/canned-goods/mega-sardines-spicy-155g.webp"
@@ -823,7 +823,7 @@
         "subcategory": "Canned Goods",
         "brand": "Bingo",
         "tags": ["canned","corned beef","meat"],
-        "stock": 10,
+        "stock": 0,
         "description": "Bingo Corned Beef 100g",
         "image_url": "images/food/canned-goods/bingo-corned-beef-100g.jpg",
         "image_webp": "images/food/canned-goods/bingo-corned-beef-100g.webp"
@@ -849,7 +849,7 @@
         "subcategory": "Canned Goods",
         "brand": "CDO",
         "tags": ["canned","corned beef","carne norte"],
-        "stock": 5,
+        "stock": 0,
         "description": "CDO Carne Norte Classic 150g",
         "image_url": "images/food/canned-goods/cdo-carnenorte-classic-150g.jpg",
         "image_webp": "images/food/canned-goods/cdo-carnenorte-classic-150g.webp"
@@ -876,7 +876,7 @@
         "subcategory": "Biscuits",
         "brand": "Fita",
         "tags": ["biscuits","crackers","snack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Fita Crackers 30g",
         "image_url": "images/food/biscuits/fita-30g.jpg",
         "image_webp": "images/food/biscuits/fita-30g.webp"
@@ -889,7 +889,7 @@
         "subcategory": "Biscuits",
         "brand": "Hansel",
         "tags": ["biscuits","sandwich","milk","snack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Hansel Sandwich Milk 31g",
         "image_url": "images/food/biscuits/hansel-milk-31g.jpg",
         "image_webp": "images/food/biscuits/hansel-milk-31g.webp"
@@ -902,7 +902,7 @@
         "subcategory": "Biscuits",
         "brand": "Hansel",
         "tags": ["biscuits","sandwich","mocha","snack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Hansel Sandwich Mocha 31g",
         "image_url": "images/food/biscuits/hansel-mocha-31g.jpg",
         "image_webp": "images/food/biscuits/hansel-mocha-31g.webp"
@@ -915,7 +915,7 @@
         "subcategory": "Biscuits",
         "brand": "Magic Creams",
         "tags": ["biscuits","cream","butter","snack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Magic Creams Butter 28g",
         "image_url": "images/food/biscuits/magic-creams-butter-28g.jpg",
         "image_webp": "images/food/biscuits/magic-creams-butter-28g.webp"
@@ -928,7 +928,7 @@
         "subcategory": "Biscuits",
         "brand": "Magic Creams",
         "tags": ["biscuits","cream","peanut","snack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Magic Creams Peanut Butter 28g",
         "image_url": "images/food/biscuits/magic-creams-peanutbutter-28g.jpg",
         "image_webp": "images/food/biscuits/magic-creams-peanutbutter-28g.webp"
@@ -941,7 +941,7 @@
         "subcategory": "Biscuits",
         "brand": "Rebisco",
         "tags": ["biscuits","chocolate","snack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Rebisco Choco 32g",
         "image_url": "images/food/biscuits/rebisco-choco-32g.jpg",
         "image_webp": "images/food/biscuits/rebisco-choco-32g.webp"
@@ -954,7 +954,7 @@
         "subcategory": "Biscuits",
         "brand": "Rebisco",
         "tags": ["biscuits","crackers","snack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Rebisco Crackers 32g",
         "image_url": "images/food/biscuits/rebisco-crackers-32g.jpg",
         "image_webp": "images/food/biscuits/rebisco-crackers-32g.webp"
@@ -967,7 +967,7 @@
         "subcategory": "Biscuits",
         "brand": "Rebisco",
         "tags": ["biscuits","butter","crackers","snack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Rebisco Butter Crackers 32g",
         "image_url": "images/food/biscuits/rebisco-crackers-butter-32g.jpg",
         "image_webp": "images/food/biscuits/rebisco-crackers-butter-32g.webp"
@@ -980,7 +980,7 @@
         "subcategory": "Biscuits",
         "brand": "Rebisco",
         "tags": ["biscuits","honey","butter","crackers","snack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Rebisco Honey Butter Crackers 32g",
         "image_url": "images/food/biscuits/rebisco-crackers-honeybutter-32g.jpg",
         "image_webp": "images/food/biscuits/rebisco-crackers-honeybutter-32g.webp"
@@ -993,7 +993,7 @@
         "subcategory": "Biscuits",
         "brand": "Rebisco",
         "tags": ["biscuits","strawberry","crackers","snack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Rebisco Crackers Strawberry 32g",
         "image_url": "images/food/biscuits/rebisco-crackers-strawberry-32g.jpg",
         "image_webp": "images/food/biscuits/rebisco-crackers-strawberry-32g.webp"
@@ -1006,7 +1006,7 @@
         "subcategory": "Biscuits",
         "brand": "SkyFlakes",
         "tags": ["biscuits","crackers","snack"],
-        "stock": 10,
+        "stock": 0,
         "description": "Sky Flakes 25g",
         "image_url": "images/food/biscuits/skyflakes-25g.jpg",
         "image_webp": "images/food/biscuits/skyflakes-25g.webp"
