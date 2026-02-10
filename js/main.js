@@ -81,6 +81,43 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!Array.isArray(items)) return;
             if (!Array.isArray(window.__productSearchRegistry)) window.__productSearchRegistry = [];
             // simple dedupe by id or lowercase name
+            // Remove products that belong to temporarily disabled categories or brand tiles
+            try {
+                const disabledEls = Array.from(document.querySelectorAll('.disabled-tile'));
+                const disabledCategories = new Set(disabledEls.map(el => (el.dataset && el.dataset.category) ? String(el.dataset.category).toLowerCase() : null).filter(Boolean));
+                const disabledTitles = disabledEls.map(el => (el.dataset && el.dataset.title) ? String(el.dataset.title) : null).filter(Boolean);
+                // slugify helper: normalize titles to simple path-like tokens
+                const slugify = s => String(s || '').toLowerCase().replace(/\s+/g,'-').replace(/&/g,'and').replace(/[^a-z0-9\-]/g,'');
+                const disabledSlugs = new Set(disabledTitles.map(slugify));
+
+                function matchesDisabledBrand(p) {
+                    if (!p) return false;
+                    // check brand/name
+                    const name = p.name ? String(p.name).toLowerCase() : '';
+                    const brand = p.brand ? String(p.brand).toLowerCase() : '';
+                    const img = p.image_url ? String(p.image_url).toLowerCase() : '';
+                    const tags = Array.isArray(p.tags) ? p.tags.join(' ').toLowerCase() : '';
+                    for (const s of disabledSlugs) {
+                        if (!s) continue;
+                        if (name.includes(s) || brand.includes(s) || img.includes(s) || tags.includes(s)) return true;
+                    }
+                    return false;
+                }
+
+                // filter merged list
+                const filtered = merged.filter(p => {
+                    try {
+                        if (!p) return false;
+                        if (p.category && disabledCategories.has(String(p.category).toLowerCase())) return false;
+                        if (matchesDisabledBrand(p)) return false;
+                        return true;
+                    } catch (e) { return true; }
+                });
+                return filtered;
+            } catch (e) {
+                // If DOM scanning fails, return merged as-is
+                return merged;
+            }
             const existing = window.__productSearchRegistry;
             const seen = new Set(existing.map(p => (p && p.id) ? `id:${p.id}` : (p && p.name) ? `name:${String(p.name).toLowerCase()}` : null));
             for (const it of items) {

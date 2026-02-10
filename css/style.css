@@ -574,3 +574,50 @@ button, .add-to-cart-btn, .tile-add-btn, .brand-item, .category-tile {
     .category-tile, .brand-item, .product-card { transform: none !important; }
 }
 
+/* Temporarily disable tiles (visible but non-interactive) */
+.disabled-tile {
+    pointer-events: none !important;
+    opacity: 0.65;
+    cursor: default !important;
+    position: relative; /* allow label/overlay positioning */
+}
+
+/* subtle overlay so disabled tiles read as inactive while staying visible */
+.disabled-tile::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.06);
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.disabled-tile[aria-disabled="true"] {
+    filter: grayscale(4%);
+}
+
+.disabled-label {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    pointer-events: none;
+}
+
+/* variant for brand tiles where label should be centered */
+.brand-tile.disabled-tile .disabled-label {
+    top: auto;
+    right: auto;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(17,24,39,0.8);
+}
+
+
